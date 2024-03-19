@@ -1,6 +1,6 @@
 ---
-templateKey: 'about-page'
-path: /about
+templateKey: 'programs-page'
+path: /programs
 title: Programs
 ---
 ### Programs
