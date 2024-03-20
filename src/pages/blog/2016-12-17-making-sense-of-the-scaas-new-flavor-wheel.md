@@ -1,34 +1,22 @@
 ---
 templateKey: blog-post
-title: Making sense of the SCAA’s new Flavor Wheel
-date: 2024-03-20T01:46:11.261Z
-description: The Coffee Taster’s Flavor Wheel, the official resource used by
-  coffee tasters, has been revised for the first time this year.
+title: "Blog Entry #1"
+date: 2024-03-20T04:47:48.945Z
+description: "Description for blog entry #1"
 featuredpost: false
 featuredimage: /img/placeholder_image.jpeg
 tags:
-  - flavor
-  - tasting
+  - test
+  - lorem
 ---
-![flavor wheel](/img/placeholder_image.jpeg)
+![alt image text](/img/placeholder_image.jpeg)
 
-The SCAA updated the wheel to reflect the finer nuances needed to describe flavors more precisely. The new descriptions are more detailed and hence allow cuppers to distinguish between more flavors.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque diam volutpat commodo sed egestas egestas fringilla. Malesuada fames ac turpis egestas sed. Semper quis lectus nulla at volutpat diam ut venenatis tellus. Massa sed elementum tempus egestas. Mi ipsum faucibus vitae aliquet nec ullamcorper sit. Magna eget est lorem ipsum. Eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque. Ut etiam sit amet nisl purus in mollis nunc sed. Elit at imperdiet dui accumsan sit amet. Faucibus turpis in eu mi bibendum neque egestas congue quisque. Facilisis magna etiam tempor orci eu lobortis elementum nibh tellus. Velit laoreet id donec ultrices tincidunt arcu non. Sed id semper risus in. Quis auctor elit sed vulputate mi sit amet. Dignissim enim sit amet venenatis urna cursus eget nunc scelerisque. Pharetra sit amet aliquam id diam maecenas ultricies mi.
 
-While this is going to be a big change for professional coffee tasters, it means a lot to you as a consumer as well. We’ll explain how the wheel came to be, how pros use it and what the flavors actually mean.
+Vitae elementum curabitur vitae nunc sed velit dignissim. Mattis aliquam faucibus purus in. Facilisis volutpat est velit egestas. Sed sed risus pretium quam vulputate. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit aliquam. Sit amet cursus sit amet. Ipsum a arcu cursus vitae congue mauris rhoncus. Enim blandit volutpat maecenas volutpat blandit aliquam etiam erat velit. Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum est. Eget nullam non nisi est sit amet. Proin sagittis nisl rhoncus mattis rhoncus urna. Condimentum lacinia quis vel eros donec ac odio. Massa placerat duis ultricies lacus sed turpis tincidunt id aliquet. Bibendum est ultricies integer quis.
 
-## What the updates mean to you
+Egestas maecenas pharetra convallis posuere morbi leo. Mi eget mauris pharetra et ultrices neque ornare aenean. Et ultrices neque ornare aenean euismod elementum nisi. Nisl rhoncus mattis rhoncus urna. Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Quam viverra orci sagittis eu volutpat odio facilisis mauris. Non blandit massa enim nec dui nunc mattis enim ut. Consequat ac felis donec et odio pellentesque diam volutpat commodo. Et malesuada fames ac turpis egestas. Sapien pellentesque habitant morbi tristique senectus et netus et malesuada. Adipiscing commodo elit at imperdiet dui accumsan sit amet. Fames ac turpis egestas integer eget. Amet justo donec enim diam. Ipsum a arcu cursus vitae congue. Auctor eu augue ut lectus arcu.
 
-The Specialty Coffee Association of America (SCAA), founded in 1982, is a non-profit trade organization for the specialty coffee industry. With members located in more than 40 countries, SCAA represents every segment of the specialty coffee industry, including:
+Proin libero nunc consequat interdum varius sit. Tincidunt ornare massa eget egestas purus. Interdum consectetur libero id faucibus nisl. Tellus in hac habitasse platea. Nisl purus in mollis nunc sed id semper. Quis auctor elit sed vulputate mi sit amet mauris. Sollicitudin ac orci phasellus egestas tellus. Non quam lacus suspendisse faucibus interdum posuere lorem ipsum. Dignissim cras tincidunt lobortis feugiat vivamus at. Velit laoreet id donec ultrices tincidunt arcu non sodales neque. Ultrices dui sapien eget mi proin sed libero enim. Arcu non sodales neque sodales. Id neque aliquam vestibulum morbi blandit cursus risus at ultrices. Nec feugiat in fermentum posuere urna nec tincidunt praesent semper.
 
-* producers
-* roasters
-* importers/exporters
-* retailers
-* manufacturers
-* baristas
-
-For over 30 years, SCAA has been dedicated to creating a vibrant specialty coffee community by recognizing, developing and promoting specialty coffee. SCAA sets and maintains quality standards for the industry, conducts market research, and provides education, training, resources, and business services for its members.
-
-Coffee cupping, or coffee tasting, is the practice of observing the tastes and aromas of brewed coffee. It is a professional practice but can be done informally by anyone or by professionals known as "Q Graders". A standard coffee cupping procedure involves deeply sniffing the coffee, then loudly slurping the coffee so it spreads to the back of the tongue.
-
-The coffee taster attempts to measure aspects of the coffee's taste, specifically the body (the texture or mouthfeel, such as oiliness), sweetness, acidity (a sharp and tangy feeling, like when biting into an orange), flavour (the characters in the cup), and aftertaste. Since coffee beans embody telltale flavours from the region where they were grown, cuppers may attempt to identify the coffee's origin.
+Donec adipiscing tristique risus nec feugiat in fermentum posuere. Quis viverra nibh cras pulvinar mattis nunc. Risus nec feugiat in fermentum posuere urna. Maecenas ultricies mi eget mauris pharetra et. Eget nullam non nisi est. Sit amet massa vitae tortor condimentum lacinia quis vel eros. Et egestas quis ipsum suspendisse ultrices gravida dictum fusce. Purus in mollis nunc sed. Pharetra vel turpis nunc eget lorem dolor sed. Eget lorem dolor sed viverra. Urna nunc id cursus metus aliquam. Facilisis mauris sit amet massa. At varius vel pharetra vel turpis nunc. Duis ut diam quam nulla porttitor massa. Blandit aliquam etiam erat velit scelerisque in.
