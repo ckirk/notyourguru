@@ -11,8 +11,10 @@ const Navbar = () => {
 			<div className='container'>
 				<div className='navbar-brand'>
 					<Link to='/' className='navbar-item' title='Logo'>
-						<img src={logo} alt='Kaldi' style={{ width: '88px' }} />
+						{/* <img src={logo} alt='Kaldi' style={{ width: '88px' }} /> */}
+            <h1 className='siteTitle'>Not Your Guru</h1>
 					</Link>
+
 					{/* Hamburger menu */}
 					<button
 						className={`navbar-burger burger ${isActive && 'is-active'}`}
@@ -28,16 +30,6 @@ const Navbar = () => {
 					id='navMenu'
 					className={` navbar-start has-text-centered navbar-menu ${isActive && 'is-active'}`}
 				>
-					{/* TODO: inline override of padding is a result of refactoring
-                to a ul for accessibilty purposes, would like to see a css
-                re-write that makes this unneccesary.
-             */}
-
-					{/* <li className='navbar-item' style={{ padding: '0px' }}>
-						<Link className='navbar-item' to='/about'>
-							About
-						</Link>
-					</li> */}
 					<li className='navbar-item' style={{ padding: '0px' }}>
 						<Link className='navbar-item' to='/retreats'>
 							Retreats
@@ -68,23 +60,6 @@ const Navbar = () => {
 							Contact
 						</Link>
 					</li>
-					{/* <li className='navbar-item' style={{ padding: '0px' }}>
-						<Link className='navbar-item' to='/contact/examples'>
-							Form Examples
-						</Link>
-					</li> */}
-					{/* <li className='navbar-end has-text-centered'>
-						<a
-							className='navbar-item'
-							href='https://github.com/decaporg/gatsby-plugin-decap-cms'
-							target='_blank'
-							rel='noopener noreferrer'
-						>
-							<span className='icon'>
-								<img src={github} alt='Github' />
-							</span>
-						</a>
-					</li> */}
 				</ul>
 			</div>
 		</nav>
