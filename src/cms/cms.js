@@ -18,5 +18,5 @@ CMS.registerPreviewTemplate('coaching', AboutPagePreview) // using aboutPagePrev
 CMS.registerPreviewTemplate('training', AboutPagePreview) // using aboutPagePreview template for now
 CMS.registerPreviewTemplate('programs', AboutPagePreview) // using aboutPagePreview template for now
 // CMS.registerPreviewTemplate('products', ProductPagePreview)
-CMS.registerPreviewTemplate('retreats', ProductPagePreview) // using ProductPagePreview for now
+CMS.registerPreviewTemplate('retreat', ProductPagePreview) // using ProductPagePreview for now
 CMS.registerPreviewTemplate('blog', BlogPostPreview)

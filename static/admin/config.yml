@@ -169,9 +169,9 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
-      - file: "src/pages/retreats/index.md"
-        label: "Retreats Page"
-        name: "retreats"
+      - file: "src/pages/retreat/index.md"
+        label: "Retreat Page"
+        name: "retreat"
         fields:
           - {
               label: "Template Key",
