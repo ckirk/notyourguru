@@ -4,9 +4,9 @@ import { Link, graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
 
 import Layout from "../components/Layout";
-import Features from "../components/Features";
-import BlogRoll from "../components/BlogRoll";
-import FullWidthImage from "../components/FullWidthImage";
+import Features from "../components/Features"; // a list of features
+import BlogRoll from "../components/BlogRoll"; // a few recent blogs
+import FullWidthImage from "../components/FullWidthImage"; // Hero Image Zone
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
@@ -30,12 +30,12 @@ export const IndexPageTemplate = ({
               <div className="column is-10 is-offset-1">
                 <div className="content">
                   <div className="content">
-                    <div className="tile">
+                    {/* <div className="tile">
                       <h1 className="title">{mainpitch.title}</h1>
-                    </div>
-                    <div className="tile">
+                    </div> */}
+                    {/* <div className="tile">
                       <h3 className="subtitle">{mainpitch.description}</h3>
-                    </div>
+                    </div> */}
                   </div>
                   <div className="columns">
                     <div className="column is-12">
@@ -49,13 +49,13 @@ export const IndexPageTemplate = ({
                   <div className="columns">
                     <div className="column is-12 has-text-centered">
                       <Link className="btn" to="/products">
-                        See all products
+                        View Upcoming Retreats
                       </Link>
                     </div>
                   </div>
                   <div className="column is-12">
                     <h3 className="has-text-weight-semibold is-size-2">
-                      Latest stories
+                      Latest Blog Entries
                     </h3>
                     <BlogRoll />
                     <div className="column is-12 has-text-centered">
