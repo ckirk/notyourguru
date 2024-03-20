@@ -15,6 +15,7 @@ CMS.registerMediaLibrary(cloudinary)
 CMS.registerPreviewTemplate('index', IndexPagePreview)
 CMS.registerPreviewTemplate('about', AboutPagePreview)
 CMS.registerPreviewTemplate('coaching', AboutPagePreview) // using aboutPagePreview template for now
+CMS.registerPreviewTemplate('training', AboutPagePreview) // using aboutPagePreview template for now
 CMS.registerPreviewTemplate('programs', AboutPagePreview) // using aboutPagePreview template for now
 CMS.registerPreviewTemplate('products', ProductPagePreview)
 CMS.registerPreviewTemplate('retreats', ProductPagePreview) // using ProductPagePreview for now
