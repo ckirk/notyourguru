@@ -20,3 +20,4 @@ CMS.registerPreviewTemplate('programs', AboutPagePreview) // using aboutPagePrev
 // CMS.registerPreviewTemplate('products', ProductPagePreview)
 CMS.registerPreviewTemplate('retreat', ProductPagePreview) // using ProductPagePreview for now
 CMS.registerPreviewTemplate('blog', BlogPostPreview)
+CMS.registerPreviewTemplate('retreats', BlogPostPreview) // using BlogPostPreview for now
