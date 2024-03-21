@@ -8,6 +8,8 @@ import AboutPagePreview from './preview-templates/AboutPagePreview'
 import BlogPostPreview from './preview-templates/BlogPostPreview'
 import ProductPagePreview from './preview-templates/ProductPagePreview'
 import IndexPagePreview from './preview-templates/IndexPagePreview'
+import RetreatPostPreview from './preview-templates/RetreatPostPreview'
+
 
 // CMS.registerMediaLibrary(uploadcare)
 // CMS.registerMediaLibrary(cloudinary)
@@ -18,6 +20,6 @@ CMS.registerPreviewTemplate('coaching', AboutPagePreview) // using aboutPagePrev
 CMS.registerPreviewTemplate('training', AboutPagePreview) // using aboutPagePreview template for now
 CMS.registerPreviewTemplate('programs', AboutPagePreview) // using aboutPagePreview template for now
 // CMS.registerPreviewTemplate('products', ProductPagePreview)
-CMS.registerPreviewTemplate('retreat', ProductPagePreview) // using ProductPagePreview for now
+CMS.registerPreviewTemplate('retreats', ProductPagePreview) // using ProductPagePreview for now
 CMS.registerPreviewTemplate('blog', BlogPostPreview)
-CMS.registerPreviewTemplate('retreats', BlogPostPreview) // using BlogPostPreview for now
+CMS.registerPreviewTemplate('retreat', RetreatPostPreview)

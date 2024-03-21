@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
 
-
+// Template for showing multiple retreats on a page
 const RetreatsRollTemplate = (props) => {
   
   const { edges: posts } = props.data.allMarkdownRemark;
@@ -44,7 +44,7 @@ const RetreatsRollTemplate = (props) => {
                   </Link>
                   <span> &bull; </span>
                   <span className="subtitle is-size-5 is-block">
-                    {post.frontmatter.date}
+                    {post.frontmatter.startDate}
                   </span>
                 </p>
               </header>
@@ -74,42 +74,40 @@ RetreatsRoll.propTypes = {
 
 export default function RetreatsRoll() {
   return (
-    <StaticQuery
-      query={graphql`
-        query RetreatsRollQuery {
-          allMarkdownRemark(
-            sort: { order: DESC, fields: [frontmatter___date] }
-            filter: { frontmatter: { templateKey: { eq: "retreat-post" } } }
-          ) {
-            edges {
-              node {
-                excerpt(pruneLength: 400)
-                id
-                fields {
-                  slug
-                }
-                frontmatter {
-                  title
-                  templateKey
-                  date(formatString: "MMMM DD, YYYY")
-                  featuredpost
-                  featuredimage {
-                    childImageSharp {
-                      gatsbyImageData(
-                        width: 120
-                        quality: 100
-                        layout: CONSTRAINED
-                      )
-
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      `}
-      render={(data, count) => <RetreatsRollTemplate data={data} count={count} />}
-    />
-  );
+		<StaticQuery
+			query={graphql`
+				query RetreatsRollQuery {
+					allMarkdownRemark(
+						sort: { order: DESC, fields: [frontmatter___date] }
+						filter: { frontmatter: { templateKey: { eq: "retreat-post" } } }
+					) {
+						edges {
+							node {
+								excerpt(pruneLength: 400)
+								id
+								fields {
+									slug
+								}
+								frontmatter {
+									title
+                  subtitle
+									templateKey
+									startDate(formatString: "MMMM DD, YYYY")
+									endDate(formatString: "MMMM DD, YYYY")
+                  price
+									featuredpost
+									featuredimage {
+										childImageSharp {
+											gatsbyImageData(width: 120, quality: 100, layout: CONSTRAINED)
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			`}
+			render={(data, count) => <RetreatsRollTemplate data={data} count={count} />}
+		/>
+	)
 }
