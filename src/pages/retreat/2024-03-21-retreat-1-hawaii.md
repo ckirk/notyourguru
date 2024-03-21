@@ -1,12 +1,12 @@
 ---
 templateKey: retreat-post
-title: "Retreat #1"
-subtitle: subtitle
+title: "Retreat #1: Hawaii"
+subtitle: Find yourself in one of the most beautiful places in the world.
 description: "Description for blog entry #1"
-startDate: 2024-03-21T00:45:31.623Z
-endDate: 2024-03-21T00:45:31.643Z
+startDate: 2024-04-01T19:11:35.056Z
+endDate: 2024-03-21T19:11:35.066Z
 featuredpost: false
-featuredimage: /img/placeholder_image.jpeg
+featuredimage: /img/montana.jpeg
 location: '{"type":"Point","coordinates":[-73.8655797,40.7113502]}'
 price: 270.99
 date: 2024-03-20T04:47:48.945Z

@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
 title: Not Your Guru
-image: /img/placeholder_image.jpeg
-heading: About Not Your Guru
 subheading: Personal trainer and wellness coach practitioner
+image: /img/night_timelapse.jpeg
+heading: What Is Not Your Guru?
 description: "\"Not Your Guru\" is more than a brand; it's a philosophy rooted
   in the belief that true wellness comes from empowering individuals to
   cultivate a deeper connection with themselves. As a personal trainer and
