@@ -22,7 +22,7 @@ export default class RetreatIndexPage extends React.Component {
               padding: "1rem",
             }}
           >
-            Latest Posts
+            Latest Retreats
           </h1>
         </div>
         <section className="section">

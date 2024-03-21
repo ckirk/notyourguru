@@ -32,9 +32,9 @@ collections:
       - { label: "Featured Image", name: "featuredimage", widget: image }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Tags", name: "tags", widget: "list" }
-  - name: "retreats"
-    label: "Retreats"
-    folder: "src/pages/retreats"
+  - name: "retreat"
+    label: "Retreat"
+    folder: "src/pages/retreat"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
@@ -188,15 +188,15 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
-      - file: "src/pages/retreat/index.md"
-        label: "Retreat Page"
-        name: "retreat"
+      - file: "src/pages/retreats/index.md"
+        label: "Retreats Page"
+        name: "retreats"
         fields:
           - {
               label: "Template Key",
               name: "templateKey",
               widget: "hidden",
-              default: "retreat-page",
+              default: "retreats-page",
             }
           - { label: Title, name: title, widget: string }
           - { label: Image, name: image, widget: image }

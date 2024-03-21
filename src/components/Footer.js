@@ -32,7 +32,7 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link className='navbar-item' to='/retreat'>
+                    <Link className='navbar-item' to='/retreats'>
                       Retreats
                     </Link>
                   </li>

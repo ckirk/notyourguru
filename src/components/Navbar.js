@@ -31,8 +31,8 @@ const Navbar = () => {
 					className={` navbar-start has-text-centered navbar-menu ${isActive && 'is-active'}`}
 				>
 					<li className='navbar-item' style={{ padding: '0px' }}>
-						<Link className='navbar-item' to='/retreat'>
-							Retreat
+						<Link className='navbar-item' to='/retreats'>
+							Retreats
 						</Link>
 					</li>
 					<li className='navbar-item' style={{ padding: '0px' }}>

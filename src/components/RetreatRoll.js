@@ -4,7 +4,7 @@ import { Link, graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 
-const RetreatRollTemplate = (props) => {
+const RetreatsRollTemplate = (props) => {
   
   const { edges: posts } = props.data.allMarkdownRemark;
 
@@ -63,7 +63,7 @@ const RetreatRollTemplate = (props) => {
   )
 }
 
-RetreatRoll.propTypes = {
+RetreatsRoll.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -72,11 +72,11 @@ RetreatRoll.propTypes = {
 }
 
 
-export default function RetreatRoll() {
+export default function RetreatsRoll() {
   return (
     <StaticQuery
       query={graphql`
-        query RetreatRollQuery {
+        query RetreatsRollQuery {
           allMarkdownRemark(
             sort: { order: DESC, fields: [frontmatter___date] }
             filter: { frontmatter: { templateKey: { eq: "retreat-post" } } }
@@ -109,7 +109,7 @@ export default function RetreatRoll() {
           }
         }
       `}
-      render={(data, count) => <RetreatRollTemplate data={data} count={count} />}
+      render={(data, count) => <RetreatsRollTemplate data={data} count={count} />}
     />
   );
 }

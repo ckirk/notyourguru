@@ -1,8 +1,8 @@
 ---
 heading: You Need A Retreat
-path: /retreat
-templateKey: retreat-page
-title: Retreat
+path: /retreats
+templateKey: retreats-page
+title: Retreats
 image: /img/placeholder_image.jpeg
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
   eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque diam
