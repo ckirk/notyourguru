@@ -45,7 +45,7 @@ export const IndexPageTemplate = ({
                       <p>{description}</p>
                     </div>
                   </div>
-                  <Features gridItems={intro.blurbs} />
+                  <Features gridItems={intro.features} />
                   <div className="columns">
                     <div className="column is-12 has-text-centered">
                       <Link className="btn" to="/retreat">
@@ -82,7 +82,7 @@ IndexPageTemplate.propTypes = {
   mainpitch: PropTypes.object,
   description: PropTypes.string,
   intro: PropTypes.shape({
-    blurbs: PropTypes.array,
+    features: PropTypes.array,
   }),
 };
 
@@ -126,13 +126,9 @@ export const pageQuery = graphql`
         }
         heading
         subheading
-        mainpitch {
-          title
-          description
-        }
         description
         intro {
-          blurbs {
+          features {
             image {
               childImageSharp {
                 gatsbyImageData(width: 240, quality: 64, layout: CONSTRAINED)
@@ -141,7 +137,6 @@ export const pageQuery = graphql`
             text
           }
           heading
-          description
         }
       }
     }
