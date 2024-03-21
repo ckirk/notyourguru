@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
-title: Not Your Guru
-subheading: Personal trainer and wellness coach practitioner
+title: Be Thy Own Guru
+subheading: Learn the tools to improve the quality of communication you have with your body
 image: /img/silhouette_md.jpeg
 heading: What Is Not Your Guru?
 description: "\"Not Your Guru\" is more than a brand; it's a philosophy rooted
