@@ -6,7 +6,7 @@ import { getImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
 import Features from "../components/Features"; // a list of features
 import BlogRoll from "../components/BlogRoll"; // a few recent blogs
-import FullWidthImage from "../components/FullWidthImage"; // Hero Image Zone
+import LandingHeroImage from "../components/LandingHeroImage"; // Hero Image Zone
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
@@ -21,57 +21,58 @@ export const IndexPageTemplate = ({
   const heroImage = getImage(image) || image;
 
   return (
-    <div>
-      <FullWidthImage height={'100%'} img={heroImage} title={title} subheading={subheading} />
-      <section className="section section--gradient">
-        <div className="container">
-          <div className="section">
-            <div className="columns">
-              <div className="column is-10 is-offset-1">
-                <div className="content">
-                  <div className="content">
-                    {/* <div className="tile">
-                      <h1 className="title">{mainpitch.title}</h1>
-                    </div> */}
-                    {/* <div className="tile">
-                      <h3 className="subtitle">{mainpitch.description}</h3>
-                    </div> */}
+		<div>
+			<LandingHeroImage
+				height={'100vh'}
+				imgPosition='bottom center'
+				img={heroImage}
+				title={title}
+				subheading={subheading}
+        extraClasses='landingHero'
+			/>
+			<section className='section section--gradient'>
+				<div className='container'>
+          <div className='columns'>
+            <div className='column is-10 is-offset-1'>
+              <div className='content'>
+                <div className='content'>
+                  {/* <div className="tile">
+                    <h1 className="title">{mainpitch.title}</h1>
+                  </div> */}
+                  {/* <div className="tile">
+                    <h3 className="subtitle">{mainpitch.description}</h3>
+                  </div> */}
+                </div>
+                <div className='columns'>
+                  <div className='column is-12'>
+                    <h3 className='has-text-weight-semibold is-size-2'>{heading}</h3>
+                    <p>{description}</p>
                   </div>
-                  <div className="columns">
-                    <div className="column is-12">
-                      <h3 className="has-text-weight-semibold is-size-2">
-                        {heading}
-                      </h3>
-                      <p>{description}</p>
-                    </div>
+                </div>
+                <Features gridItems={intro.features} />
+                <div className='columns'>
+                  <div className='column is-12 has-text-centered'>
+                    <Link className='btn' to='/retreat'>
+                      View Upcoming Retreats
+                    </Link>
                   </div>
-                  <Features gridItems={intro.features} />
-                  <div className="columns">
-                    <div className="column is-12 has-text-centered">
-                      <Link className="btn" to="/retreat">
-                        View Upcoming Retreats
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      Latest Blog Entries
-                    </h3>
-                    <BlogRoll />
-                    <div className="column is-12 has-text-centered">
-                      <Link className="btn" to="/blog">
-                        Read more
-                      </Link>
-                    </div>
+                </div>
+                <div className='column is-12'>
+                  <h3 className='has-text-weight-semibold is-size-2'>Latest Blog Entries</h3>
+                  <BlogRoll />
+                  <div className='column is-12 has-text-centered'>
+                    <Link className='btn' to='/blog'>
+                      Read more
+                    </Link>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-    </div>
-  );
+				</div>
+			</section>
+		</div>
+	)
 };
 
 IndexPageTemplate.propTypes = {

@@ -5,11 +5,10 @@ import logo from "../img/logo.svg";
 
 const Navbar = (props) => {
   const [isActive, setIsActive] = useState(false);
-	const { transparent } = props
-	console.log('transparent:', transparent)
+	const { transparent = false } = props // default prop value
 
   return (
-		<nav className={`navbar ${transparent ? 'transparent' : ''}`} role='navigation' aria-label='main-navigation'>
+		<nav className={`navbar ${transparent && 'is-transparent'}`} role='navigation' aria-label='main-navigation'>
 			<div className='container'>
 				<div className='navbar-brand'>
 					<Link to='/' className='navbar-item' title='Logo'>
@@ -33,32 +32,32 @@ const Navbar = (props) => {
 					className={` navbar-start has-text-centered navbar-menu ${isActive && 'is-active'}`}
 				>
 					<li className='navbar-item' style={{ padding: '0px' }}>
-						<Link className='navbar-item' to='/retreats' activeClassName='active'>
+						<Link className='navbar-item' to='/retreats' activeClassName='is-selected'>
 							Retreats
 						</Link>
 					</li>
 					<li className='navbar-item' style={{ padding: '0px' }}>
-						<Link className='navbar-item' to='/training' activeClassName='active'>
+						<Link className='navbar-item' to='/training' activeClassName='is-selected'>
 							Training
 						</Link>
 					</li>
 					<li className='navbar-item' style={{ padding: '0px' }}>
-						<Link className='navbar-item' to='/coaching' activeClassName='active'>
+						<Link className='navbar-item' to='/coaching' activeClassName='is-selected'>
 							Online Coaching
 						</Link>
 					</li>
 					<li className='navbar-item' style={{ padding: '0px' }}>
-						<Link className='navbar-item' to='/programs' activeClassName='active'>
+						<Link className='navbar-item' to='/programs' activeClassName='is-selected'>
 							Ready-Made Programs
 						</Link>
 					</li>
 					<li className='navbar-item' style={{ padding: '0px' }}>
-						<Link className='navbar-item' to='/blog' activeClassName='active'>
+						<Link className='navbar-item' to='/blog' activeClassName='is-selected'>
 							Blog
 						</Link>
 					</li>
 					<li className='navbar-item' style={{ padding: '0px' }}>
-						<Link className='navbar-item' to='/contact' activeClassName='active'>
+						<Link className='navbar-item' to='/contact' activeClassName='is-selected'>
 							Contact
 						</Link>
 					</li>

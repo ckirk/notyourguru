@@ -9,7 +9,7 @@ import { withPrefix } from "gatsby";
 
 const TemplateWrapper = (props) => {
   const { title, description } = useSiteMetadata();
-  const { children, transparentNavbar } = props
+  const { children, transparentNavbar = false } = props
   return (
     <div>
       <Helmet>

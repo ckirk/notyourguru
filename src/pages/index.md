@@ -2,7 +2,7 @@
 templateKey: index-page
 title: Be Thy Own Guru
 subheading: Learn the tools to improve the quality of communication you have with your body
-image: /img/silhouette_md.jpeg
+image: /img/silhouette_centered.jpg
 heading: What Is Not Your Guru?
 description: "\"Not Your Guru\" is more than a brand; it's a philosophy rooted
   in the belief that true wellness comes from empowering individuals to
