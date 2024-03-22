@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
-import github from "../img/github-icon.svg";
-import logo from "../img/logo.svg";
+// import github from "../img/github-icon.svg";
+import logo from "../img/logo_500_square.jpg";
 
 const Navbar = (props) => {
   const [isActive, setIsActive] = useState(false);
@@ -12,7 +12,11 @@ const Navbar = (props) => {
 			<div className='container'>
 				<div className='navbar-brand'>
 					<Link to='/' className='navbar-item' title='Logo'>
-						{/* <img src={logo} alt='' style={{ width: '88px' }} /> */}
+						<img src={logo} alt='' style={{ 
+							maxHeight: '40px',
+							borderRadius: '6px',
+							marginRight: '20px'
+						}} />
             <h1 className='siteTitle'>Not Your Guru</h1>
 					</Link>
 
