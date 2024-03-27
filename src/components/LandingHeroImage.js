@@ -68,7 +68,7 @@ export default function FullWidthImage(props) {
 							// This centers the other elements inside the hero component
 							placeItems: 'center',
 							display: 'grid',
-							marginTop: '-15%',
+							// marginTop: '-15%',
 							padding: '20px',
 							textAlign: 'center'
 						}}
