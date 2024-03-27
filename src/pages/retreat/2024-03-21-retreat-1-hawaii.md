@@ -6,7 +6,7 @@ description: "Description for blog entry #1"
 startDate: 2024-04-01T19:11:35.056Z
 endDate: 2024-03-21T19:11:35.066Z
 featuredpost: false
-featuredimage: /img/montana.jpeg
+featuredimage: /img/hawaii.jpeg
 location: '{"type":"Point","coordinates":[-73.8655797,40.7113502]}'
 price: 270.99
 date: 2024-03-20T04:47:48.945Z

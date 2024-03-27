@@ -8,16 +8,24 @@ const Navbar = (props) => {
 	const { transparent = false } = props // default prop value
 
   return (
-		<nav className={`navbar ${transparent && 'is-transparent'}`} role='navigation' aria-label='main-navigation'>
+		<nav
+			className={`navbar ${transparent && 'is-transparent'}`}
+			role='navigation'
+			aria-label='main-navigation'
+		>
 			<div className='container'>
 				<div className='navbar-brand'>
 					<Link to='/' className='navbar-item' title='Logo'>
-						<img src={logo} alt='' style={{ 
-							maxHeight: '40px',
-							borderRadius: '6px',
-							marginRight: '20px'
-						}} />
-            <h1 className='siteTitle'>Not Your Guru</h1>
+						<img
+							src={logo}
+							alt=''
+							style={{
+								maxHeight: '40px',
+								borderRadius: '6px',
+								marginRight: '10px',
+							}}
+						/>
+						<h1 className='is-size-6 siteTitle'>Not Your Guru</h1>
 					</Link>
 
 					{/* Hamburger menu */}

@@ -66,43 +66,31 @@ html
 .margin-top-0
   margin-top: 0 !important
 
-
-// NAVBAR
-#navMenu
-  justify-content: flex-end
-
-.navbar-item .icon
-  color: $primary
-
 a.navbar-item
   &:hover
     background-color: rgba(255, 255, 255, 0.05)
 
 .navbar
-  // background-color: green
-  width: 100%
-  .container
-    // margin: 0
-    // width: 100%
-    // background-color: red
-    // padding-left: 20px
-    display: flex
-    // justify-content: space-between
-    max-width: 100%
-    & .navbar-brand
-      padding-left: 20px
-    & #navMenu
-      padding-right: 20px
-    & .navbar-burger
-      justify-content: flex-end
+  #navMenu
+    justify-content: flex-end
 
   &.is-transparent
-    background-color: #ffffff00
+    background-color: rgba(255, 255, 255, 0)
     position: absolute
     top: 0
     left: 0
-    & a
+    width: 100%
+    .siteTitle
       color: $link-color-navbar-transparent
+
+    & button
+      color: $link-color-navbar-transparent
+    & a 
+      @media (min-width: 1024px) 
+        color: $link-color-navbar-transparent
+
+.siteTitle
+  font-weight: bold
 
 
 // Override for use of svg's from https://simpleicons.org/
@@ -110,7 +98,6 @@ a.navbar-item
   width: 1.5rem
   height: 1.5rem
   fill: currentColor
-
 
 
 // FOOTER
@@ -152,22 +139,10 @@ footer.footer
 // CK Stuff //
 //////////////
 
-.siteTitle
-  font-weight: bold
-  font-size: 1.5em
+
 
 h1.footerTitle
   font-weight: bold
   font-size: 2.5em
   margin-bottom: 50px
   color: white
-
-// .landingHero
-//   & > div:nth-child(2)
-//     margin-top: -20%
-//     // max-width: 1000px
-//   h1
-//     // color: red !important
-//     font-size: 5em !important
-//   h3
-//     font-size: 1.5em !important
