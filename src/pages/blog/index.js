@@ -3,6 +3,7 @@ import * as React from "react";
 import Layout from "../../components/Layout";
 import BlogRoll from "../../components/BlogRoll";
 
+// Main Blogs Page (lists all blogs)
 export default class BlogIndexPage extends React.Component {
   render() {
     return (
@@ -10,14 +11,13 @@ export default class BlogIndexPage extends React.Component {
         <div
           className="full-width-image-container margin-top-0"
           style={{
-            backgroundImage: `url('/img/placeholder_image.jpeg')`,
+            backgroundImage: `url('/img/rustic_desk.jpeg')`,
           }}
         >
           <h1
             className="has-text-weight-bold is-size-1"
             style={{
-              // boxShadow: "0.5rem 0 0 #f40, -0.5rem 0 0 #f40",
-              backgroundColor: "#000",
+              // backgroundColor: "#000",
               color: "white",
               padding: "1rem",
             }}

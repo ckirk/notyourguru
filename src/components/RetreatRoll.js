@@ -10,58 +10,65 @@ const RetreatsRollTemplate = (props) => {
 
   return (
 		<div className='columns is-multiline'>
-			{posts &&
-				posts.map(({ node: post }) => (
-          <RetreatPreview post={post} />
-				))}
+			{posts && posts.map(({ node: post }) => (
+        <RetreatPreview post={post} />
+      ))}
 		</div>
 	)
 }
 
 const RetreatPreview = (props) => {
   const { post } = props
+  console.log('POST:', post)
+
   return (
-    <div className='is-parent column is-6' key={post.id}>
-      <div
-        className={`tile is-child retreat ${
-          post.frontmatter.featuredpost ? 'is-featured' : ''
-        }`}
-      >
-        <header>
-          {post?.frontmatter?.featuredimage && (
-            <div className='featured-thumbnail'>
-              <PreviewCompatibleImage
-                imageInfo={{
-                  height: '100vh',
-				          imgPosition: 'bottom center',
-                  image: post.frontmatter.featuredimage,
-                  alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                  width: post.frontmatter.featuredimage.childImageSharp.gatsbyImageData.width,
-                  // height:
-                  //   post.frontmatter.featuredimage.childImageSharp.gatsbyImageData.height,
-                }}
-              />
-            </div>
-          )}
-          <p className='post-meta'>
-            <Link className='title has-text-primary is-size-4' to={post.fields.slug}>
-              {post.frontmatter.title}
+		<div className='is-parent column is-6' key={post.id}>
+			<div
+				className={`tile is-child retreat ${post.frontmatter.featuredpost ? 'is-featured' : ''}`}
+			>
+				{/* Header */}
+				<header>
+					{post?.frontmatter?.featuredimage && (
+						<Link to={post.fields.slug}>
+							<div className='featured-thumbnail'>
+								<PreviewCompatibleImage
+									imageInfo={{
+										// height: '100vh',
+										// imgPosition: 'center center',
+										image: post.frontmatter.featuredimage,
+										alt: `featured image thumbnail for post ${post.frontmatter.title}`,
+										// width: '100px',
+										// height:
+										//   post.frontmatter.featuredimage.childImageSharp.gatsbyImageData.height,
+									}}
+								/>
+								<div className='imgOverlay'>
+									<h2 className='is-size-3'>{post.frontmatter.title}</h2>
+									{/* <p className='has-text-centered'>{post.frontmatter.subtitle}</p> */}
+								</div>
+							</div>
+						</Link>
+					)}
+				</header>
+
+				{/* Body */}
+				<div className='body'>
+          <div className='post-meta'>
+            <Link className='has-text-primary is-size-4' to={post.fields.slug}>
+              {post.frontmatter.subtitle}
             </Link>
-            <span> &bull; </span>
-            <span className='subtitle is-size-5 is-block'>{post.frontmatter.startDate}</span>
-          </p>
-        </header>
-        <p>
-          {/* {post.excerpt} */}
+            <span className='is-size-5 is-block'>{`${post.frontmatter.startDate} - ${post.frontmatter.endDate}`}</span>
+          </div>
+          {post.excerpt}
           <br />
           <br />
           <Link className='button' to={post.fields.slug}>
             Learn More
           </Link>
-        </p>
-      </div>
-    </div>
-  )
+				</div>
+			</div>
+		</div>
+	)
 }
 
 RetreatsRoll.propTypes = {
@@ -84,22 +91,22 @@ export default function RetreatsRoll() {
 					) {
 						edges {
 							node {
-								excerpt(pruneLength: 400)
+								excerpt(pruneLength: 100)
 								id
 								fields {
 									slug
 								}
 								frontmatter {
 									title
-                  subtitle
+									subtitle
 									templateKey
 									startDate(formatString: "MMMM DD, YYYY")
 									endDate(formatString: "MMMM DD, YYYY")
-                  price
+									price
 									featuredpost
 									featuredimage {
 										childImageSharp {
-											gatsbyImageData(width: 120, quality: 100, layout: CONSTRAINED)
+											gatsbyImageData(width: 600, quality: 100, layout: CONSTRAINED) # CONSTRAINED, FIXED, FULL_WIDTH
 										}
 									}
 								}
