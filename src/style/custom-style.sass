@@ -1,4 +1,29 @@
-@import ./variables.sass
+// @use 'variables'
+
+$primary: #ee7028
+$primary-invert: #fff
+$body-color: #333
+$black: #2b2523
+
+$link-color: $primary
+$link-color-navbar: $black
+$link-color-navbar-transparent: #fff
+$featured-blog-bkg-color: #d6400033
+
+$button-bkg-color: #fff
+
+$menu-item-color: #fff
+$menu-item-hover-color: $black !important
+$menu-item-hover-background-color: $black
+$menu-item-active-color: $primary-invert
+$menu-item-active-background-color:	$primary-invert
+$menu-list-border-left: 1px solid $primary-invert
+$menu-label-color: #fff
+
+$size-1: 4rem
+
+@use 'bulma/sass'
+
 
 html
   font-size: 16px // scale up all text (default is 16px)
@@ -117,7 +142,7 @@ footer.footer
 .social a
     padding: .5em .5em .3em .5em
     border-radius: 1em
-    background-color: $white-ter
+    background-color: #fff
     margin: .5em
     width: 1em
     height: 1em

@@ -22,9 +22,9 @@ const RetreatPreview = (props) => {
   console.log('POST:', post)
 
   return (
-		<div className='is-parent column is-6' key={post.id}>
+		<div className='column is-6' key={post.id}>
 			<div
-				className={`tile is-child retreat ${post.frontmatter.featuredpost ? 'is-featured' : ''}`}
+				className={`retreat ${post.frontmatter.featuredpost ? 'is-featured' : ''}`}
 			>
 				{/* Header */}
 				<header>
