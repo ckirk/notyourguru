@@ -10,7 +10,8 @@ import vimeo from "../img/social/vimeo.svg";
 const Footer = () => {
   
   return (
-		<footer className='footer has-background-black has-text-white-ter'>
+		// using dark mode theme for footer
+		<footer data-theme='dark' className='footer has-background-dark'>
 			<div className='content has-text-centered'>
 				<Link to='/' title='Logo'>
 					<img
@@ -22,15 +23,18 @@ const Footer = () => {
 							marginRight: '20px',
 						}}
 					/>
-					<h1 className='footerTitle'>Not Your Guru</h1>
+					<h1 className='footerTitle has-text-weight-bold is-size-1 mt-5'>
+						Not Your Guru
+					</h1>
 				</Link>
 			</div>
 
-			<div className='content has-text-centered has-background-black has-text-white-ter'>
-				<div className='container has-background-black has-text-white-ter'>
+			<div className='content has-text-centered'>
+				<div className='container has-text-primary-light'>
 					<div style={{ maxWidth: '100vw' }} className='columns'>
 						{/* Column 1 */}
 						<div className='column is-4'>
+							{/* MENU 1 */}
 							<section className='menu'>
 								<ul className='menu-list'>
 									<li>
@@ -69,7 +73,7 @@ const Footer = () => {
 
 						{/* Column 2 */}
 						<div className='column is-4'>
-							<section>
+							<section className='menu'>
 								<ul className='menu-list'>
 									<li>
 										<Link className='navbar-item' to='/blog'>

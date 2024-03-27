@@ -1,28 +1,18 @@
 // @use 'variables'
 
+// Set your brand colors
 $primary: #ee7028
-$primary-invert: #fff
-$body-color: #333
-$black: #2b2523
+$green: #098e3c
+$purple: #9115e3
 
-$link-color: $primary
-$link-color-navbar: $black
 $link-color-navbar-transparent: #fff
 $featured-blog-bkg-color: #d6400033
 
-$button-bkg-color: #fff
+// $size-1: 4rem
 
-$menu-item-color: #fff
-$menu-item-hover-color: $black !important
-$menu-item-hover-background-color: $black
-$menu-item-active-color: $primary-invert
-$menu-item-active-background-color:	$primary-invert
-$menu-list-border-left: 1px solid $primary-invert
-$menu-label-color: #fff
-
-$size-1: 4rem
-
-@use 'bulma/sass'
+// Override Default Bulma variables
+  // for some reason it wont let me put this on multiple lines
+@use 'bulma/sass' with ( $primary: $primary, $link: $purple )
 
 
 html
@@ -77,14 +67,14 @@ html
   font-size: 18px
   font-size: 1rem
   line-height: 1.25
-  background-color: $button-bkg-color
+  // background-color: $button-bkg-color
   border-radius: .25rem
   text-decoration: none
   font-weight: 700
-  color: $primary
+  color: $green
   text-align: center
-  -webkit-box-shadow: inset 0 0 0 2px $primary
-  box-shadow: inset 0 0 0 2px $primary
+  -webkit-box-shadow: inset 0 0 0 2px $green
+  box-shadow: inset 0 0 0 2px $green
   -webkit-transition: all .15s ease
   transition: all .15s ease
 
@@ -128,7 +118,7 @@ a.navbar-item
 // FOOTER
 footer.footer
   padding: 3rem 0rem 0rem
-  background-color: transparent
+  // background-color: transparent
 
 
 .menu-label
@@ -192,7 +182,7 @@ footer.footer
 
 
 h1.footerTitle
-  font-weight: bold
-  font-size: 2.5em
+  // font-weight: bold
+  // font-size: 2.5em
   margin-bottom: 50px
-  color: white
+  // color: white
