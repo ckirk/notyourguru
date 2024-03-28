@@ -10,6 +10,7 @@ const Navbar = (props) => {
   return (
 		<nav
 			className={`navbar ${transparent && 'is-transparent'}`}
+			// className={`navbar is-transparent`}
 			role='navigation'
 			aria-label='main-navigation'
 		>
@@ -25,7 +26,7 @@ const Navbar = (props) => {
 								marginRight: '10px',
 							}}
 						/>
-						<h1 className='is-size-6 siteTitle'>Not Your Guru</h1>
+						<h1 className='is-size-5 siteTitle has-text-weight-bold'>Not Your Guru</h1>
 					</Link>
 
 					{/* Hamburger menu */}
@@ -39,41 +40,28 @@ const Navbar = (props) => {
 						<span />
 					</button>
 				</div>
-				<ul
-					id='navMenu'
-					className={` navbar-start has-text-centered navbar-menu ${isActive && 'is-active'}`}
+				<div
+					className={`navbar-start has-text-centered navbar-menu ${isActive && 'is-active'}`}
 				>
-					<li className='navbar-item' style={{ padding: '0px' }}>
-						<Link className='navbar-item' to='/retreats' activeClassName='is-selected'>
-							Retreats
-						</Link>
-					</li>
-					<li className='navbar-item' style={{ padding: '0px' }}>
-						<Link className='navbar-item' to='/training' activeClassName='is-selected'>
-							Training
-						</Link>
-					</li>
-					<li className='navbar-item' style={{ padding: '0px' }}>
-						<Link className='navbar-item' to='/coaching' activeClassName='is-selected'>
-							Online Coaching
-						</Link>
-					</li>
-					<li className='navbar-item' style={{ padding: '0px' }}>
-						<Link className='navbar-item' to='/programs' activeClassName='is-selected'>
-							Ready-Made Programs
-						</Link>
-					</li>
-					<li className='navbar-item' style={{ padding: '0px' }}>
-						<Link className='navbar-item' to='/blog' activeClassName='is-selected'>
-							Blog
-						</Link>
-					</li>
-					<li className='navbar-item' style={{ padding: '0px' }}>
-						<Link className='navbar-item' to='/contact' activeClassName='is-selected'>
-							Contact
-						</Link>
-					</li>
-				</ul>
+					<Link className='navbar-item' to='/retreats' activeClassName='is-selected'>
+						Retreats
+					</Link>
+					<Link className='navbar-item' to='/training' activeClassName='is-selected'>
+						Training
+					</Link>
+					<Link className='navbar-item' to='/coaching' activeClassName='is-selected'>
+						Online Coaching
+					</Link>
+					<Link className='navbar-item' to='/programs' activeClassName='is-selected'>
+						Ready-Made Programs
+					</Link>
+					<Link className='navbar-item' to='/blog' activeClassName='is-selected'>
+						Blog
+					</Link>
+					<Link className='navbar-item' to='/contact' activeClassName='is-selected'>
+						Contact
+					</Link>
+				</div>
 			</div>
 		</nav>
 	)

@@ -1,25 +1,11 @@
-// @use 'variables'
-
-// Set your brand colors
-$primary: #00d1b2
-$green: #098e3c
-$purple: #9115e3
-
-$link-color-navbar-transparent: #fff
-$featured-blog-bkg-color: #d6400033
-
-// $size-1: 4rem
-
-// Override Default Bulma variables
-  // for some reason it wont let me put this on multiple lines
-@use 'bulma/sass' with ( $primary: $primary, $link: $purple )
-
+// Import custom variables
+@import ./variables.sass
 
 html
   font-size: 16px // scale up all text (default is 16px)
 
 .navbar .navbar-menu
-  box-shadow: none !important
+  // box-shadow: none !important
 
 .content .taglist
   list-style: none
@@ -86,9 +72,11 @@ a.navbar-item
     // background-color: rgba(255, 255, 255, 0.05)
 
 .navbar
-  #navMenu
+  .navbar-menu
     justify-content: flex-end
-
+  .navbar-item
+    &.is-selected
+      // background-color: rgba(0, 0, 0, 0.4)
   &.is-transparent
     background-color: rgba(255, 255, 255, 0)
     position: absolute
@@ -97,15 +85,17 @@ a.navbar-item
     width: 100%
     .siteTitle
       color: $link-color-navbar-transparent
-
-    & button
-      color: $link-color-navbar-transparent
-    & a 
+    .navbar-brand
+      .navbar-item:hover
+        background-color: rgba(0, 0, 0, 0)
+    .navbar-item
       @media (min-width: 1024px) 
         color: $link-color-navbar-transparent
-
-.siteTitle
-  font-weight: bold
+        &:hover
+          background-color: rgba(255, 255, 255, 0.1)
+    // hamburger menu btn
+    & button
+      color: $link-color-navbar-transparent
 
 
 // Override for use of svg's from https://simpleicons.org/
@@ -115,10 +105,6 @@ a.navbar-item
   fill: currentColor
 
 
-// FOOTER
-footer.footer
-  padding: 3rem 0rem 0rem
-  // background-color: transparent
 
 
 .menu-label
@@ -181,8 +167,11 @@ footer.footer
     padding: 10px
 
 
-h1.footerTitle
-  // font-weight: bold
-  // font-size: 2.5em
-  margin-bottom: 50px
-  // color: white
+// FOOTER
+.footer
+  padding: 3rem 0rem 0rem
+  background-color: #14161A
+  h1.footerTitle
+    // font-weight: bold
+    // font-size: 2.5em
+    margin-bottom: 50px

@@ -11,7 +11,7 @@ const Footer = () => {
   
   return (
 		// using dark mode theme for footer
-		<footer data-theme='dark' className='footer has-background-dark'>
+		<footer data-theme='dark' className='footer'>
 			<div className='content has-text-centered'>
 				<Link to='/' title='Logo'>
 					<img
@@ -38,9 +38,7 @@ const Footer = () => {
 							<section className='menu'>
 								<ul className='menu-list'>
 									<li>
-										<Link to='/' className='navbar-item'>
-											Home
-										</Link>
+										<Link to='/'>Home</Link>
 									</li>
 									{/* <li>
                     <Link className='navbar-item' to='/about'>
@@ -48,24 +46,16 @@ const Footer = () => {
                     </Link>
                   </li> */}
 									<li>
-										<Link className='navbar-item' to='/retreats'>
-											Retreats
-										</Link>
+										<Link to='/retreats'>Retreats</Link>
 									</li>
 									<li>
-										<Link className='navbar-item' to='/training'>
-											In-Person Training
-										</Link>
+										<Link to='/training'>In-Person Training</Link>
 									</li>
 									<li>
-										<Link className='navbar-item' to='/coaching'>
-											Online Coaching
-										</Link>
+										<Link to='/coaching'>Online Coaching</Link>
 									</li>
 									<li>
-										<Link className='navbar-item' to='/programs'>
-											Ready-Made Programs
-										</Link>
+										<Link to='/programs'>Ready-Made Programs</Link>
 									</li>
 								</ul>
 							</section>
@@ -76,23 +66,22 @@ const Footer = () => {
 							<section className='menu'>
 								<ul className='menu-list'>
 									<li>
-										<Link className='navbar-item' to='/blog'>
+										<Link to='/blog'>
 											Blog
 										</Link>
 									</li>
 									<li>
-										<Link className='navbar-item' to='/contact'>
+										<Link to='/contact'>
 											Contact
 										</Link>
 									</li>
 									<li>
-										<Link className='navbar-item' to='/contact/examples'>
+										<Link to='/contact/examples'>
 											Form Examples
 										</Link>
 									</li>
 									<li>
 										<a
-											className='navbar-item'
 											href='/admin/'
 											target='_blank'
 											rel='noopener noreferrer'

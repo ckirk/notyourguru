@@ -7,35 +7,19 @@
 // WARNING: Sometimes it mistakenly removes needed styles. You can reduce your
 // risk of confusion and bugs by doing any custom styling in a separate file.
 
-// @use 'variables'
+// @import 'variables'
+@import ./variables.sass
 
+// Override Default Bulma variables
+$primary: $primary
+// $navbar-background-color: #0e3de7
+// $navbar-tab-active-background-color: rgba(0, 0, 0, 0.3)
+// $navbar-tab-active-border-bottom-color: $purple
+// $link: $purple
 
-// Set your brand colors
-
-  
-// Menu overrides
-// $menu-item-color: #fff
-// $menu-item-hover-color: $black !important
-// $menu-item-hover-background-color: $black
-// $menu-item-active-color: $primary-invert
-// $menu-item-active-background-color:	$primary-invert
-// $menu-list-border-left: 1px solid $primary-invert
-// $menu-label-color: #fff
-
-// $size-1: 4rem
+// Old method using @use
+  // for some reason it wont let me put this on multiple lines
+// @use 'bulma/sass' with ( $primary: $primary, $link: $purple )
 
 // Import bulma only after the variables have been customized.
-// @use 'bulma/css/bulma.css'
-
-// responsiveness
-// +tablet-only
-//   .blog-list-item .featured-thumbnail
-//     flex-basis: 50%
-
-// +mobile
-//   .blog-list-item header
-//     display: block
-//   .blog-list-item .featured-thumbnail
-//     text-align: center
-//     max-width: 70%
-//     margin: 0 0 1em
+@import 'bulma/sass'

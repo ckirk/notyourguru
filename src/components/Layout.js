@@ -44,6 +44,7 @@ const TemplateWrapper = (props) => {
 				<meta property='og:url' content='/' />
 				<meta property='og:image' content={`${withPrefix('/')}img/og-image.jpg`} />
 			</Helmet>
+			
 			<Navbar transparent={transparentNavbar} />
 			<div>{children}</div>
 			<Footer />
