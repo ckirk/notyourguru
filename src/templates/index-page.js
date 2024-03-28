@@ -55,7 +55,7 @@ export const IndexPageTemplate = ({
 								<Features gridItems={intro.features} />
 								<div className='columns'>
 									<div className='column is-12 has-text-centered'>
-										<Link className='btn' to='/retreat'>
+										<Link className='button is-primary is-outlined' to='/retreat'>
 											View Upcoming Retreats
 										</Link>
 									</div>
@@ -64,7 +64,7 @@ export const IndexPageTemplate = ({
 									<h3 className='has-text-weight-semibold is-size-2'>Upcoming Retreats</h3>
 									<RetreatRoll />
 									<div className='column is-12 has-text-centered'>
-										<Link className='btn' to='/retreats'>
+										<Link className='button is-primary is-outlined' to='/retreats'>
 											View All Upcoming Retreats
 										</Link>
 									</div>
@@ -72,7 +72,7 @@ export const IndexPageTemplate = ({
 									<h3 className='has-text-weight-semibold is-size-2'>Latest Blog Entries</h3>
 									<BlogRoll />
 									<div className='column is-12 has-text-centered'>
-										<Link className='btn' to='/blog'>
+										<Link className='button is-primary is-outlined' to='/blog'>
 											Read More
 										</Link>
 									</div>
