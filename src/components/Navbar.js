@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 // import github from "../img/github-icon.svg";
 import logo from "../img/logo_500.jpg";
 
+// Site Navigation and Branding
 const Navbar = (props) => {
   const [isActive, setIsActive] = useState(false);
 	const { transparent = false } = props // default prop value

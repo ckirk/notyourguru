@@ -2,7 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import { GatsbyImage } from "gatsby-plugin-image";
 
-export default function FullWidthImage(props) {
+// A modified version of FullWidthImage for the landing page
+	// make the image bigger on desktop
+export default function LandingHeroImage(props) {
   const {
     height = 400,
     img,
@@ -106,7 +108,7 @@ export default function FullWidthImage(props) {
 	)
 }
 
-FullWidthImage.propTypes = {
+LandingHeroImage.propTypes = {
   img: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   height: PropTypes.number,

@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { GatsbyImage } from "gatsby-plugin-image";
 
+// Image that takes up full web page width
 export default function FullWidthImage(props) {
   const {
     height = 400,

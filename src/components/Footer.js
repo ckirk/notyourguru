@@ -7,6 +7,7 @@ import instagram from "../img/social/instagram.svg";
 import twitter from "../img/social/twitter.svg";
 import vimeo from "../img/social/vimeo.svg";
 
+// Site Footer
 const Footer = () => {
   
   return (

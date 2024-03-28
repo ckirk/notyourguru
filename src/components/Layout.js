@@ -7,6 +7,8 @@ import "../style/custom-style.sass";
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
 
+// Injects Navbar and Footer around content
+// adds meta tags via Helmet
 const TemplateWrapper = (props) => {
   const { title, description } = useSiteMetadata();
   const { children, transparentNavbar = false } = props
