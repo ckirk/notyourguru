@@ -23,9 +23,7 @@ const RetreatPreview = (props) => {
 
   return (
 		<div className='column is-6' key={post.id}>
-			<div
-				className={`retreat ${post.frontmatter.featuredpost ? 'is-featured' : ''}`}
-			>
+			<div className={`retreat ${post.frontmatter.featuredpost ? 'is-featured' : ''}`}>
 				{/* Header */}
 				<header>
 					{post?.frontmatter?.featuredimage && (
@@ -43,7 +41,7 @@ const RetreatPreview = (props) => {
 									}}
 								/>
 								<div className='imgOverlay'>
-									<h2 className='is-size-3'>{post.frontmatter.title}</h2>
+									<h2 className='is-size-3 has-text-weight-semibold'>{post.frontmatter.title}</h2>
 									{/* <p className='has-text-centered'>{post.frontmatter.subtitle}</p> */}
 								</div>
 							</div>
@@ -53,18 +51,22 @@ const RetreatPreview = (props) => {
 
 				{/* Body */}
 				<div className='body'>
-          <div className='post-meta'>
-            <Link className='has-text-primary is-size-4' to={post.fields.slug}>
-              {post.frontmatter.subtitle}
-            </Link>
-            <span className='is-size-5 is-block'>{`${post.frontmatter.startDate} - ${post.frontmatter.endDate}`}</span>
-          </div>
-          {post.excerpt}
-          <br />
-          <br />
-          <Link className='button' to={post.fields.slug}>
-            Learn More
-          </Link>
+					<div className='post-meta'>
+						<Link
+							className='subtitle has-text-primary is-size-4 has-text-weight-semibold'
+							to={post.fields.slug}
+						>
+							{post.frontmatter.subtitle}
+						</Link>
+						<p className='is-size-5 is-block dates'>
+							{`${post.frontmatter.startDate} - ${post.frontmatter.endDate}`}
+						</p>
+						<p className='excerpt is-block'>{post.excerpt}</p>
+					</div>
+
+					<Link className='button' to={post.fields.slug}>
+						Learn More
+					</Link>
 				</div>
 			</div>
 		</div>
