@@ -42,8 +42,14 @@ export const RetreatsPageTemplate = ({
 
 			{/* Upcomnig Retreats */}
 			<section className='section'>
-				<h3 className='has-text-weight-semibold is-size-2'>Upcoming Retreats</h3>
-				<RetreatRoll />
+				<div className='container'>
+					<div className='columns'>
+						<div className='column is-10 is-ofset-1'>
+							<h3 className='has-text-weight-semibold is-size-2'>Upcoming Retreats</h3>
+							<RetreatRoll />
+						</div>
+					</div>
+				</div>
 			</section>
 
 			{/* More Info */}
@@ -59,15 +65,15 @@ export const RetreatsPageTemplate = ({
 							</div>
 						</div>
 						<div className='grid'>
-              <article className='cell'>
-                <PreviewCompatibleImage imageInfo={main.image1} />
-              </article>
-              <article className='cell'>
-                <PreviewCompatibleImage imageInfo={main.image2} />
-              </article>
-              <article className='cell'>
-                <PreviewCompatibleImage imageInfo={main.image3} />
-              </article>
+							<article className='cell'>
+								<PreviewCompatibleImage imageInfo={main.image1} />
+							</article>
+							<article className='cell'>
+								<PreviewCompatibleImage imageInfo={main.image2} />
+							</article>
+							<article className='cell'>
+								<PreviewCompatibleImage imageInfo={main.image3} />
+							</article>
 						</div>
 						<Testimonials testimonials={testimonials} />
 					</div>

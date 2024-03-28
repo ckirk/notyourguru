@@ -31,51 +31,112 @@ export const IndexPageTemplate = ({
 				subheading={subheading}
 				extraClasses='landingHero'
 			/>
-			<section className='section section--gradient'>
+
+			{/* What is Not Your Guru? */}
+			<section className='section'>
 				<div className='container'>
 					<div className='columns'>
 						<div className='column is-10 is-offset-1'>
 							<div className='content'>
-								<div className='content'>
-									{/* <div className="cell">
-                    <h1 className="title">{mainpitch.title}</h1>
-                  </div> */}
-									{/* <div className="cell">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
-                  </div> */}
-								</div>
-								<div className='columns'>
-									<div className='column is-12'>
-										<h3 className='has-text-weight-semibold is-size-2'>
-											{heading}
-										</h3>
-										<p>{description}</p>
-									</div>
-								</div>
+								<h3 className='has-text-weight-semibold is-size-2'>{heading}</h3>
+								<p>{description}</p>
 								<Features gridItems={intro.features} />
-								<div className='columns'>
-									<div className='column is-12 has-text-centered'>
-										<Link className='button is-primary is-outlined' to='/retreat'>
-											View Upcoming Retreats
-										</Link>
-									</div>
-								</div>
-								<div className='column is-12'>
-									<h3 className='has-text-weight-semibold is-size-2'>Upcoming Retreats</h3>
-									<RetreatRoll />
-									<div className='column is-12 has-text-centered'>
-										<Link className='button is-primary is-outlined' to='/retreats'>
-											View All Upcoming Retreats
-										</Link>
-									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-									<h3 className='has-text-weight-semibold is-size-2'>Latest Blog Entries</h3>
-									<BlogRoll />
-									<div className='column is-12 has-text-centered'>
-										<Link className='button is-primary is-outlined' to='/blog'>
-											Read More
-										</Link>
-									</div>
+			{/* Retreats */}
+			<section className='section'>
+				<div className='container'>
+					<div className='columns'>
+						<div className='column is-10 is-offset-1'>
+							<div className='content'>
+								<h3 className='has-text-weight-semibold is-size-2'>Join Me On A Retreat</h3>
+								<p>{description}</p>
+								{/* <h1 className="title">{mainpitch.title}</h1> */}
+								{/* <h3 className="subtitle">{mainpitch.description}</h3> */}
+							</div>
+
+							<div className='column is-12'>
+								<h3 className='has-text-weight-semibold is-size-2'>Upcoming Retreats</h3>
+								<RetreatRoll />
+								<div className='column is-12 has-text-centered'>
+									<Link className='button is-primary is-outlined' to='/retreats'>
+										View All Upcoming Retreats
+									</Link>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* About Jesse */}
+			<section className='section'>
+				<div className='container'>
+					<div className='columns'>
+						<div className='column is-10 is-offset-1'>
+							<div className='content'>
+								<h3 className='has-text-weight-semibold is-size-2'>About Jesse</h3>
+								<p>{description}</p>
+								<div className='column is-12 has-text-centered'>
+									<Link className='button is-primary is-outlined' to='/training'>
+										Inquire About Personal Training
+									</Link>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* Corporate Wellness */}
+			<section className='section'>
+				<div className='container'>
+					<div className='columns'>
+						<div className='column is-10 is-offset-1'>
+							<div className='content'>
+								<h3 className='has-text-weight-semibold is-size-2'>Corporate Wellness</h3>
+								<p>{description}</p>
+								<div className='column is-12 has-text-centered'>
+									<Link className='button is-primary is-outlined' to='/training'>
+										Inquire About Corporate Wellness
+									</Link>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* Reviews */}
+			<section className='section'>
+				<div className='container'>
+					<div className='columns'>
+						<div className='column is-10 is-offset-1'>
+							<div className='content'>
+								<h3 className='has-text-weight-semibold is-size-2'>Reviews</h3>
+								<p>{description}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* Blog */}
+			<section className='section'>
+				<div className='container'>
+					<div className='columns'>
+						<div className='column is-10 is-offset-1'>
+							<div className='content'>
+								<h3 className='has-text-weight-semibold is-size-2'>Latest Blog Entries</h3>
+								<BlogRoll />
+								<div className='column is-12 has-text-centered'>
+									<Link className='button is-primary is-outlined' to='/blog'>
+										Read More
+									</Link>
 								</div>
 							</div>
 						</div>

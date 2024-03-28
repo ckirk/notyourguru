@@ -1,12 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { CoachingPageTemplate } from '../../templates/coaching-page'
+import { ForceTheme } from './ForceTheme'
 
 const CoachingPagePreview = ({ entry, widgetFor }) => (
-  <CoachingPageTemplate
-    title={entry.getIn(['data', 'title'])}
-    content={widgetFor('body')}
-  />
+	<>
+    <ForceTheme />
+		<CoachingPageTemplate title={entry.getIn(['data', 'title'])} content={widgetFor('body')} />
+	</>
 )
 
 CoachingPagePreview.propTypes = {

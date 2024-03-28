@@ -7,6 +7,21 @@
 // WARNING: Sometimes it mistakenly removes needed styles. You can reduce your
 // risk of confusion and bugs by doing any custom styling in a separate file.
 
+// @use "bulma/sass/utilities/css-variables" as cv
+
+// @use "bulma/sass/themes/light" as light
+// @use "bulma/sass/themes/dark" as dark
+
+// // prefers-color-scheme: light
+// @include cv.system-theme($name: "light") 
+//   @include light.light-theme
+
+
+// // prefers-color-scheme: dark
+// @include cv.system-theme($name: "dark") 
+//   @include light.light-theme
+
+
 // @import 'variables'
 @import ./variables.sass
 
@@ -15,7 +30,7 @@ $primary: $primary
 // $navbar-background-color: #0e3de7
 // $navbar-tab-active-background-color: rgba(0, 0, 0, 0.3)
 // $navbar-tab-active-border-bottom-color: $purple
-// $link: $purple
+$link: $blue
 
 // Old method using @use
   // for some reason it wont let me put this on multiple lines
@@ -23,3 +38,16 @@ $primary: $primary
 
 // Import bulma only after the variables have been customized.
 @import 'bulma/sass'
+
+// @import "bulma/sass/utilities"
+// @import "bulma/sass/themes"
+// @import "bulma/sass/base"
+// @import "bulma/sass/elements"
+// @import "bulma/sass/form"
+// @import "bulma/sass/components"
+// @import "bulma/sass/grid"
+// @import "bulma/sass/layout"
+// @import "bulma/sass/base/skeleton"
+// @import "bulma/sass/helpers"
+
+

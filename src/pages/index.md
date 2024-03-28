@@ -17,17 +17,14 @@ description: "\"Not Your Guru\" is more than a brand; it's a philosophy rooted
   strength, resilience, and self-awareness."
 intro:
   features:
-    - image: /img/placeholder_image.jpeg
+    - image: /img/logo_500.jpg
       text: |
         First great feature
-    - image: /img/placeholder_image.jpeg
+    - image: /img/logo_500.jpg
       text: |
         Second great feature
-    - image: /img/placeholder_image.jpeg
+    - image: /img/logo_500.jpg
       text: |
         Third great feature
-    - image: /img/placeholder_image.jpeg
-      text: |
-        Fourth great feature
   heading: What we offer
 ---

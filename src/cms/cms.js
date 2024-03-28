@@ -28,3 +28,5 @@ CMS.registerPreviewTemplate('programs', SimplePagePreview) // using common Simpl
 // Collections
 CMS.registerPreviewTemplate('blog', BlogPostPreview)
 CMS.registerPreviewTemplate('retreat', RetreatPostPreview)
+
+// CMS.registerPreviewStyle('/example.css')
