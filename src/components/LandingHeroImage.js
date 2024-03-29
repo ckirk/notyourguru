@@ -111,6 +111,6 @@ export default function LandingHeroImage(props) {
 LandingHeroImage.propTypes = {
   img: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
-  height: PropTypes.number,
+  height: PropTypes.string,
   subheading: PropTypes.string,
 };

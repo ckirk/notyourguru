@@ -11,7 +11,7 @@ const RetreatsRollTemplate = (props) => {
   return (
 		<div className='columns is-multiline'>
 			{posts && posts.map(({ node: post }) => (
-        <RetreatPreview post={post} />
+        <RetreatPreview post={post} key={post.id} />
       ))}
 		</div>
 	)
@@ -19,10 +19,9 @@ const RetreatsRollTemplate = (props) => {
 
 const RetreatPreview = (props) => {
   const { post } = props
-  console.log('POST:', post)
 
   return (
-		<div className='column is-6' key={post.id}>
+		<div className='column is-6'>
 			<div className={`retreat ${post.frontmatter.featuredpost ? 'is-featured' : ''}`}>
 				{/* Header */}
 				<header>

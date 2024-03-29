@@ -31,7 +31,7 @@ export const RetreatsPageTemplate = ({
 			<FullWidthImage img={heroImage} title={title} />
 
 			{/* INTRO */}
-			<section className='section'>
+			<section className='section tan'>
 				<div className='container'>
 					<div className='column is-7 is-offset-1'>
 						<h3 className='has-text-weight-semibold is-size-2'>{heading}</h3>

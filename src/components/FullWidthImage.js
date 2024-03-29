@@ -9,8 +9,9 @@ export default function FullWidthImage(props) {
     img,
     title,
     subheading,
-    imgPosition = "top left",
-		extraClasses = false
+    imgPosition = "center center",
+		extraClasses = false,
+		brightness = 1
   } = props;
 
   return (
@@ -32,7 +33,7 @@ export default function FullWidthImage(props) {
 							// You can set a maximum height for the image, if you wish.
 							height: height,
 							width: '100%',
-							// filter: 'brightness(0.7)',
+							filter: `brightness(${brightness})`,
 						}}
 						// You can optionally force an aspect ratio for the generated image
 						aspectratio={3 / 1}
@@ -50,6 +51,7 @@ export default function FullWidthImage(props) {
 							// You can set a maximum height for the image, if you wish.
 							maxHeight: height,
 							// maxHeight: '100vh',
+							filter: `brightness(${brightness})`,
 							// filter: 'brightness(0.7)',
 						}}
 						layout='fullWidth'

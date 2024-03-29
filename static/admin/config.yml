@@ -74,7 +74,9 @@ collections:
               default: "about-page",
             }
           - { label: "Title", name: "title", widget: "string" }
+          - { label: Image, name: image, widget: image }
           - { label: "Body", name: "body", widget: "markdown" }
+
 
       - file: "src/pages/retreats/index.md"
         label: "Retreats"
@@ -199,6 +201,7 @@ collections:
               default: "training-page",
             }
           - { label: "Title", name: "title", widget: "string" }
+          - { label: Image, name: image, widget: image }
           - { label: "Body", name: "body", widget: "markdown" }
 
       - file: "src/pages/coaching/index.md"
@@ -212,8 +215,9 @@ collections:
               default: "coaching-page",
             }
           - { label: "Title", name: "title", widget: "string" }
+          - { label: Image, name: image, widget: image }
           - { label: "Body", name: "body", widget: "markdown" }
-
+          
       - file: "src/pages/programs/index.md"
         label: "Ready-Made Programs"
         name: "programs"
@@ -225,6 +229,7 @@ collections:
               default: "programs-page",
             }
           - { label: "Title", name: "title", widget: "string" }
+          - { label: Image, name: image, widget: image }
           - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "retreat"

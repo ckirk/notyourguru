@@ -3,7 +3,7 @@ heading: You Need A Retreat
 path: /retreats
 templateKey: retreats-page
 title: Retreats
-image: /img/hawaii.jpeg
+image: /img/retreats2.jpeg
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
   eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque diam
   volutpat commodo sed egestas egestas fringilla. Malesuada fames ac turpis
