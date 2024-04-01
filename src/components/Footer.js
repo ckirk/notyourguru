@@ -19,7 +19,7 @@ const Footer = () => {
 						src={logo}
 						alt=''
 						style={{
-							maxHeight: '40px',
+							maxHeight: '100px',
 							borderRadius: '6px',
 							marginRight: '20px',
 						}}
