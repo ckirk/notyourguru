@@ -11,6 +11,7 @@ backend:
 local_backend: true
 media_folder: static/img
 public_folder: /img
+publish_mode: simple # simple | editorial_workflow
 
 collections:
   - name: "pages"
@@ -27,29 +28,28 @@ collections:
               widget: "hidden",
               default: "index-page",
             }
-          - { label: Title, name: title, widget: string }
-          - { label: Subheading, name: subheading, widget: string }
-          - { label: Image, name: image, widget: image }
-          - { label: Heading, name: heading, widget: string }
-          - { label: Description, name: description, widget: text }
-          # - {
-          #     label: Mainpitch,
-          #     name: mainpitch,
-          #     widget: object,
-          #     fields:
-          #       [
-          #         { label: Title, name: title, widget: string },
-          #         { label: Description, name: description, widget: text },
-          #       ],
-          #   }
+          - {
+              label: Hero,
+              name: hero,
+              widget: object,
+              fields:
+                [
+                  { label: Title, name: title, widget: string },
+                  { label: Subtitle, name: subtitle, widget: string },
+                  { label: Image, name: image, widget: image },
+                  { label: CTA Button Text, name: cta_btn_text, widget: string },
+                  { label: CTA Button Link, name: cta_btn_link, widget: string },
+                ],
+            }
           - {
               label: Intro,
               name: intro,
               widget: object,
               fields:
                 [
+                  { label: Enabled, name: enabled, widget: boolean, default: true },
                   { label: Heading, name: heading, widget: string },
-                  # { label: Description, name: description, widget: text },
+                  { label: Description, name: description, widget: text },
                   {
                     label: Features,
                     name: features,
@@ -58,9 +58,82 @@ collections:
                       [
                         { label: Image, name: image, widget: image },
                         { label: Text, name: text, widget: text },
+                        { label: Description, name: description, widget: text },
                       ],
-                  },
+                  }
                 ],
+            }
+
+          - {
+              label: Retreats,
+              name: retreats,
+              widget: object,
+              fields:
+                [
+                  { label: Enabled, name: enabled, widget: boolean, default: true },
+                  { label: Heading, name: heading, widget: string },
+                  { label: Description, name: description, widget: text },
+                  { label: CTA Button Text, name: cta_btn_text, widget: string }
+                ],
+            }
+
+          - {
+            label: About,
+            name: about,
+            widget: object,
+            fields:
+              [
+                { label: Enabled, name: enabled, widget: boolean, default: true },
+                { label: Heading, name: heading, widget: string },
+                { label: Description, name: description, widget: text },
+                { label: Image, name: image, widget: image },
+                { label: CTA Button Text, name: cta_btn_text, widget: string },
+                { label: CTA Button Link, name: cta_btn_link, widget: string },
+              ],
+            }
+          
+          - {
+            label: Corporate Wellness,
+            name: corporate,
+            widget: object,
+            fields:
+              [
+                { label: Enabled, name: enabled, widget: boolean, default: true },
+                { label: Heading, name: heading, widget: string },
+                { label: Description, name: description, widget: text },
+                { label: CTA Button Text, name: cta_btn_text, widget: string },
+                { label: CTA Button Link, name: cta_btn_link, widget: string },
+              ],
+            }
+
+          - {
+            label: Reviews,
+            name: reviews,
+            widget: object,
+            fields:
+              [
+                { label: Enabled, name: enabled, widget: boolean, default: true },
+                { label: Heading, name: heading, widget: string },
+                { label: Description, name: description, widget: text },
+                {
+                  label: Reviews,
+                  name: reviews,
+                  widget: list,
+                  fields:
+                    [
+                      { label: Name, name: name, widget: string },
+                      { label: Quote, name: quote, widget: text },
+                      { label: Image, name: image, widget: image },
+                    ],
+                }
+              ],
+            }
+            
+          - {
+              label: Show Blog,
+              name: showBlog,
+              widget: boolean,
+              default: true,
             }
 
       - file: "src/pages/about/index.md"
@@ -73,9 +146,9 @@ collections:
               widget: "hidden",
               default: "about-page",
             }
-          - { label: "Title", name: "title", widget: "string" }
+          - { label: Title, name: title, widget: string }
           - { label: Image, name: image, widget: image }
-          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: Body, name: body, widget: markdown }
 
 
       - file: "src/pages/retreats/index.md"
@@ -281,3 +354,14 @@ collections:
       - { label: "Featured Image", name: "featuredimage", widget: image }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Tags", name: "tags", widget: "list" }
+
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - file: "src/config/globalSettings.md"
+        label: "Global Settings"
+        name: "settings"
+        editor:
+          preview: false
+        fields:
+        - { label: "Test", name: "test", widget: "string", default: 'test' }

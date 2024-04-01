@@ -11,13 +11,18 @@ const IndexPagePreview = ({ entry, getAsset }) => {
 			<>
 				<ForceTheme />
 				<IndexPageTemplate
-					image={getAsset(data.image)}
-					title={data.title}
-					heading={data.heading}
-					subheading={data.subheading}
-					description={data.description}
+					// image={getAsset(data.image)}
+					// title={data.title}
+					// heading={data.heading}
+					// subheading={data.subheading}
+					// description={data.description}
+					hero={data.hero || {}}
 					intro={data.intro || { features: [] }}
-					mainpitch={data.mainpitch || {}}
+					retreats={data.retreats || {}}
+					about={data.about || {}}
+					corporate={data.corporate || {}}
+					reviews={data.reviews || {}}
+					showBlog={data.showBlog || {}}
 				/>
 			</>
 		)

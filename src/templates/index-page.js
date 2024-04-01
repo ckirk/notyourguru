@@ -11,141 +11,157 @@ import LandingHeroImage from "../components/LandingHeroImage"; // Hero Image Zon
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
-  image,
-  title,
-  heading,
-  subheading,
-  mainpitch,
-  description,
-  intro,
+	// image,
+	// title,
+	// subtitle,
+	hero,
+	intro,
+	retreats,
+	about,
+	corporate,
+	reviews,
+	showBlog
 }) => {
-  const heroImage = getImage(image) || image;
+	const heroImage = getImage(hero.image) || hero.image
 
-  return (
+	return (
 		<div>
+			{/* Hero */}
 			<LandingHeroImage
 				height={'100vh'}
 				imgPosition='bottom center'
 				img={heroImage}
-				title={title}
-				subheading={subheading}
+				title={hero.title}
+				subtitle={hero.subtitle}
 				extraClasses='landingHero'
 			/>
 
-			{/* What is Not Your Guru? */}
-			<section className='section'>
-				<div className='container'>
-					<div className='columns'>
-						<div className='column is-10 is-offset-1'>
-							<div className='content'>
-								<h3 className='has-text-weight-semibold is-size-2'>{heading}</h3>
-								<p>{description}</p>
-								<Features gridItems={intro.features} />
+			{/* Intro Section */}
+			{intro.enabled && (
+				<section className='section'>
+					<div className='container'>
+						<div className='columns'>
+							<div className='column is-10 is-offset-1'>
+								<div className='content'>
+									<h3 className='has-text-weight-semibold is-size-2'>{intro.heading}</h3>
+									<p>{intro.description}</p>
+									<Features gridItems={intro.features} />
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</section>
+				</section>
+			)}
 
 			{/* Retreats */}
-			<section className='section'>
-				<div className='container'>
-					<div className='columns'>
-						<div className='column is-10 is-offset-1'>
-							<div className='content'>
-								<h3 className='has-text-weight-semibold is-size-2'>Join Me On A Retreat</h3>
-								<p>{description}</p>
-								{/* <h1 className="title">{mainpitch.title}</h1> */}
-								{/* <h3 className="subtitle">{mainpitch.description}</h3> */}
-							</div>
+			{retreats.enabled && (
+				<section className='section'>
+					<div className='container'>
+						<div className='columns'>
+							<div className='column is-10 is-offset-1'>
+								<div className='content'>
+									<h3 className='has-text-weight-semibold is-size-2'>{retreats.heading}</h3>
+									<p>{retreats.description}</p>
+									{/* <h1 className="title">{mainpitch.title}</h1> */}
+									{/* <h3 className="subtitle">{mainpitch.description}</h3> */}
+								</div>
 
-							<div className='column is-12'>
-								<h3 className='has-text-weight-semibold is-size-2'>Upcoming Retreats</h3>
-								<RetreatRoll />
-								<div className='column is-12 has-text-centered'>
-									<Link className='button is-primary is-outlined' to='/retreats'>
-										View All Upcoming Retreats
-									</Link>
+								<div className='column is-12'>
+									{/* <h3 className='has-text-weight-semibold is-size-2'>{retreats.heading}</h3> */}
+									<RetreatRoll />
+									<div className='column is-12 has-text-centered'>
+										<Link className='button is-primary is-outlined' to='/retreats'>
+											{retreats.cta_btn_text}
+										</Link>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</section>
+				</section>
+			)}
 
 			{/* About Jesse */}
-			<section className='section'>
-				<div className='container'>
-					<div className='columns'>
-						<div className='column is-10 is-offset-1'>
-							<div className='content'>
-								<h3 className='has-text-weight-semibold is-size-2'>About Jesse</h3>
-								<p>{description}</p>
-								<div className='column is-12 has-text-centered'>
-									<Link className='button is-primary is-outlined' to='/training'>
-										Inquire About Personal Training
-									</Link>
+			{about.enabled && (
+				<section className='section'>
+					<div className='container'>
+						<div className='columns'>
+							<div className='column is-10 is-offset-1'>
+								<div className='content'>
+									<h3 className='has-text-weight-semibold is-size-2'>{about.heading}</h3>
+									<p>{about.description}</p>
+									<div className='column is-12 has-text-centered'>
+										<Link className='button is-primary is-outlined' to={about.cta_btn_link}>
+											{about.cta_btn_text}
+										</Link>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</section>
+				</section>
+			)}
 
 			{/* Corporate Wellness */}
-			<section className='section'>
-				<div className='container'>
-					<div className='columns'>
-						<div className='column is-10 is-offset-1'>
-							<div className='content'>
-								<h3 className='has-text-weight-semibold is-size-2'>Corporate Wellness</h3>
-								<p>{description}</p>
-								<div className='column is-12 has-text-centered'>
-									<Link className='button is-primary is-outlined' to='/training'>
-										Inquire About Corporate Wellness
-									</Link>
+			{corporate.enabled && (
+				<section className='section'>
+					<div className='container'>
+						<div className='columns'>
+							<div className='column is-10 is-offset-1'>
+								<div className='content'>
+									<h3 className='has-text-weight-semibold is-size-2'>{corporate.heading}</h3>
+									<p>{corporate.description}</p>
+									<div className='column is-12 has-text-centered'>
+										<Link className='button is-primary is-outlined' to={corporate.cta_btn_link}>
+											{corporate.cta_btn_text}
+										</Link>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</section>
+				</section>
+			)}
 
 			{/* Reviews */}
-			<section className='section'>
-				<div className='container'>
-					<div className='columns'>
-						<div className='column is-10 is-offset-1'>
-							<div className='content'>
-								<h3 className='has-text-weight-semibold is-size-2'>Reviews</h3>
-								<p>{description}</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			{/* Blog */}
-			<section className='section'>
-				<div className='container'>
-					<div className='columns'>
-						<div className='column is-10 is-offset-1'>
-							<div className='content'>
-								<h3 className='has-text-weight-semibold is-size-2'>Latest Blog Entries</h3>
-								<BlogRoll />
-								<div className='column is-12 has-text-centered'>
-									<Link className='button is-primary is-outlined' to='/blog'>
-										Read More
-									</Link>
+			{reviews.enabled && (
+				<section className='section'>
+					<div className='container'>
+						<div className='columns'>
+							<div className='column is-10 is-offset-1'>
+								<div className='content'>
+									<h3 className='has-text-weight-semibold is-size-2'>{reviews.heading}</h3>
+									<p>{reviews.description}</p>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</section>
+				</section>
+			)}
+
+			{/* Blog */}
+			{showBlog && (
+				<section className='section'>
+					<div className='container'>
+						<div className='columns'>
+							<div className='column is-10 is-offset-1'>
+								<div className='content'>
+									<h3 className='has-text-weight-semibold is-size-2'>Latest Blog Entries</h3>
+									<BlogRoll />
+									<div className='column is-12 has-text-centered'>
+										<Link className='button is-primary is-outlined' to='/blog'>
+											Read More
+										</Link>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			)}
 		</div>
 	)
-};
+}
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -163,18 +179,21 @@ const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
   return (
-    <Layout transparentNavbar={true}>
-      <IndexPageTemplate
-        image={frontmatter.image}
-        title={frontmatter.title}
-        heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
-        intro={frontmatter.intro}
-      />
-    </Layout>
-  );
+		<Layout transparentNavbar={true}>
+			<IndexPageTemplate
+				// image={frontmatter.image}
+				// title={frontmatter.title}
+				// subtitle={frontmatter.subtitle}
+				hero={frontmatter.hero}
+				intro={frontmatter.intro}
+				retreats={frontmatter.retreats}
+				about={frontmatter.about}
+				corporate={frontmatter.corporate}
+				reviews={frontmatter.reviews}
+				showBlog={frontmatter.showBlog}
+			/>
+		</Layout>
+	)
 };
 
 IndexPage.propTypes = {
@@ -188,30 +207,84 @@ IndexPage.propTypes = {
 export default IndexPage;
 
 export const pageQuery = graphql`
-  query IndexPageTemplate {
-    markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
-      frontmatter {
-        title
-        image {
-          childImageSharp {
-            gatsbyImageData(quality: 100, layout: FULL_WIDTH)
-          }
-        }
-        heading
-        subheading
-        description
-        intro {
-          features {
-            image {
-              childImageSharp {
-                gatsbyImageData(width: 240, quality: 64, layout: CONSTRAINED)
-              }
-            }
-            text
-          }
-          heading
-        }
-      }
-    }
-  }
-`;
+	query IndexPageTemplate {
+		markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+			frontmatter {
+				# title
+				# subtitle
+				# cta_btn_text
+				# cta_btn_link
+				showBlog
+				image {
+					childImageSharp {
+						gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+					}
+				}
+				hero {
+					title
+					subtitle
+					cta_btn_text
+					cta_btn_link
+					image {
+						childImageSharp {
+							gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+						}
+					}
+				}
+				intro {
+					enabled
+					heading
+					description
+					features {
+						image {
+							childImageSharp {
+								gatsbyImageData(width: 240, quality: 64, layout: CONSTRAINED)
+							}
+						}
+						text
+						description
+					}
+				}
+				retreats {
+					enabled
+					heading
+					description
+					cta_btn_text
+				}
+				about {
+					enabled
+					heading
+					description
+					cta_btn_text
+					cta_btn_link
+					image {
+						childImageSharp {
+							gatsbyImageData(width: 500, quality: 100, layout: CONSTRAINED)
+						}
+					}
+				}
+				corporate {
+					enabled
+					heading
+					description
+					cta_btn_text
+					cta_btn_link
+				}
+				reviews {
+					enabled
+					heading
+					description
+					reviews {
+						name
+						quote
+						image {
+							childImageSharp {
+								gatsbyImageData(width: 240, quality: 100, layout: CONSTRAINED)
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+`

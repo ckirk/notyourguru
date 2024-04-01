@@ -9,7 +9,7 @@ export default function LandingHeroImage(props) {
     height = 400,
     img,
     title,
-    subheading,
+    subtitle,
     imgPosition = "top left",
 		extraClasses = false
   } = props;
@@ -61,7 +61,7 @@ export default function LandingHeroImage(props) {
 						formats={['auto', 'webp', 'avif']}
 					/>
 				)}
-				{(title || subheading) && (
+				{(title || subtitle) && (
 					<div
 						style={{
 							// By using the same grid area for both, they are stacked on top of each other
@@ -88,7 +88,7 @@ export default function LandingHeroImage(props) {
 								{title}
 							</h1>
 						)}
-						{subheading && (
+						{subtitle && (
 							<h3
 								className='has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen'
 								style={{
@@ -98,7 +98,7 @@ export default function LandingHeroImage(props) {
 									marginTop: '0.5rem',
 								}}
 							>
-								{subheading}
+								{subtitle}
 							</h3>
 						)}
 					</div>
@@ -112,5 +112,5 @@ LandingHeroImage.propTypes = {
   img: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   height: PropTypes.string,
-  subheading: PropTypes.string,
+  subtitle: PropTypes.string,
 };
