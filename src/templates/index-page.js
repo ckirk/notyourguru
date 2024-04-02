@@ -8,6 +8,7 @@ import Features from "../components/Features"; // a list of features
 import BlogRoll from "../components/BlogRoll"; // a few recent blogs
 import RetreatRoll from "../components/RetreatRoll"; // latest retreats
 import LandingHeroImage from "../components/LandingHeroImage"; // Hero Image Zone
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
@@ -34,17 +35,25 @@ export const IndexPageTemplate = ({
 				title={hero.title}
 				subtitle={hero.subtitle}
 				extraClasses='landingHero'
+				cta_btn_text={hero.cta_btn_text}
+				cta_btn_link={hero.cta_btn_link}
 			/>
 
 			{/* Intro Section */}
 			{intro.enabled && (
-				<section className='section'>
+				<section className='section tan'>
 					<div className='container'>
 						<div className='columns'>
-							<div className='column is-10 is-offset-1'>
+							<div className='column is-8 is-offset-2'>
 								<div className='content'>
 									<h3 className='has-text-weight-semibold is-size-2'>{intro.heading}</h3>
 									<p>{intro.description}</p>
+								</div>
+							</div>
+						</div>
+						<div className='columns'>
+							<div className='column is-10 is-offset-1'>
+								<div className='content'>
 									<Features gridItems={intro.features} />
 								</div>
 							</div>
@@ -58,22 +67,20 @@ export const IndexPageTemplate = ({
 				<section className='section'>
 					<div className='container'>
 						<div className='columns'>
-							<div className='column is-10 is-offset-1'>
+							<div className='column is-8 is-offset-2'>
 								<div className='content'>
 									<h3 className='has-text-weight-semibold is-size-2'>{retreats.heading}</h3>
-									<p>{retreats.description}</p>
-									{/* <h1 className="title">{mainpitch.title}</h1> */}
-									{/* <h3 className="subtitle">{mainpitch.description}</h3> */}
+									<p className='mb-6'>{retreats.description}</p>
 								</div>
-
-								<div className='column is-12'>
-									{/* <h3 className='has-text-weight-semibold is-size-2'>{retreats.heading}</h3> */}
-									<RetreatRoll />
-									<div className='column is-12 has-text-centered'>
-										<Link className='button is-primary is-outlined' to='/retreats'>
-											{retreats.cta_btn_text}
-										</Link>
-									</div>
+							</div>
+						</div>
+						<div className='columns'>
+							<div className='column is-10 is-offset-1'>
+								<RetreatRoll />
+								<div className='column is-12 has-text-centered'>
+									<Link className='button is-primary is-outlined' to='/retreats'>
+										{retreats.cta_btn_text}
+									</Link>
 								</div>
 							</div>
 						</div>
@@ -83,10 +90,13 @@ export const IndexPageTemplate = ({
 
 			{/* About Jesse */}
 			{about.enabled && (
-				<section className='section'>
+				<section className='section tan'>
 					<div className='container'>
 						<div className='columns'>
-							<div className='column is-10 is-offset-1'>
+							<div className='column is-half'>
+								<PreviewCompatibleImage imageInfo={about.image} />
+							</div>
+							<div className='column is-half'>
 								<div className='content'>
 									<h3 className='has-text-weight-semibold is-size-2'>{about.heading}</h3>
 									<p>{about.description}</p>
@@ -107,7 +117,7 @@ export const IndexPageTemplate = ({
 				<section className='section'>
 					<div className='container'>
 						<div className='columns'>
-							<div className='column is-10 is-offset-1'>
+							<div className='column is-8 is-offset-2'>
 								<div className='content'>
 									<h3 className='has-text-weight-semibold is-size-2'>{corporate.heading}</h3>
 									<p>{corporate.description}</p>
@@ -125,10 +135,10 @@ export const IndexPageTemplate = ({
 
 			{/* Reviews */}
 			{reviews.enabled && (
-				<section className='section'>
+				<section className='section tan'>
 					<div className='container'>
 						<div className='columns'>
-							<div className='column is-10 is-offset-1'>
+							<div className='column is-8 is-offset-2'>
 								<div className='content'>
 									<h3 className='has-text-weight-semibold is-size-2'>{reviews.heading}</h3>
 									<p>{reviews.description}</p>
@@ -210,10 +220,6 @@ export const pageQuery = graphql`
 	query IndexPageTemplate {
 		markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
 			frontmatter {
-				# title
-				# subtitle
-				# cta_btn_text
-				# cta_btn_link
 				showBlog
 				image {
 					childImageSharp {
@@ -238,7 +244,7 @@ export const pageQuery = graphql`
 					features {
 						image {
 							childImageSharp {
-								gatsbyImageData(width: 240, quality: 64, layout: CONSTRAINED)
+								gatsbyImageData(width: 300, quality: 64, layout: CONSTRAINED)
 							}
 						}
 						text
@@ -259,7 +265,7 @@ export const pageQuery = graphql`
 					cta_btn_link
 					image {
 						childImageSharp {
-							gatsbyImageData(width: 500, quality: 100, layout: CONSTRAINED)
+							gatsbyImageData(width: 1000, quality: 100, layout: CONSTRAINED)
 						}
 					}
 				}

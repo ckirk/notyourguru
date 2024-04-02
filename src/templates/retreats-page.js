@@ -53,7 +53,7 @@ export const RetreatsPageTemplate = ({
 			</section>
 
 			{/* More Info */}
-			<section className='section'>
+			{/* <section className='section'>
 				<h3 className='has-text-weight-semibold is-size-2'>More About Retreats</h3>
 				<div className='columns'>
 					<div className='column is-10 is-offset-1'>
@@ -78,10 +78,10 @@ export const RetreatsPageTemplate = ({
 						<Testimonials testimonials={testimonials} />
 					</div>
 				</div>
-			</section>
+			</section> */}
 
-			<FullWidthImage img={fullWidthImage} imgPosition={'bottom'} />
-			<section className='section section--gradient'>
+			{/* <FullWidthImage img={fullWidthImage} imgPosition={'bottom'} /> */}
+			{/* <section className='section section--gradient'>
 				<div className='container'>
 					<div className='section'>
 						<div className='columns'>
@@ -93,7 +93,7 @@ export const RetreatsPageTemplate = ({
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> */}
 		</div>
 	)
 };

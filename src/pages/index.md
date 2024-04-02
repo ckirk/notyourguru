@@ -22,13 +22,19 @@ intro:
   features:
     - image: /img/logo_500.jpg
       text: Supports Healthy Habit Building
-      description: text
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Id velit ut
+        tortor pretium viverra suspendisse.
     - image: /img/logo_500.jpg
       text: Learn Modalities of Wellness
-      description: text
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Id velit ut
+        tortor pretium viverra suspendisse.
     - image: /img/logo_500.jpg
       text: Connect to yourself, others, and nature
-      description: text
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Id velit ut
+        tortor pretium viverra suspendisse.
   enabled: true
 retreats:
   heading: Upcoming Retreats

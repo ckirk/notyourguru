@@ -1,18 +1,16 @@
 ---
 templateKey: retreat-post
-title: "Retreat #1: Hawaii"
+title: June 14-16 (SOLD OUT)
 subtitle: Find yourself in one of the most beautiful places in the world.
 description: "Description for blog entry #1"
-startDate: 2024-04-01T19:11:35.056Z
-endDate: 2024-03-21T19:11:35.066Z
+startDate: 2024-06-14T19:11:35.056Z
+endDate: 2024-06-16T19:11:35.066Z
 featuredpost: false
 featuredimage: /img/hawaii.jpeg
 location: '{"type":"Point","coordinates":[-73.8655797,40.7113502]}'
 price: 270.99
 date: 2024-03-20T04:47:48.945Z
-tags:
-  - test
-  - lorem
+tags: []
 ---
 ![](/img/hawaii.jpeg)
 

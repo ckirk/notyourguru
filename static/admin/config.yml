@@ -8,10 +8,13 @@ backend:
     uploadMedia: "[skip ci] Upload “{{path}}”"
     deleteMedia: "[skip ci] Delete “{{path}}”"
 
+publish_mode: editorial_workflow # simple | editorial_workflow
 local_backend: true
 media_folder: static/img
 public_folder: /img
-publish_mode: simple # simple | editorial_workflow
+
+display_url: http://localhost:8000
+# logo_url: src/img/logo_500.jpg
 
 collections:
   - name: "pages"
@@ -35,10 +38,10 @@ collections:
               fields:
                 [
                   { label: Title, name: title, widget: string },
-                  { label: Subtitle, name: subtitle, widget: string },
+                  { label: Subtitle, name: subtitle, widget: string, required: false },
                   { label: Image, name: image, widget: image },
-                  { label: CTA Button Text, name: cta_btn_text, widget: string },
-                  { label: CTA Button Link, name: cta_btn_link, widget: string },
+                  { label: CTA Button Text, name: cta_btn_text, widget: string, required: false },
+                  { label: CTA Button Link, name: cta_btn_link, widget: string, required: false },
                 ],
             }
           - {
@@ -47,7 +50,7 @@ collections:
               widget: object,
               fields:
                 [
-                  { label: Enabled, name: enabled, widget: boolean, default: true },
+                  { label: Enabled, name: enabled, widget: boolean, default: true, required: false },
                   { label: Heading, name: heading, widget: string },
                   { label: Description, name: description, widget: text },
                   {
@@ -58,7 +61,7 @@ collections:
                       [
                         { label: Image, name: image, widget: image },
                         { label: Text, name: text, widget: text },
-                        { label: Description, name: description, widget: text },
+                        { label: Description, name: description, widget: text, required: false },
                       ],
                   }
                 ],
@@ -128,28 +131,14 @@ collections:
                 }
               ],
             }
-            
+
           - {
               label: Show Blog,
               name: showBlog,
               widget: boolean,
               default: true,
+              required: false
             }
-
-      - file: "src/pages/about/index.md"
-        label: "About (hidden)"
-        name: "about"
-        fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "about-page",
-            }
-          - { label: Title, name: title, widget: string }
-          - { label: Image, name: image, widget: image }
-          - { label: Body, name: body, widget: markdown }
-
 
       - file: "src/pages/retreats/index.md"
         label: "Retreats"
@@ -364,4 +353,19 @@ collections:
         editor:
           preview: false
         fields:
-        - { label: "Test", name: "test", widget: "string", default: 'test' }
+        - { label: Site Title, name: title, widget: string, default: 'Not Your Guru' }
+        - { label: Site Logo, name: logo, widget: image }
+        - { label: Site Accent Color, name: color, widget: color }
+        - { 
+          label: Menu Items, 
+          name: menu, 
+          collapsed: true,
+          hint: Use this menu to enable/disable menu items from the site's navbar,
+          widget: object, 
+          fields: [
+            { label: Training, name: training, widget: boolean },
+            { label: Coaching, name: coaching, widget: boolean },
+            { label: Ready-Made Programs, name: programs, widget: boolean },
+            { label: Blog, name: blog, widget: boolean },
+          ] 
+        }

@@ -9,10 +9,12 @@ const RetreatsRollTemplate = (props) => {
   const { edges: posts } = props.data.allMarkdownRemark;
 
   return (
-		<div className='columns is-multiline'>
-			{posts && posts.map(({ node: post }) => (
-        <RetreatPreview post={post} key={post.id} />
-      ))}
+		<div className='retreats-scroll columns'>
+			{console.log(posts)}
+			{posts && posts.map(({ node: post }, index) => {
+				// console.log(index)
+        return (<RetreatPreview post={post} key={post.id} />)
+			})}
 		</div>
 	)
 }

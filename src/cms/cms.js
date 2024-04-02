@@ -20,7 +20,6 @@ import RetreatPostPreview from './preview-templates/RetreatPostPreview'
 CMS.registerPreviewTemplate('index', IndexPagePreview)
 CMS.registerPreviewTemplate('retreats', RetreatsPagePreview)
 
-CMS.registerPreviewTemplate('about', SimplePagePreview)    // using common SimplePagePreview template for now
 CMS.registerPreviewTemplate('training', SimplePagePreview) // using common SimplePagePreview template for now
 CMS.registerPreviewTemplate('coaching', SimplePagePreview) // using common SimplePagePreview template for now
 CMS.registerPreviewTemplate('programs', SimplePagePreview) // using common SimplePagePreview template for now

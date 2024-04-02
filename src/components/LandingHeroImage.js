@@ -11,11 +11,13 @@ export default function LandingHeroImage(props) {
     title,
     subtitle,
     imgPosition = "top left",
-		extraClasses = false
+		extraClasses = false,
+		cta_btn_text,
+		cta_btn_link
   } = props;
 
   return (
-		<React.Fragment>
+		<>
 			<div
 				className={`margin-top-0 ${extraClasses && extraClasses}`}
 				style={{
@@ -72,15 +74,16 @@ export default function LandingHeroImage(props) {
 							display: 'grid',
 							// marginTop: '-15%',
 							padding: '20px',
-							textAlign: 'center'
+							textAlign: 'center',
 						}}
 					>
 						{/* Any content here will be centered in the component */}
 						{title && (
 							<h1
-								className='has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen'
+								className='heroBigText has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen'
 								style={{
 									color: 'white',
+									// fontSize: '4rem !important'
 									// lineHeight: '1',
 									// padding: '0.25em',
 								}}
@@ -90,21 +93,27 @@ export default function LandingHeroImage(props) {
 						)}
 						{subtitle && (
 							<h3
-								className='has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen'
+								className='has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-3-widescreen'
 								style={{
 									color: 'white',
 									lineHeight: '1',
 									padding: '0.25rem',
 									marginTop: '0.5rem',
+									marginBottom: '1rem',
 								}}
 							>
 								{subtitle}
 							</h3>
 						)}
+						{cta_btn_text && (
+							<a className='button is-primary is-medium' href={cta_btn_link}>
+								{cta_btn_text}
+							</a>
+						)}
 					</div>
 				)}
 			</div>
-		</React.Fragment>
+		</>
 	)
 }
 

@@ -1,10 +1,10 @@
 ---
 templateKey: retreat-post
-title: "Retreat #2: Montana"
+title: July 19-21 (5 spots available)
 subtitle: Get centered in a rustic mountain town.
 description: "Description for blog entry #1"
-startDate: 2024-05-01T19:04:05.619Z
-endDate: 2024-03-21T19:04:05.631Z
+startDate: 2024-07-19T19:04:05.619Z
+endDate: 2024-07-21T19:04:05.631Z
 featuredpost: false
 featuredimage: /img/montana.jpeg
 location: '{"type":"Point","coordinates":[-73.8655797,40.7113502]}'
