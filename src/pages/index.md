@@ -2,7 +2,7 @@
 templateKey: index-page
 hero:
   title: Live Inspired
-  subtitle: Not Your Guru curates retreat experiences for life!
+  subtitle: "Not Your Guru curates retreat experiences for life! "
   image: /img/silhouette_centered.jpg
   cta_btn_text: Find Your Retreat
   cta_btn_link: /retreats
