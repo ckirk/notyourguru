@@ -4,10 +4,10 @@ path: /retreats
 templateKey: retreats-page
 title: Retreats
 image: /img/retreats2.jpeg
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
   eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque diam
   volutpat commodo sed egestas egestas fringilla. Malesuada fames ac turpis
-  egestas sed. Semper quis lectus nulla at volutpat diam ut venenatis tellus. "
+  egestas sed. Semper quis lectus nulla at volutpat diam ut venenatis tellus...
 intro:
   blurbs:
     - image: /img/placeholder_image.jpeg
