@@ -32,17 +32,22 @@ exports.createPages = ({ actions, graphql }) => {
 
     posts.forEach((edge) => {
       const id = edge.node.id
-      createPage({
-        path: edge.node.fields.slug,
-        tags: edge.node.frontmatter.tags,
-        component: path.resolve(
-          `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
-        ),
-        // additional data can be passed via context
-        context: {
-          id,
-        },
-      })
+      const slug = edge.node.fields.slug
+      // console.log('SLUG:', edge.node.fields.slug)
+
+      // I created a data only file for use with the CMS (no associated page) src/config/globalSettings.md
+        // Gatsby kept trying to make a page from it so I'm excluding it here
+      if (slug !== "/globalSettings/") {
+				createPage({
+					path: slug,
+					tags: edge.node.frontmatter.tags,
+					component: path.resolve(`src/templates/${String(edge.node.frontmatter.templateKey)}.js`),
+					// additional data can be passed via context
+					context: {
+						id,
+					},
+				})
+      }
     })
 
     // Tag pages:

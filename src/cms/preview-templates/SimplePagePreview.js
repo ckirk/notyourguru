@@ -3,13 +3,13 @@ import PropTypes from 'prop-types'
 
 // Still using AboutPageTemplate here for simplicity
 // Will work as long as all simple pages share the same template
-import { AboutPageTemplate } from '../../templates/simple-page'
+import { SimplePageTemplate } from '../../templates/simple-page'
 import { ForceTheme } from './ForceTheme'
 
 const SimplePagePreview = ({ entry, widgetFor }) => (
 	<>
     <ForceTheme theme='light' />
-		<AboutPageTemplate title={entry.getIn(['data', 'title'])} content={widgetFor('body')} />
+		<SimplePageTemplate title={entry.getIn(['data', 'title'])} content={widgetFor('body')} />
 	</>
 )
 
