@@ -75,7 +75,8 @@ corporate:
 reviews:
   enabled: true
   heading: Reviews
-  description: Reviews Description
+  description: Our clients love us! Check below for a few of our favorite
+    endorsements from valued customers.
   reviews:
     - image: /img/placeholder_image.jpeg
       name: Chris K.
