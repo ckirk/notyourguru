@@ -60,7 +60,7 @@ collections:
                     fields:
                       [
                         { label: Image, name: image, widget: image },
-                        { label: Text, name: text, widget: text },
+                        { label: Text, name: text, widget: string },
                         { label: Description, name: description, widget: text, required: false },
                       ],
                   }
@@ -363,6 +363,13 @@ collections:
           hint: Use this menu to enable/disable menu items from the site's navbar,
           widget: object, 
           fields: [
+            {
+              # using this hidden attribute to help with finding it via graphql queries
+              label: Usage,
+              name: usage,
+              widget: hidden,
+              default: settings,
+            },
             { label: Training, name: training, widget: boolean },
             { label: Coaching, name: coaching, widget: boolean },
             { label: Ready-Made Programs, name: programs, widget: boolean },

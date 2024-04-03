@@ -1,4 +1,5 @@
 ---
+usage: settings
 title: Not Your Guru
 logo: /img/logo_500.jpg
 color: "#439294"
