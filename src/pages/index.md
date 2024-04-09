@@ -2,39 +2,44 @@
 templateKey: index-page
 hero:
   title: Live Inspired
-  subtitle: Not Your Guru curates retreat experiences for life!
+  subtitle: Not Your Guru Curates Retreat Experiences For Life!
   image: /img/silhouette_centered.jpg
   cta_btn_text: Find Your Retreat
   cta_btn_link: /retreats
 intro:
-  heading: What Is Not Your Guru?
-  description: "\"Not Your Guru\" is more than a brand; it's a philosophy rooted
-    in the belief that true wellness comes from empowering individuals to
-    cultivate a deeper connection with themselves. As a personal trainer and
-    wellness coach practitioner, I offer a diverse range of services, including
-    in-person training, online coaching, transformative retreats, and ready-made
-    training programs. My approach is not about providing quick fixes or being
-    someone's guru; rather, it's about equipping individuals with the tools they
-    need to navigate their own journey towards physical and emotional
-    well-being. With a lifetime of learning and personal experience in both
-    realms, I aim to foster a supportive environment where clients can discover
-    their inner strength, resilience, and self-awareness."
+  heading: Discover The Guru In You
+  description: N/A
   features:
     - image: /img/logo_500.jpg
-      text: Supports Healthy Habit Building
-      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Id velit ut
-        tortor pretium viverra suspendisse.
+      text: Exposure To Different Modalities of Fitness and Wellness
+      description: This is education for life. By exploring a range of practices such
+        as yoga, pilates, meditation, and functional training, individuals can
+        discover what resonates best with their bodies and lifestyles, promoting
+        holistic well-being. This exposure fosters flexibility, strength, stress
+        reduction, and improved overall health, ultimately empowering
+        individuals to cultivate a personalized wellness routine that suits
+        their unique journey toward balance and vitality.
     - image: /img/logo_500.jpg
-      text: Learn Modalities of Wellness
-      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Id velit ut
-        tortor pretium viverra suspendisse.
+      text: Expand Your Capabilities
+      description: Expanding your capabilities is crucial for personal growth because
+        it pushes you beyond your comfort zone. By taking on our challenges, you
+        not only expand your skills and knowledge but also build resilience and
+        confidence in your abilities. It allows you to gauge your current
+        strengths and weaknesses, identify areas for improvement, and set
+        realistic goals - fitness or otherwise - tailored to your individual
+        abilities.
     - image: /img/logo_500.jpg
-      text: Connect to yourself, others, and nature
-      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Id velit ut
-        tortor pretium viverra suspendisse.
+      text: Time to Connect to Yourself, Others, and Nature
+      description: Taking time to connect to yourself, others, and nature is essential
+        for cultivating inner peace, fostering meaningful relationships, and
+        experiencing the profound beauty of the natural world. Embracing the joy
+        of making time for yourself allows for introspection, self-discovery,
+        and rejuvenation, enhancing overall well-being and happiness.
+        Socializing with other like-minded individuals in a serene retreat
+        setting not only encourages camaraderie but also provides opportunities
+        for shared growth, support, and inspiration, all within convenient reach
+        of New York City, ensuring a seamless escape from urban hustle to serene
+        sanctuary in under three hours.
   enabled: true
 retreats:
   heading: Upcoming Retreats
