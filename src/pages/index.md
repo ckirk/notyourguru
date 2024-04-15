@@ -19,9 +19,9 @@ intro:
         is unique in their own journey, so the most powerful thing one can
         achieve is a deeper understanding and connection to self.  We are not
         your guru; and no one should be. This is why we offer a range of
-        modalities taught by experts across such practices as yoga, pilates,
-        meditation, and functional training, so you can discover what resonates
-        best with your body and lifestyle. "
+        modalities and courses taught by experts across such practices as yoga,
+        pilates, nutrition, meditation, and functional training, so you can
+        discover what resonates best with your body and lifestyle. "
     - image: /img/logo_500.jpg
       text: Expand Your Capabilities
       description: Experience yourself at your best and be extraordinary. Expanding
