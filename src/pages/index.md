@@ -23,13 +23,14 @@ intro:
         journey toward balance and vitality.
     - image: /img/logo_500.jpg
       text: Expand Your Capabilities
-      description: Expanding your capabilities is crucial for personal growth because
-        it pushes you beyond your comfort zone. By taking on our challenges, you
-        not only expand your skills and knowledge but also build resilience and
-        confidence in your abilities. It allows you to gauge your current
-        strengths and weaknesses, identify areas for improvement, and set
-        realistic goals - fitness or otherwise - tailored to your individual
-        abilities.
+      description: Experience yourself at your best and be extraordinary. Expanding
+        your capabilities is crucial for personal growth because it pushes you
+        beyond your comfort zone. By taking on our challenges, you not only
+        expand your skills and knowledge but also build resilience and
+        confidence in your abilities. Not Your Guru Retreats fosters an
+        environment where you can gauge your current strengths and weaknesses,
+        identify areas for improvement, and set realistic goals - fitness or
+        otherwise - tailored to your individual abilities.
     - image: /img/logo_500.jpg
       text: Time to Connect to Yourself, Others, and Nature
       description: Taking time to connect to yourself, others, and nature is essential
