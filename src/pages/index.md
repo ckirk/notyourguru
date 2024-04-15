@@ -32,17 +32,15 @@ intro:
         identify areas for improvement, and set realistic goals - fitness or
         otherwise - tailored to your individual abilities.
     - image: /img/logo_500.jpg
-      text: Time to Connect to Yourself, Others, and Nature
-      description: Taking time to connect to yourself, others, and nature is essential
-        for cultivating inner peace, fostering meaningful relationships, and
-        experiencing the profound beauty of the natural world. Embracing the joy
-        of making time for yourself allows for introspection, self-discovery,
-        and rejuvenation, enhancing overall well-being and happiness.
-        Socializing with other like-minded individuals in a serene retreat
+      text: Connection to Self, Others, and Nature
+      description: Remove yourself from the hustle and bustle of every day life, where
+        most people spend their days looking right through other people, and
+        take time to connect to yourself, others, and nature. Connection and
+        presence is essential for cultivating inner peace, fostering meaningful
+        relationships, and experiencing the profound beauty of the natural
+        world. Encountering other like-minded individuals in a serene retreat
         setting not only encourages camaraderie but also provides opportunities
-        for shared growth, support, and inspiration, all within convenient reach
-        of New York City, ensuring a seamless escape from urban hustle to serene
-        sanctuary in under three hours.
+        for shared growth, support, and inspiration.
   enabled: true
 retreats:
   heading: Upcoming Retreats
