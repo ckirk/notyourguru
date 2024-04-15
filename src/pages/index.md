@@ -8,17 +8,19 @@ hero:
   cta_btn_link: /retreats
 intro:
   heading: Discover The Guru In You
-  description: N/A
+  description: |-
+    There are many reasons to give yourself the gift of a Not Your Guru Retreat.
+
+    These are our top 3!
   features:
     - image: /img/logo_500.jpg
       text: Exposure To Different Modalities of Fitness and Wellness
-      description: This is education for life. By exploring a range of practices such
-        as yoga, pilates, meditation, and functional training, individuals can
-        discover what resonates best with their bodies and lifestyles, promoting
-        holistic well-being. This exposure fosters flexibility, strength, stress
-        reduction, and improved overall health, ultimately empowering
-        individuals to cultivate a personalized wellness routine that suits
-        their unique journey toward balance and vitality.
+      description: This is education for life. Explore a range of practices such as
+        yoga, pilates, meditation, and functional training, so you can discover
+        what resonates best with your body and lifestyle. promoting holistic
+        well-being. This exposure fosters and ultimately empowers individuals to
+        cultivate a personalized wellness routine that suits their unique
+        journey toward balance and vitality.
     - image: /img/logo_500.jpg
       text: Expand Your Capabilities
       description: Expanding your capabilities is crucial for personal growth because
