@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Link, useStaticQuery, graphql } from 'gatsby'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 // import github from "../img/github-icon.svg";
-import logo from "../img/logo_500.jpg";
+// import logo from "../img/logo_500.jpg";
 
 
 // Site Navigation and Branding
@@ -41,6 +42,8 @@ const Navbar = (props) => {
 
 	const allData = data.markdownRemark.frontmatter
 	const menu = data.markdownRemark.frontmatter.menu
+	let logo = getImage(data.markdownRemark.frontmatter.logo?.childImageSharp?.gatsbyImageData)
+
 
   return (
 		<nav
@@ -52,7 +55,18 @@ const Navbar = (props) => {
 			<div className='container'>
 				<div className='navbar-brand'>
 					<Link to='/' className='navbar-item' title='Logo'>
-						<img
+						<GatsbyImage
+							image={logo}
+							// style={{
+							// 	width: '40px',
+							// 	maxHeight: '40px !important',
+							// 	maxWidth: '40px',
+							// }}
+							// imgStyle={}
+							alt=''
+							formats={['auto', 'webp', 'avif']}
+						/>
+						{/* <img
 							src={logo}
 							alt=''
 							style={{
@@ -60,8 +74,8 @@ const Navbar = (props) => {
 								borderRadius: '6px',
 								marginRight: '10px',
 							}}
-						/>
-						<h1 className='is-size-5 siteTitle has-text-weight-bold'>Not Your Guru</h1>
+						/> */}
+						<h1 className='is-size-5 siteTitle has-text-weight-bold'>{allData.title}</h1>
 					</Link>
 
 					{/* Hamburger menu */}

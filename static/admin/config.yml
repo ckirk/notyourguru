@@ -353,9 +353,9 @@ collections:
         editor:
           preview: false
         fields:
-        - { label: Site Title, name: title, widget: string, default: 'Not Your Guru' }
-        - { label: Site Logo, name: logo, widget: image }
-        - { label: Site Accent Color, name: color, widget: color }
+        - { label: Site Title (not active), name: title, widget: string, default: 'Not Your Guru' }
+        - { label: Site Logo (not active), name: logo, widget: image }
+        - { label: Site Accent Color (not active), name: color, widget: color }
         - { 
           label: Menu Items, 
           name: menu, 
@@ -374,5 +374,54 @@ collections:
             { label: Coaching, name: coaching, widget: boolean },
             { label: Ready-Made Programs, name: programs, widget: boolean },
             { label: Blog, name: blog, widget: boolean },
+          ] 
+        }
+        - { 
+          label: Socials (footer), 
+          name: socials, 
+          collapsed: true,
+          hint: Social media links in the site footer,
+          widget: object, 
+          fields: [
+            { 
+              label: Facebook, 
+              name: facebook, 
+              widget: object, 
+              fields: 
+                [
+                  { label: Link, name: link, widget: string },
+                  { label: Enabled, name: enabled, widget: boolean },
+                ] 
+            },
+            { 
+              label: X, 
+              name: x, 
+              widget: object, 
+              fields: 
+                [
+                  { label: Link, name: link, widget: string },
+                  { label: Enabled, name: enabled, widget: boolean },
+                ] 
+            },
+            { 
+              label: Instagram, 
+              name: instagram, 
+              widget: object, 
+              fields: 
+                [
+                  { label: Link, name: link, widget: string },
+                  { label: Enabled, name: enabled, widget: boolean },
+                ] 
+            },
+            { 
+              label: YouTube, 
+              name: youtube, 
+              widget: object, 
+              fields: 
+                [
+                  { label: Link, name: link, widget: string },
+                  { label: Enabled, name: enabled, widget: boolean },
+                ] 
+            },
           ] 
         }

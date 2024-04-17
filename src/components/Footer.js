@@ -1,11 +1,15 @@
 import * as React from "react";
 import { Link, useStaticQuery, graphql } from 'gatsby'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 
-import logo from "../img/logo_500.jpg"
+// import logo from "../img/logo_500.jpg"
 import facebook from "../img/social/facebook.svg";
 import instagram from "../img/social/instagram.svg";
-import twitter from "../img/social/twitter.svg";
+import x from '../img/social/x.svg'
+import youtube from '../img/social/youtube.svg'
+import twitter from '../img/social/twitter.svg'
 import vimeo from "../img/social/vimeo.svg";
+
 
 // Site Footer
 const Footer = () => {
@@ -29,9 +33,27 @@ const Footer = () => {
 							programs
 							training
 						}
+						socials {
+							facebook {
+								link
+								enabled
+							}
+							x {
+								link
+								enabled
+							}
+							instagram {
+								link
+								enabled
+							}
+							youtube {
+								link
+								enabled
+							}
+						}
 						logo {
 							childImageSharp {
-								gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+								gatsbyImageData(width: 100, quality: 100, layout: FULL_WIDTH)
 							}
 						}
 					}
@@ -42,23 +64,45 @@ const Footer = () => {
 
 	const allData = data.markdownRemark.frontmatter
 	const menu = data.markdownRemark.frontmatter.menu
+	const socials = data.markdownRemark.frontmatter.socials
+	let logo = getImage(data.markdownRemark.frontmatter.logo?.childImageSharp?.gatsbyImageData)
+
+	console.log('DATA:', allData)
 
 	return (
 		// using dark mode theme for footer
 		<footer data-theme='dark' className='footer'>
 			<div className='content has-text-centered'>
-				<Link to='/' title='Logo'>
-					<img
-						src={logo}
-						alt=''
+				<div
+					className='container has-text-centered'
+					style={{
+						display: 'flex',
+						justifyContent: 'center',
+					}}
+				>
+					<Link
+						to='/'
+						title='Logo'
 						style={{
-							maxHeight: '100px',
-							borderRadius: '6px',
-							marginRight: '20px',
-						}}
-					/>
-					<h1 className='footerTitle has-text-weight-bold is-size-1 mt-5'>Not Your Guru</h1>
-				</Link>
+								flex: '0 0 auto',
+								width: '100px',
+								borderRadius: '6px',
+								overflow: 'hidden'
+							}}
+					>
+						<GatsbyImage
+							image={logo}
+							style={{
+								maxHeight: '100px',
+								maxWidth: '100px',
+							}}
+							alt=''
+							formats={['auto', 'webp', 'avif']}
+						/>
+					</Link>
+				</div>
+
+				<h1 className='footerTitle has-text-weight-bold is-size-1 mt-5'>{allData.title}</h1>
 			</div>
 
 			<div className='content has-text-centered'>
@@ -102,7 +146,6 @@ const Footer = () => {
 						<div className='column is-4'>
 							<section className='menu'>
 								<ul className='menu-list'>
-
 									{menu.blog && (
 										<li>
 											<Link to='/blog'>Blog</Link>
@@ -122,28 +165,37 @@ const Footer = () => {
 											Admin
 										</a>
 									</li>
-
 								</ul>
 							</section>
 						</div>
 						<div className='column is-4 social'>
-							<a title='facebook' href='https://facebook.com'>
-								<img src={facebook} alt='Facebook' style={{ width: '1em', height: '1em' }} />
-							</a>
-							<a title='twitter' href='https://twitter.com'>
-								<img
-									className='fas fa-lg'
-									src={twitter}
-									alt='Twitter'
-									style={{ width: '1em', height: '1em' }}
-								/>
-							</a>
-							<a title='instagram' href='https://instagram.com'>
-								<img src={instagram} alt='Instagram' style={{ width: '1em', height: '1em' }} />
-							</a>
-							<a title='vimeo' href='https://vimeo.com'>
-								<img src={vimeo} alt='Vimeo' style={{ width: '1em', height: '1em' }} />
-							</a>
+							{socials.facebook.enabled && (
+								<a title='facebook' href={socials.facebook.link}>
+									<img src={facebook} alt='Facebook' style={{ width: '1em', height: '1em' }} />
+								</a>
+							)}
+							{socials.x.enabled && (
+								<a title='x' href={socials.x.link}>
+									<img
+										className='fas fa-lg'
+										src={x}
+										alt='Twitter'
+										style={{ width: '1em', height: '1em' }}
+									/>
+								</a>
+							)}
+
+							{socials.instagram.enabled && (
+								<a title='instagram' href={socials.instagram.link}>
+									<img src={instagram} alt='Instagram' style={{ width: '1em', height: '1em' }} />
+								</a>
+							)}
+
+							{socials.youtube.enabled && (
+								<a title='youtube' href={socials.youtube.link}>
+									<img src={youtube} alt='YouTube' style={{ width: '1em', height: '1em' }} />
+								</a>
+							)}
 						</div>
 					</div>
 				</div>
