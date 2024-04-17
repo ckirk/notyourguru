@@ -70,7 +70,7 @@ about:
     experience in both realms, I aim to foster a supportive environment where
     clients can discover their inner strength, resilience, and self-awareness.
   image: /img/placeholder_image.jpeg
-  cta_btn_text: Contact Jesse to inquire about 1 on 1 services
+  cta_btn_text: Contact Jesse about 1 on 1 services
   cta_btn_link: /contact
 corporate:
   enabled: true

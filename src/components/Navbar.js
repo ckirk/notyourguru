@@ -24,6 +24,7 @@ const Navbar = (props) => {
 
 						# what to include in the menu (bool)
 						menu {
+							home
 							blog
 							coaching
 							programs
@@ -89,7 +90,18 @@ const Navbar = (props) => {
 						<span />
 					</button>
 				</div>
+
 				<div className={`navbar-start has-text-centered navbar-menu ${isActive && 'is-active'}`}>
+					{menu.home && (
+						<Link
+							className='navbar-item'
+							to='/'
+							// activeClassName='is-selected'
+						>
+							Home
+						</Link>
+					)}
+
 					<Link className='navbar-item' to='/retreats' activeClassName='is-selected'>
 						Retreats
 					</Link>

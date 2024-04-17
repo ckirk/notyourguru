@@ -7,7 +7,7 @@ export const ForceTheme = ({ theme='light' }) => {
 	// Code to execute after component has mounted
 	useEffect(() => {
 		const iframe = document.getElementById('preview-pane')
-		console.log('iframe: ', iframe)
+		// console.log('iframe: ', iframe)
 		var iframeDocument = iframe.contentDocument || iframe.contentWindow.document
 		var htmlTag = iframeDocument.documentElement // Access the <html> tag
 		htmlTag.setAttribute('data-theme', theme)

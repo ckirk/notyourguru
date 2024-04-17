@@ -44,6 +44,10 @@ const TemplateWrapper = (props) => {
 				<meta property='og:title' content={title} />
 				<meta property='og:url' content='/' />
 				<meta property='og:image' content={`${withPrefix('/')}img/og-image.jpg`} />
+
+				{/* <!-- Start of HubSpot Embed Code --> */}
+				<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/39505965.js"></script>
+				{/* <!-- End of HubSpot Embed Code --> */}
 			</Helmet>
 			
 			<Navbar transparent={transparentNavbar} />

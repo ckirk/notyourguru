@@ -4,6 +4,7 @@ title: Not Your Guru
 logo: /img/logo_500.jpg
 color: "#439294"
 menu:
+  home: true
   training: true
   coaching: false
   programs: false
