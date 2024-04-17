@@ -46,10 +46,10 @@ export const IndexPageTemplate = ({
 						<div className='columns'>
 							<div className='column is-8 is-offset-2'>
 								<div className='content'>
-									<h3 className='has-text-weight-semibold is-size-2 has-text-centered'>
+									<h3 className={`has-text-weight-semibold is-size-2 ${intro.centered && 'has-text-centered'}`}>
 										{intro.heading}
 									</h3>
-									<p className='has-text-centered'>{intro.description}</p>
+									<p className={intro.centered && 'has-text-centered'}>{intro.description}</p>
 								</div>
 							</div>
 						</div>
@@ -242,6 +242,7 @@ export const pageQuery = graphql`
 				intro {
 					enabled
 					heading
+					centered
 					description
 					features {
 						image {

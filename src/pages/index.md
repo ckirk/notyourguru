@@ -8,6 +8,7 @@ hero:
   cta_btn_link: /retreats
 intro:
   heading: Discover The Guru In You
+  centered: true
   description: |-
     There are many reasons to give yourself the gift of a Not Your Guru Retreat.
 

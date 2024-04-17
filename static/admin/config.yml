@@ -52,7 +52,8 @@ collections:
                 [
                   { label: Enabled, name: enabled, widget: boolean, default: true, required: false },
                   { label: Heading, name: heading, widget: string },
-                  { label: Description, name: description, widget: text },
+                  { label: Centered, name: centered, widget: boolean, default: true },
+                  { label: Description, name: description, widget: text, required: false },
                   {
                     label: Features,
                     name: features,

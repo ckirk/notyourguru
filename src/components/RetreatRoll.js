@@ -10,7 +10,7 @@ const RetreatsRollTemplate = (props) => {
 
   return (
 		<div className='retreats-scroll columns'>
-			{console.log(posts)}
+			{/* {console.log(posts)} */}
 			{posts && posts.map(({ node: post }, index) => {
 				// console.log(index)
         return (<RetreatPreview post={post} key={post.id} />)

@@ -67,7 +67,7 @@ const Footer = () => {
 	const socials = data.markdownRemark.frontmatter.socials
 	let logo = getImage(data.markdownRemark.frontmatter.logo?.childImageSharp?.gatsbyImageData)
 
-	console.log('DATA:', allData)
+	// console.log('DATA:', allData)
 
 	return (
 		// using dark mode theme for footer
