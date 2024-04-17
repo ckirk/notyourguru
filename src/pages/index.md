@@ -10,9 +10,11 @@ intro:
   heading: Discover The Guru In You
   centered: true
   description: >-
-    Not Your Guru is committed to providing New Yorkers with an escape to the
-    serenity of Hudson Valley where we offer exclusive retreats lead by top
-    instructors of various fitness and wellness modalities
+    Not Your Guru Retreats provides New Yorkers with the opportunity to escape
+    the chaos of the concrete jungle and return to the serenity of nature and
+    our circadian rhythms.  Our retreats are held in the picturesque Hudson
+    Valley, less than 3 hours away from the city, and are led by NYC's top
+    fitness and wellness instructors. 
 
 
     There are many reasons to give yourself the gift of a Not Your Guru Retreat.
