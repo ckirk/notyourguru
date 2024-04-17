@@ -54,13 +54,10 @@ intro:
   enabled: true
 retreats:
   heading: Upcoming Retreats
-  description: Escape the hustle and bustle of NYC this summer and join us for our
-    Mind, Body, Soul Reset Series! Situated less than 3 hours away in the serene
-    Hudson Valley area, our retreat blends the comforts of a luxurious Airbnb
-    getaway with the rustic charm of upstate New York's nature. Embark on a
-    transformative journey where exercise becomes a gateway to understanding and
-    pushing our body's limits, complemented by immersive experiences in
-    meditation, yoga, hot and cold exposure, invigorating hikes, and more
+  description: Join us this summer for our Mind, Body, Soul Reset Series! Embark
+    on a transformative journey where exercise becomes a gateway to
+    understanding our body's capabilities, complemented by immersive experiences
+    in meditation, yoga, hot and cold exposure, invigorating hikes, and more.
   cta_btn_text: View All Upcoming Retreats
   enabled: true
 about:
