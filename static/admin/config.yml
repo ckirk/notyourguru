@@ -355,7 +355,7 @@ collections:
           preview: false
         fields:
         - { label: Site Title (not active), name: title, widget: string, default: 'Not Your Guru' }
-        - { label: Site Logo (footer only), name: logo, widget: image, hint: This will change the logo in the top navbar and the site footer }
+        - { label: Site Logo, name: logo, widget: image, hint: This will change the logo in the top navbar and the site footer }
         - { label: Site Accent Color (not active), name: color, widget: color }
         - { 
           label: Menu Items, 

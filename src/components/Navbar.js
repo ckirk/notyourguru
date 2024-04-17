@@ -32,7 +32,7 @@ const Navbar = (props) => {
 						}
 						logo {
 							childImageSharp {
-								gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+								gatsbyImageData(quality: 100, height: 40, width: 40, layout: FULL_WIDTH)
 							}
 						}
 					}
@@ -58,12 +58,16 @@ const Navbar = (props) => {
 					<Link to='/' className='navbar-item' title='Logo'>
 						<GatsbyImage
 							image={logo}
-							// style={{
-							// 	width: '40px',
-							// 	maxHeight: '40px !important',
-							// 	maxWidth: '40px',
-							// }}
-							// imgStyle={}
+							style={{
+								width: '40px',
+								height: '40px',
+								marginRight: '10px',
+								borderRadius: '6px',
+								overflow: 'hidden'
+							}}
+							imgStyle={{
+								maxHeight: '40px'
+							}}
 							alt=''
 							formats={['auto', 'webp', 'avif']}
 						/>

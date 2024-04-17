@@ -14,7 +14,7 @@ intro:
 
     These are our top 3!
   features:
-    - image: /img/logo_500.jpg
+    - image: /img/modalities-of-fitness.png
       text: Exposure To Different Modalities of Fitness and Wellness
       description: "Not Your Guru Retreats offers education for life. Every individual
         is unique in their own journey, so the most powerful thing one can
@@ -23,7 +23,7 @@ intro:
         modalities and courses taught by experts across such practices as yoga,
         pilates, nutrition, meditation, and functional training, so you can
         discover what resonates best with your body and lifestyle. "
-    - image: /img/logo_500.jpg
+    - image: /img/capabilities.png
       text: Expand Your Capabilities
       description: Experience yourself at your best and be extraordinary. Expanding
         your capabilities is crucial for personal growth because it pushes you
@@ -33,7 +33,7 @@ intro:
         environment where you can gauge your current strengths and weaknesses,
         identify areas for improvement, and set realistic goals - fitness or
         otherwise - tailored to your individual abilities.
-    - image: /img/logo_500.jpg
+    - image: /img/connection.png
       text: Connection to Self, Others, and Nature
       description: Remove yourself from the hustle and bustle of every day life, where
         most people spend their days looking right through other people, and

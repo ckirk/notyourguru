@@ -62,7 +62,8 @@ const RetreatPreview = (props) => {
 						<p className='is-size-5 is-block dates'>
 							{`${post.frontmatter.startDate} - ${post.frontmatter.endDate}`}
 						</p>
-						<p className='excerpt is-block'>{post.excerpt}</p>
+						<p className='excerpt is-block'>{post.frontmatter.description}</p>
+						{/* <p className='excerpt is-block'>{post.excerpt}</p> */}
 					</div>
 
 					<Link className='button' to={post.fields.slug}>
@@ -102,6 +103,7 @@ export default function RetreatsRoll() {
 								frontmatter {
 									title
 									subtitle
+									description
 									templateKey
 									startDate(formatString: "MMMM DD, YYYY")
 									endDate(formatString: "MMMM DD, YYYY")

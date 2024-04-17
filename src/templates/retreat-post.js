@@ -12,6 +12,7 @@ export const RetreatPostTemplate = ({
 	title,
 	subtitle,
   startDate,
+	endDate,
 	content,
 	contentComponent,
 	description,
@@ -28,13 +29,22 @@ export const RetreatPostTemplate = ({
 				<div className='columns'>
 					<div className='column is-10 is-offset-1'>
 						<h1 className='title is-size-2 has-text-weight-bold is-bold-light'>{title}</h1>
-						<p>Subtitle: {subtitle}</p>
-						<p>Price: {price}</p>
-						<p>Start Date: {startDate}</p>
+						<p className='is-size-4'>{subtitle}</p>
+						{/* <p>Subtitle: {subtitle}</p> */}
+						{/* <p>Price: {price}</p> */}
+						<p className='mb-0'>
+							<b>Start Date:</b> {startDate}
+						</p>
+						<p>
+							<b>End Date:</b> {endDate}
+						</p>
 
 						<p>{description}</p>
 
+						{/* Everything Else Goes Here */}
 						<PostContent content={content} />
+
+						{/* TAGS */}
 						{tags && tags.length ? (
 							<div style={{ marginTop: `4rem` }}>
 								<h4>Tags</h4>
@@ -83,6 +93,7 @@ const RetreatPost = ({ data }) => {
 				subtitle={post.frontmatter.subtitle}
 				price={post.frontmatter.price}
 				startDate={post.frontmatter.startDate}
+				endDate={post.frontmatter.endDate}
 			/>
 		</Layout>
 	)
