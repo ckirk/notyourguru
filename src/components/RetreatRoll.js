@@ -89,7 +89,7 @@ export default function RetreatsRoll() {
 			query={graphql`
 				query RetreatsRollQuery {
 					allMarkdownRemark(
-						sort: { order: DESC, fields: [frontmatter___date] }
+						sort: { order: ASC, fields: [frontmatter___startDate] }
 						filter: { frontmatter: { templateKey: { eq: "retreat-post" } } }
 					) {
 						edges {
