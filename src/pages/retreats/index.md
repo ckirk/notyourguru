@@ -1,9 +1,9 @@
 ---
-heading: You Need A Retreat
-path: /retreats
 templateKey: retreats-page
 title: Retreats
 image: /img/retreats2.jpeg
+heading: We Have The Right Retreats For You!
+path: /retreats
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
   eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque diam
   volutpat commodo sed egestas egestas fringilla. Malesuada fames ac turpis
