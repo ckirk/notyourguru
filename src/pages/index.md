@@ -10,11 +10,11 @@ intro:
   heading: Discover The Guru In You
   centered: true
   description: >-
-    Not Your Guru Retreats provides everyone in the tristate area with the
-    opportunity to escape the chaos city living and return to the serenity of
-    nature and our circadian rhythms.  Our retreats are held in the picturesque
-    Hudson Valley, less than 3 hours away from the city, and are led by NYC's
-    top fitness and wellness instructors. 
+    Not Your Guru Retreats provides the tristate area with the opportunity to
+    escape the chaos of city living and a return to the serenity of nature and
+    our circadian rhythms.  Our retreats are held in the picturesque Hudson
+    Valley, less than 3 hours away from the city, and are led by NYC's top
+    fitness and wellness instructors. 
 
 
     There are many reasons to give yourself the gift of a Not Your Guru Retreat.
