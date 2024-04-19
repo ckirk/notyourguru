@@ -46,15 +46,21 @@ export const IndexPageTemplate = ({
 						<div className='columns'>
 							<div className='column is-8 is-offset-2'>
 								<div className='content'>
-									<h3 className={`has-text-weight-semibold is-size-2 ${intro.centered && 'has-text-centered'}`}>
+									<h3
+										className={`has-text-weight-semibold is-size-2 ${
+											intro.centered && 'has-text-centered'
+										}`}
+									>
 										{intro.heading}
 									</h3>
-									<p className={intro.centered && 'has-text-centered'}>{intro.description}</p>
+									<p className={intro.centered && 'has-text-centered is-size-5'}>
+										{intro.description}
+									</p>
 								</div>
 							</div>
 						</div>
 						<div className='columns'>
-							<div className='column is-10 is-offset-1'>
+							<div className='column is-12'>
 								<div className='content'>
 									<Features gridItems={intro.features} />
 								</div>
@@ -72,7 +78,7 @@ export const IndexPageTemplate = ({
 							<div className='column is-8 is-offset-2'>
 								<div className='content'>
 									<h3 className='has-text-weight-semibold is-size-2'>{retreats.heading}</h3>
-									<p className='mb-6'>{retreats.description}</p>
+									<p className='mb-6 is-size-5'>{retreats.description}</p>
 								</div>
 							</div>
 						</div>
@@ -101,7 +107,7 @@ export const IndexPageTemplate = ({
 							<div className='column is-half'>
 								<div className='content'>
 									<h3 className='has-text-weight-semibold is-size-2'>{about.heading}</h3>
-									<p>{about.description}</p>
+									<p className='is-size-5'>{about.description}</p>
 									<div className='column is-12 has-text-centered'>
 										<Link className='button is-primary is-outlined' to={about.cta_btn_link}>
 											{about.cta_btn_text}
@@ -122,7 +128,7 @@ export const IndexPageTemplate = ({
 							<div className='column is-8 is-offset-2'>
 								<div className='content'>
 									<h3 className='has-text-weight-semibold is-size-2'>{corporate.heading}</h3>
-									<p>{corporate.description}</p>
+									<p className='is-size-5'>{corporate.description}</p>
 									<div className='column is-12 has-text-centered'>
 										<Link className='button is-primary is-outlined' to={corporate.cta_btn_link}>
 											{corporate.cta_btn_text}
@@ -143,7 +149,7 @@ export const IndexPageTemplate = ({
 							<div className='column is-8 is-offset-2'>
 								<div className='content'>
 									<h3 className='has-text-weight-semibold is-size-2'>{reviews.heading}</h3>
-									<p>{reviews.description}</p>
+									<p className='is-size-5'>{reviews.description}</p>
 								</div>
 							</div>
 						</div>

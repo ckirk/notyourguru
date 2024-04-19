@@ -23,6 +23,7 @@ export default function LandingHeroImage(props) {
 				style={{
 					display: 'grid',
 					alignItems: 'center',
+					// height: '50vh'
 				}}
 			>
 				{img?.url ? (
@@ -33,8 +34,7 @@ export default function LandingHeroImage(props) {
 						style={{
 							gridArea: '1/1',
 							// You can set a maximum height for the image, if you wish.
-							height: height,
-							width: '100%',
+							height: '100%',
 							// filter: 'brightness(0.7)',
 						}}
 						// You can optionally force an aspect ratio for the generated image
@@ -49,6 +49,7 @@ export default function LandingHeroImage(props) {
 						objectFit={'cover'}
 						objectPosition={imgPosition}
 						style={{
+							height: '100%',
 							gridArea: '1/1',
 							// You can set a maximum height for the image, if you wish.
 							maxHeight: height,

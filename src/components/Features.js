@@ -4,10 +4,9 @@ import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
 // Features grid on landing page
 const FeatureGrid = ({ gridItems }) => (
-	<div className='features columns is-multiline'>
+	<div className='features columns is-gapless is-multiline'>
 		{gridItems.map((item) => (
-
-      // FEATURE
+			// FEATURE
 			<div key={item.text} className='column is-4'>
 				<section className='section'>
 					<div className='has-text-centered'>
@@ -20,11 +19,10 @@ const FeatureGrid = ({ gridItems }) => (
 							<PreviewCompatibleImage imageInfo={item} />
 						</div>
 					</div>
-					<p className='featureTitle has-text-weight-semibold is-size-5'>{item.text}</p>
-					{item.description && <p>{item.description}</p>}
+					<p className='featureTitle has-text-weight-semibold is-size-4 has-text-centered-desktop'>{item.text}</p>
+					{item.description && <p className='has-text-justified-desktop'>{item.description}</p>}
 				</section>
 			</div>
-      
 		))}
 	</div>
 )
