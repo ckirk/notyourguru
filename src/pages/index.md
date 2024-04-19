@@ -81,8 +81,9 @@ corporate:
   enabled: true
   heading: Corporate Wellness
   description: Give your employees the gift of life! Life doesn't happen in the
-    cubicle or at the office, life happens outdoors and in our bodies. Empower
-    and encourage your team with Not Your Guru's Corporate Wellness Programs!
+    cubicle or at the office, life happens outdoors and in our bodies. Improve
+    employee productivity by empowering and encouraging your team with Not Your
+    Guru's Corporate Wellness Programs!
   cta_btn_text: Inquire About Corporate Wellness
   cta_btn_link: /contact
 reviews:
