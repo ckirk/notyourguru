@@ -24,6 +24,8 @@ export const IndexPageTemplate = ({
 	showBlog
 }) => {
 	const heroImage = getImage(hero.image) || hero.image
+	console.log('hero:', hero)
+	console.log('getImage():', getImage(hero.image))
 
 	return (
 		<div>
@@ -182,12 +184,12 @@ export const IndexPageTemplate = ({
 }
 
 IndexPageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  title: PropTypes.string,
-  heading: PropTypes.string,
-  subheading: PropTypes.string,
-  mainpitch: PropTypes.object,
-  description: PropTypes.string,
+  // image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  // title: PropTypes.string,
+  // heading: PropTypes.string,
+  // subheading: PropTypes.string,
+  // mainpitch: PropTypes.object,
+  // description: PropTypes.string,
   intro: PropTypes.shape({
     features: PropTypes.array,
   }),

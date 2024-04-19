@@ -6,10 +6,15 @@ import PropTypes from 'prop-types'
 import { SimplePageTemplate } from '../../templates/simple-page'
 import { ForceTheme } from './ForceTheme'
 
-const SimplePagePreview = ({ entry, widgetFor }) => (
+const SimplePagePreview = ({ entry, widgetFor, getAsset }) => (
 	<>
-    <ForceTheme theme='light' />
-		<SimplePageTemplate title={entry.getIn(['data', 'title'])} content={widgetFor('body')} />
+		<ForceTheme theme='light' />
+		<SimplePageTemplate
+			title={entry.getIn(['data', 'title'])}
+			image={getAsset(entry.getIn(['data', 'image']))}
+			body={entry.getIn(['data', 'body'])}
+			content={widgetFor('body')}
+		/>
 	</>
 )
 

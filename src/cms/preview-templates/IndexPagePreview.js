@@ -16,7 +16,14 @@ const IndexPagePreview = ({ entry, getAsset }) => {
 					// heading={data.heading}
 					// subheading={data.subheading}
 					// description={data.description}
-					hero={data.hero || {}}
+					hero={{
+						// data.hero || {}
+						title: data.hero.title,
+						subtitle: data.hero.subtitle,
+						image: getAsset(entry.getIn(['data', 'hero', 'image'])),
+						cta_btn_text: data.hero.cta_btn_text,
+						cta_btn_link: data.hero.cta_btn_link,
+					}}
 					intro={data.intro || { features: [] }}
 					retreats={data.retreats || {}}
 					about={data.about || {}}
