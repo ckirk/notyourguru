@@ -87,7 +87,7 @@ corporate:
   cta_btn_text: Inquire About Corporate Wellness
   cta_btn_link: /contact
 reviews:
-  enabled: true
+  enabled: false
   heading: Reviews
   description: Our clients love us! Check below for a few of our favorite
     endorsements from valued customers.
