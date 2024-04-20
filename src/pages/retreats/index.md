@@ -1,13 +1,11 @@
 ---
 templateKey: retreats-page
-title: Retreats
+title: Your Time Is Now!
 image: /img/retreats2.jpeg
-heading: We Have The Right Retreats For You!
+heading: We Are Not Your Guru, Because No One Should Be
 path: /retreats
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-  eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque diam
-  volutpat commodo sed egestas egestas fringilla. Malesuada fames ac turpis
-  egestas sed. Semper quis lectus nulla at volutpat diam ut venenatis tellus. "
+description: “A teacher is never a giver of truth; he is a guide, a pointer to
+  the truth that each student must find for himself.” - Bruce Lee
 intro:
   blurbs:
     - image: /img/placeholder_image.jpeg
