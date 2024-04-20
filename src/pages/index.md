@@ -74,7 +74,7 @@ about:
     lifetime of learning and personal experience in both realms, Jesse aims to
     foster a supportive environment where clients can discover their inner
     strength, resilience, and self-awareness.
-  image: /img/placeholder_image.jpeg
+  image: /img/jessepic.jpg
   cta_btn_text: Contact Jesse about 1 on 1 services
   cta_btn_link: /contact
 corporate:
