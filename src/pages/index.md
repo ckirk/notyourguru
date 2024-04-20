@@ -38,15 +38,15 @@ intro:
         beyond your comfort zone. By taking on our challenges, you not only
         expand your skills and knowledge but also build resilience and
         confidence in your abilities. Not Your Guru Retreats fosters an
-        environment where you can gauge your current strengths and weaknesses,
-        identify areas for improvement, and set realistic goals - fitness or
-        otherwise - tailored to your individual abilities.
+        environment where you can gauge your current strengths, identify areas
+        for improvement, and set realistic goals - fitness or otherwise -
+        tailored to your individual abilities.
     - image: /img/connection.png
       text: Connection to Self, Others, and Nature
       description: Remove yourself from the hustle and bustle of every day life, where
-        most people spend their days looking right through other people, and
-        take time to connect to yourself, others, and nature. Connection and
-        presence is essential for cultivating inner peace, fostering meaningful
+        many of us spend our days looking right through other people, and take
+        time to connect to yourself, others, and nature. Connection and presence
+        is essential for cultivating inner peace, fostering meaningful
         relationships, and experiencing the profound beauty of the natural
         world. Encountering other like-minded individuals in a serene retreat
         setting not only encourages camaraderie but also provides opportunities
@@ -65,7 +65,7 @@ about:
   heading: About Jesse
   description: Jesse started "Not Your Guru" as a philosophy rooted in the belief
     that true wellness comes from empowering individuals to cultivate a deeper
-    connection with themselves. As a personal trainer and wellness coach
+    connection within themselves. As a personal trainer and wellness coach
     practitioner, he offers a diverse range of services, including in-person
     training, online coaching, transformative retreats, and ready-made training
     programs. His approach is not about providing quick fixes or being someone's
@@ -80,10 +80,10 @@ about:
 corporate:
   enabled: true
   heading: Corporate Wellness
-  description: Give your employees the gift of life! Life doesn't happen in the
-    cubicle or at the office, life happens outdoors and in our bodies. Improve
-    employee productivity by empowering and encouraging your team with Not Your
-    Guru's Corporate Wellness Programs!
+  description: Give your employees the gift of life! Improve employee productivity
+    by empowering and encouraging your team with Not Your Guru's Corporate
+    Wellness Programs. Life doesn't happen in the cubicle or at the office, life
+    happens outdoors and in our bodies!
   cta_btn_text: Inquire About Corporate Wellness
   cta_btn_link: /contact
 reviews:
