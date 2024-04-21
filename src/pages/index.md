@@ -62,7 +62,7 @@ retreats:
   enabled: true
 about:
   enabled: true
-  heading: About Jesse
+  heading: About Our Founder
   description: >-
     If you are reading this that means something about this page has captured
     your interest, and for that I am grateful. My name is Jesse, and I started
