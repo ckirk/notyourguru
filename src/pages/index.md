@@ -58,6 +58,7 @@ retreats:
     on a transformative journey where exercise becomes a gateway to
     understanding our body's capabilities, complemented by immersive experiences
     in meditation, yoga, hot and cold exposure, invigorating hikes, and more.
+    This experience is suitable for all levels!
   cta_btn_text: View All Upcoming Retreats
   enabled: true
 about:
