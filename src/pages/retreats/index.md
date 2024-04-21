@@ -1,8 +1,8 @@
 ---
 templateKey: retreats-page
-title: Your Time Is Now!
+title: Yoga Retreats Are Yesterday's News, Join One Of Our Immesive Experiences
 image: /img/retreats2.jpeg
-heading: We Are Not Your Guru, Because No One Should Be
+heading: //
 path: /retreats
 description: “A teacher is never a giver of truth; he is a guide, a pointer to
   the truth that each student must find for himself.” - Bruce Lee
