@@ -64,11 +64,11 @@ about:
   enabled: true
   heading: About Jesse
   description: >-
-    If you are reading this then that means something about this page has
-    captured your interest, and for that I am grateful. My name is Jesse, and I
-    started "Not Your Guru" as a philosophy rooted in the belief that true
-    wellness comes from empowering individuals to cultivate a deeper connection
-    within themselves. 
+    If you are reading this that means something about this page has captured
+    your interest, and for that I am grateful. My name is Jesse, and I started
+    "Not Your Guru" as a philosophy rooted in the belief that true wellness
+    comes from empowering individuals to cultivate a deeper connection within
+    themselves. 
 
 
     As a personal trainer and wellness coach practitioner, I offer a diverse range of services, including in-person training, online coaching, transformative retreats, and ready-made training programs. My approach is not about providing quick fixes or being someone's guru; rather, it's about equipping individuals with the tools they need to navigate their own journey towards physical and emotional well-being. With a lifetime of learning and personal experience in both realms, my objective is to foster a supportive environment where clients can discover their inner strength, resilience, and self-awareness.
