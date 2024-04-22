@@ -1,6 +1,6 @@
 ---
 templateKey: retreats-page
-title: Yoga Retreats Are Yesterday's News, Join One Of Our Immersive Experiences
+title: Upcoming Experiences
 image: /img/retreats2.jpeg
 heading: //
 path: /retreats
