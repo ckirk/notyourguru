@@ -65,10 +65,10 @@ about:
   enabled: true
   heading: About Our Founder
   description: >-
-    If you are reading this that means something about this page has captured
-    your interest, and for that I am grateful. My name is Jesse, and I started
-    "Not Your Guru" as a philosophy rooted in the belief that true wellness
-    comes from empowering individuals to cultivate a deeper connection within
+    If you are reading this then something about this page has captured your
+    interest, and for that I am grateful. My name is Jesse, and I started "Not
+    Your Guru" as a philosophy rooted in the belief that true wellness comes
+    from empowering individuals to cultivate a deeper connection within
     themselves. 
 
 
