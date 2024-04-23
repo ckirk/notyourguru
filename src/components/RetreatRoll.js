@@ -24,7 +24,7 @@ const RetreatPreview = (props) => {
 
   return (
 		<div className='column is-6'>
-			<div className={`retreat ${post.frontmatter.featuredpost ? 'is-featured' : ''}`}>
+			<div className={`retreat ${post.frontmatter.featuredRetreat ? 'is-featured' : ''}`}>
 				{/* Header */}
 				<header>
 					{post?.frontmatter?.featuredimage && (
@@ -108,7 +108,7 @@ export default function RetreatsRoll() {
 									startDate(formatString: "MMMM DD, YYYY")
 									endDate(formatString: "MMMM DD, YYYY")
 									price
-									featuredpost
+									featuredRetreat
 									featuredimage {
 										childImageSharp {
 											gatsbyImageData(width: 600, quality: 100, layout: CONSTRAINED) # CONSTRAINED, FIXED, FULL_WIDTH

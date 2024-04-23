@@ -103,7 +103,7 @@ export const IndexPageTemplate = ({
 				<section className='section tan'>
 					<div className='container'>
 						<div className='columns'>
-							<div className='column is-half'>
+							<div className='column is-half mr-5'>
 								<PreviewCompatibleImage imageInfo={about.image} />
 							</div>
 							<div className='column is-half'>

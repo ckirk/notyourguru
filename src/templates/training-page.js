@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { graphql } from "gatsby";
+import { Link, graphql } from "gatsby";
 import { getImage } from 'gatsby-plugin-image'
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
@@ -21,6 +21,11 @@ export const TrainingPageTemplate = ({ title, image, content, contentComponent }
 							<div className='section'>
 								<h2 className='title is-size-3 has-text-weight-bold is-bold-light'>{title}</h2>
 								<PageContent className='content' content={content} />
+							</div>
+							<div className='column is-12 has-text-centered'>
+								<Link className='button is-primary is-outlined' to='/contact'>
+									Inquire About In-Person Training
+								</Link>
 							</div>
 						</div>
 					</div>
