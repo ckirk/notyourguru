@@ -4,4 +4,6 @@ path: /training
 title: In-Person Training
 image: /img/training.jpeg
 ---
-"Not Your Guru" is more than a brand; it's a philosophy rooted in the belief that true wellness comes from empowering individuals to cultivate a deeper connection with themselves. As a personal trainer and wellness coach practitioner, I offer a diverse range of services, including in-person training, online coaching, transformative retreats, and ready-made training programs. My approach is not about providing quick fixes or being someone's guru; rather, it's about equipping individuals with the tools they need to navigate their own journey towards physical and emotional well-being. With a lifetime of learning and personal experience in both realms, I aim to foster a supportive environment where clients can discover their inner strength, resilience, and self-awareness.
+Jesse has been changing lives as a personal trainer and coach for over a decade. He has built hundreds (or more) of personal relationships with his clients with lots of lasting results to show for it. His experience ranges from corrective exercises after an injury, pre/post natal during a pregnancy, or sports performance for our athletes, and much more.  If you are interested in qualifying to work with Jesse 1 on 1 please fill out the form below!
+
+(Not available for *LifeTime Fitness* members)
