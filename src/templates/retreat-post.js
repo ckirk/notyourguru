@@ -18,9 +18,11 @@ export const RetreatPostTemplate = ({
 	description,
 	price,
 	tags,
-	helmet
+	helmet,
+	// test
 }) => {
 	const PostContent = contentComponent || Content
+	// console.log('entry:', test)
 
 	return (
 		<section className='section'>

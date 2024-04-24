@@ -308,23 +308,24 @@ collections:
           widget: "hidden",
           default: "retreat-post",
         }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Subtitle", name: "subtitle", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
-      - { label: "Start Date", name: "startDate", widget: "datetime" }
-      - { label: "End Date", name: "endDate", widget: "datetime" }
-      - { label: "Featured", name: "featuredRetreat", widget: "boolean" }
-      - { label: "Featured Image", name: "featuredimage", widget: image }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Location", name: "location", widget: "map" }
+      - { label: "Title", name: "title", widget: "string", hint: The display name for the event }
+      - { label: "Subtitle", name: "subtitle", widget: "string", hint: A short teaser for the retreat. Shows up in colored text below image on retreat preview tiles }
+      - { label: "Description", name: "description", widget: "text", hint: A short text description of the retreat that shows up in the retreat previews }
+      - { label: "Start Date", name: "startDate", widget: "datetime", hint: The starting date for the event (also used for ordering events)}
+      - { label: "End Date", name: "endDate", widget: "datetime", hint: The ending date for the event }
+      - { label: "Featured", name: "featuredRetreat", widget: "boolean", hint: 'A "featured" event could be highlighted or placed more prominently on the site (not active)' }
+      - { label: "Featured Image", name: "featuredimage", widget: image, hint: The image associated with the retreat }
       - { 
           label: "Price", 
           name: "price", 
           widget: "number",
           value_type: "float",
-          decimals: 2
+          decimals: 2,
+          hint: The cost of the retreat in dollars
         }
-      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Body", name: "body", widget: "markdown", hint: This is the main area where you can put whatever you want about the retreat. Supports text formatting, images, links, etc. Make it as long as you want. }
+      - { label: "Location", name: "location", widget: "map", hint: Add the event location on the map }
+      - { label: "Tags", name: "tags", widget: "list", hint: "Add any text tags you would like this event organized under. For example if you had two types of retreats, some in NY and some in CR, you coudld use tags to keeps things organized. If you added the CR tag to all CR retreats, one could click on the CR tag to see a filtered list on just retreats in CR."  }
 
   - name: "blog"
     label: "Blog"

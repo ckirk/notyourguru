@@ -2,7 +2,7 @@
 templateKey: retreat-post
 title: Hudson Valley Mind, Body, Soul Reset Series (August)
 subtitle: ???
-description: (8 spots available)
+description: 8 spots available
 startDate: 2024-08-17T00:06:03.997Z
 endDate: 2024-08-19T00:06:04.008Z
 featuredimage: /img/https___cdn.evbuc.com_images_522930449_268977341116_1_original.jpg

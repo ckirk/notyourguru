@@ -5,6 +5,10 @@ import { ForceTheme } from './ForceTheme'
 
 const RetreatPostPreview = ({ entry, widgetFor }) => {
   const tags = entry.getIn(['data', 'tags'])
+	const startDate = entry.getIn(['data', 'startDate'])
+	// const tags = entry.getIn(['data', 'tags'])
+	// console.log('TAGS:', tags)
+	// console.log('startData:', startDate)
   return (
 		<>
 			<ForceTheme />
@@ -15,7 +19,9 @@ const RetreatPostPreview = ({ entry, widgetFor }) => {
 				title={entry.getIn(['data', 'title'])}
 				subtitle={entry.getIn(['data', 'subtitle'])}
 				price={entry.getIn(['data', 'price'])}
-				// startDate={entry.getIn(['data', 'startDate'])}
+				// test={entry}
+				// startDate={startDate && startDate.toJS()}
+				// endDate={entry.getIn(['data', 'endDate'])}
 			/>
 		</>
 	)

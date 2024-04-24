@@ -32,13 +32,11 @@ const RetreatPreview = (props) => {
 							<div className='featured-thumbnail'>
 								<PreviewCompatibleImage
 									imageInfo={{
-										// height: '100vh',
-										// imgPosition: 'center center',
 										image: post.frontmatter.featuredimage,
 										alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-										// width: '100px',
-										// height:
-										//   post.frontmatter.featuredimage.childImageSharp.gatsbyImageData.height,
+										style: { 
+											filter: 'brightness(0.7)' 
+										}
 									}}
 								/>
 								<div className='imgOverlay'>
