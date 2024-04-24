@@ -74,28 +74,28 @@ export const IndexPageTemplate = ({
 
 			{/* Retreats */}
 			{retreats.enabled && (
-				<section className='section'>
-					<div className='container'>
-						<div className='columns'>
-							<div className='column is-8 is-offset-2'>
-								<div className='content'>
-									<h3 className='has-text-weight-semibold is-size-2'>{retreats.heading}</h3>
-									<p className='mb-6 is-size-5'>{retreats.description}</p>
+				<div>
+					<section className='section'>
+						<div className='container'>
+							<div className='columns'>
+								<div className='column is-8 is-offset-2'>
+									<div className='content'>
+										<h3 className='has-text-weight-semibold is-size-2'>{retreats.heading}</h3>
+										<p className='mb-6 is-size-5'>{retreats.description}</p>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div className='columns'>
-							<div className='column is-10 is-offset-1'>
-								<RetreatRoll />
-								<div className='column is-12 has-text-centered'>
-									<Link className='button is-primary is-outlined' to='/retreats'>
-										{retreats.cta_btn_text}
-									</Link>
-								</div>
-							</div>
+					</section>
+					<RetreatRoll />
+					<section className='section'>
+						<div className='column is-12 has-text-centered'>
+							<Link className='button is-primary is-outlined' to='/retreats'>
+								{retreats.cta_btn_text}
+							</Link>
 						</div>
-					</div>
-				</section>
+					</section>
+				</div>
 			)}
 
 			{/* About Jesse */}

@@ -1,39 +1,68 @@
-import * as React from "react";
-import PropTypes from "prop-types";
-import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
+import React, { useState } from 'react'
+import PropTypes from 'prop-types'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+
+const Feature = (props) => {
+	const { item } = props
+	const [isTruncated, setIsTruncated] = useState(true)
+
+	const handleToggleTruncate = () => {
+		console.log('BOOM!!!')
+		setIsTruncated(!isTruncated)
+	}
+
+	return (
+		// FEATURE
+		<div className='column is-4 feature'>
+			<section className='section'>
+				<div className='has-text-centered'>
+					<div
+						style={{
+							// width: '240px',
+							display: 'inline-block',
+						}}
+					>
+						<PreviewCompatibleImage imageInfo={item} />
+					</div>
+				</div>
+				<p className='featureTitle has-text-weight-semibold is-size-4 has-text-centered-desktop'>
+					{item.text}
+				</p>
+
+				<div className='bottom'>
+					{item.description && (
+						<p className={`has-text-justified-desktop ${isTruncated && 'truncated'}`}>
+							{item.description}
+						</p>
+					)}
+
+					<div className='column is-12 has-text-centered'>
+						<div className='button is-primary is-outlined' onClick={handleToggleTruncate}>
+							{isTruncated ? 'Show More' : 'Show Less'}
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	)
+}
 
 // Features grid on landing page
 const FeatureGrid = ({ gridItems }) => (
 	<div className='features columns is-gapless is-multiline'>
 		{gridItems.map((item) => (
-			// FEATURE
-			<div key={item.text} className='column is-4'>
-				<section className='section'>
-					<div className='has-text-centered'>
-						<div
-							style={{
-								// width: '240px',
-								display: 'inline-block',
-							}}
-						>
-							<PreviewCompatibleImage imageInfo={item} />
-						</div>
-					</div>
-					<p className='featureTitle has-text-weight-semibold is-size-4 has-text-centered-desktop'>{item.text}</p>
-					{item.description && <p className='has-text-justified-desktop'>{item.description}</p>}
-				</section>
-			</div>
+			<Feature item={item} key={item.text} />
 		))}
 	</div>
 )
 
 FeatureGrid.propTypes = {
-  gridItems: PropTypes.arrayOf(
-    PropTypes.shape({
-      image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-      text: PropTypes.string,
-    })
-  ),
-};
+	gridItems: PropTypes.arrayOf(
+		PropTypes.shape({
+			image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+			text: PropTypes.string,
+		})
+	),
+}
 
-export default FeatureGrid;
+export default FeatureGrid

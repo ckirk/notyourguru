@@ -9,7 +9,7 @@ const RetreatsRollTemplate = (props) => {
   const { edges: posts } = props.data.allMarkdownRemark;
 
   return (
-		<div className='retreats-scroll columns'>
+		<div className='retreats-scroll'>
 			{/* {console.log(posts)} */}
 			{posts && posts.map(({ node: post }, index) => {
 				// console.log(index)
@@ -23,7 +23,7 @@ const RetreatPreview = (props) => {
   const { post } = props
 
   return (
-		<div className='column is-6'>
+		<div className='retreatContainer'>
 			<div className={`retreat ${post.frontmatter.featuredRetreat ? 'is-featured' : ''}`}>
 				{/* Header */}
 				<header>

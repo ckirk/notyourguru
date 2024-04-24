@@ -46,11 +46,11 @@ export const RetreatsPageTemplate = ({
 					<div className='columns'>
 						<div className='column is-10 is-ofset-1'>
 							<h3 className='has-text-weight-semibold is-size-2'>Upcoming Retreats</h3>
-							<RetreatRoll />
 						</div>
 					</div>
 				</div>
 			</section>
+			<RetreatRoll />
 
 			{/* More Info */}
 			{/* <section className='section'>

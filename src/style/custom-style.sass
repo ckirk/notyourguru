@@ -161,10 +161,47 @@ section
   .featureTitle
     margin-top: 20px !important
     margin-bottom: 20px !important
+  .truncated
+    display: -webkit-box
+    -webkit-line-clamp: 6 // Adjust this value for the number of lines you want initially displayed */
+    -webkit-box-orient: vertical
+    overflow: hidden
+    text-overflow: ellipsis
+    transition: -webkit-line-clamp 0.3s ease
+  .feature
+    display: flex
+    .section
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+    .bottom
+
 
 
 .retreats-scroll
+  // margin-left: 400px
+  
+  width: 100%
+  // display: flex
+  // justify-content: start
   overflow-x: auto
+  white-space: nowrap
+  margin-bottom: 50px
+
+  // Desktop
+  @media (min-width: 1024px)
+    padding-left: 10%
+
+.retreatContainer
+  width: 90%
+  padding: 10px
+  display: inline-block
+  white-space: wrap
+  vertical-align: top
+
+  // Desktop
+  @media (min-width: 1024px)
+    width: 40%
 
 // Individual Retreat Cards
 .retreat
@@ -172,7 +209,9 @@ section
   background-color: #f7f7f7
   border-radius: 5px
   overflow: hidden
-  max-width: 600px
+  // padding: 20px
+  // width: 20vw
+  // max-width: 600px
   .featured-thumbnail
     position: relative
   .imgOverlay
