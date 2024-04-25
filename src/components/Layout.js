@@ -18,6 +18,10 @@ const TemplateWrapper = (props) => {
 				<html lang='en' data-theme='light' /> {/* force light mode */}
 				<title>{title}</title>
 				<meta name='description' content={description} />
+				<link 
+					rel="shortcut icon" 
+					href={`${withPrefix('/')}img/favicon.ico`}
+				/>
 				<link
 					rel='apple-touch-icon'
 					sizes='180x180'
@@ -38,18 +42,24 @@ const TemplateWrapper = (props) => {
 				<link
 					rel='mask-icon'
 					href={`${withPrefix('/')}img/safari-pinned-tab.svg`}
+					color='#5bbad5'
 				/>
 				<meta name='theme-color' content='#fff' />
 				<meta property='og:type' content='business.business' />
 				<meta property='og:title' content={title} />
 				<meta property='og:url' content='/' />
 				<meta property='og:image' content={`${withPrefix('/')}img/og-image.jpg`} />
-
 				{/* <!-- Start of HubSpot Embed Code --> */}
-				<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/39505965.js"></script>
+				<script
+					type='text/javascript'
+					id='hs-script-loader'
+					async
+					defer
+					src='//js.hs-scripts.com/39505965.js'
+				></script>
 				{/* <!-- End of HubSpot Embed Code --> */}
 			</Helmet>
-			
+
 			<Navbar transparent={transparentNavbar} />
 			<div>{children}</div>
 			<Footer />
