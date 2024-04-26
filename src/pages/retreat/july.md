@@ -1,12 +1,12 @@
 ---
 templateKey: retreat-post
 title: Hudson Valley Mind, Body, Soul Reset Series (July)
-subtitle: Get centered in a rustic mountain town.
+subtitle: Hudson Valley Mind, Body, Soul Reset Series (2/3)
 description: 5 spots available
 startDate: 2024-07-19T19:04:05.619Z
 endDate: 2024-07-21T19:04:05.631Z
 featuredRetreat: false
-featuredimage: /img/https___cdn.evbuc.com_images_522930449_268977341116_1_original.jpg
+featuredimage: /img/screen-shot-2023-05-25-at-5.39.59-pm.png
 price: 270.99
 featuredpost: false
 date: 2024-03-20T04:47:48.945Z

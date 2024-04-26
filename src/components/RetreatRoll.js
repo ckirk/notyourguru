@@ -35,7 +35,7 @@ const RetreatPreview = (props) => {
 										image: post.frontmatter.featuredimage,
 										alt: `featured image thumbnail for post ${post.frontmatter.title}`,
 										style: { 
-											filter: 'brightness(0.7)' 
+											filter: 'brightness(0.85)' 
 										}
 									}}
 								/>

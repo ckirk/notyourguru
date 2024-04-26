@@ -1,15 +1,15 @@
 ---
 templateKey: retreat-post
 title: Hudson Valley Mind, Body, Soul Reset Series (June)
-subtitle: Join us for our first retreat of summer 2024!
+subtitle: Hudson Valley Mind, Body, Soul Reset Series (1/3)
 description: SOLD OUT
+startDate: 2024-06-14T19:11:35.056Z
 endDate: 2024-06-16T19:11:35.066Z
 featuredRetreat: false
 featuredimage: /img/https___cdn.evbuc.com_images_522930449_268977341116_1_original.jpg
 price: 1250
 featuredpost: false
 date: 2024-03-20T04:47:48.945Z
-startDate: 2024-06-14T19:11:35.056Z
 location: '{"type":"Point","coordinates":[-73.8655797,40.7113502]}'
 tags: []
 ---

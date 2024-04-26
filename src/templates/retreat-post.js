@@ -46,6 +46,42 @@ export const RetreatPostTemplate = ({
 						{/* Everything Else Goes Here */}
 						<PostContent content={content} />
 
+						<section className='section'>
+							<div className='column is-12 has-text-centered'>
+								{/* HUBSPOT PROSPECT POPUP/SIGNUP */}
+								<div
+									class='hs-cta-embed hs-cta-simple-placeholder hs-cta-embed-165573647789'
+									style={{
+										maxWidth: '100%',
+										maxHeight: '100%',
+										width: '250px',
+										height: '42.3984375px',
+										margin: '0 auto',
+									}}
+									data-hubspot-wrapper-cta-id='165573647789'
+								>
+									<a
+										href='https://cta-service-cms2.hubspot.com/web-interactives/public/v1/track/redirect?encryptedPayload=AVxigLJXWC0Zfime7StE8LwUFpn1GmPf%2BHP5d1k%2B7aM%2F8A04DVO05WYnOwngm1YSKVRu2BvHx8oJtQVbymQKCx3bZ6S3so46BUPQkizb7VDAP5y19Y1FrKXEBXBJPVmTTtNxxWzs9GrCKtreKvx1ZhJr%2F8xTFw%3D%3D&webInteractiveContentId=165573647789&portalId=39505965'
+										target='_blank'
+										rel='noopener'
+										crossorigin='anonymous'
+									>
+										<img
+											alt='Reserve Your Spot Today'
+											loading='lazy'
+											src='https://no-cache.hubspot.com/cta/default/39505965/interactive-165573647789.png'
+											style={{
+												height: '100%',
+												width: '100%',
+												objectFit: 'fill',
+											}}
+											onerror="this.style.display='none'"
+										/>
+									</a>
+								</div>
+							</div>
+						</section>
+
 						{/* TAGS */}
 						{tags && tags.length ? (
 							<div style={{ marginTop: `4rem` }}>
