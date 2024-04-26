@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
+import Content, { HTMLContent } from '../components/Content'
 import Features from "../components/Features";
 import Testimonials from "../components/Testimonials";
 import Pricing from "../components/Pricing";
@@ -17,14 +18,18 @@ export const RetreatsPageTemplate = ({
   title,
   heading,
   description,
+  content,
+  contentComponent,
   // intro,
   // main,
   // testimonials,
-  fullImage,
+  // fullImage,
   // pricing,
 }) => {
+
+  const PageContent = contentComponent || Content
   const heroImage = getImage(image) || image;
-  const fullWidthImage = getImage(fullImage) || fullImage;
+  // const fullWidthImage = getImage(fullImage) || fullImage;
 
   return (
 		<div className='content'>
@@ -35,7 +40,7 @@ export const RetreatsPageTemplate = ({
 				<div className='container'>
 					<div className='column is-7 is-offset-1'>
 						{heading && <h3 className='has-text-weight-semibold is-size-2'>{heading}</h3>}
-						{description && <p>{description}</p>}
+						<PageContent className='content' content={content} />
 					</div>
 				</div>
 			</section>
@@ -105,7 +110,7 @@ export const RetreatsPageTemplate = ({
 							maxHeight: '100%',
 							width: '250px',
 							height: '42.3984375px',
-              margin: '0 auto'
+							margin: '0 auto',
 						}}
 						data-hubspot-wrapper-cta-id='165573647789'
 					>
@@ -139,43 +144,46 @@ RetreatsPageTemplate.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
   description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
-  main: PropTypes.shape({
-    heading: PropTypes.string,
-    description: PropTypes.string,
-    image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  }),
-  testimonials: PropTypes.array,
-  fullImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  pricing: PropTypes.shape({
-    heading: PropTypes.string,
-    description: PropTypes.string,
-    plans: PropTypes.array,
-  }),
+  // intro: PropTypes.shape({
+  //   blurbs: PropTypes.array,
+  // }),
+  // main: PropTypes.shape({
+  //   heading: PropTypes.string,
+  //   description: PropTypes.string,
+  //   image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  //   image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  //   image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  // }),
+  // testimonials: PropTypes.array,
+  // fullImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  // pricing: PropTypes.shape({
+  //   heading: PropTypes.string,
+  //   description: PropTypes.string,
+  //   plans: PropTypes.array,
+  // }),
 };
 
 const RetreatsPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
+  const { markdownRemark: post } = data
 
   return (
-    <Layout>
-      <RetreatsPageTemplate
-        image={frontmatter.image}
-        title={frontmatter.title}
-        heading={frontmatter.heading}
-        description={frontmatter.description}
-        intro={frontmatter.intro}
-        main={frontmatter.main}
-        testimonials={frontmatter.testimonials}
-        fullImage={frontmatter.full_image}
-        pricing={frontmatter.pricing}
-      />
-    </Layout>
-  );
+		<Layout>
+			<RetreatsPageTemplate
+				image={frontmatter.image}
+				title={frontmatter.title}
+				heading={frontmatter.heading}
+				description={frontmatter.description}
+				content={post.html}
+				contentComponent={HTMLContent}
+				// intro={frontmatter.intro}
+				// main={frontmatter.main}
+				// testimonials={frontmatter.testimonials}
+				// fullImage={frontmatter.full_image}
+				// pricing={frontmatter.pricing}
+			/>
+		</Layout>
+	)
 };
 
 RetreatsPage.propTypes = {
@@ -191,6 +199,7 @@ export default RetreatsPage;
 export const retreatsPageQuery = graphql`
   query RetreatsPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
+      html # this guy's for the converted markdown
       frontmatter {
         title
         image {
@@ -200,18 +209,18 @@ export const retreatsPageQuery = graphql`
         }
         heading
         description
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                gatsbyImageData(width: 240, quality: 64, layout: CONSTRAINED)
-              }
-            }
-            text
-          }
-          heading
-          description
-        }
+        # intro {
+        #   blurbs {
+        #     image {
+        #       childImageSharp {
+        #         gatsbyImageData(width: 240, quality: 64, layout: CONSTRAINED)
+        #       }
+        #     }
+        #     text
+        #   }
+        #   heading
+        #   description
+        # }
         # main {
         #   heading
         #   description

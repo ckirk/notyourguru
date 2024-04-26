@@ -66,7 +66,7 @@ export default TrainingPage;
 export const trainingPageQuery = graphql`
 	query TrainingPage($id: String!) {
 		markdownRemark(id: { eq: $id }) {
-			html
+			html # this guy's for the converted markdown
 			frontmatter {
 				title
 				image {
