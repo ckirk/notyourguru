@@ -10,27 +10,32 @@ intro:
   heading: Discover The Guru In You
   centered: true
   description: >-
-    Not Your Guru Retreats provides the tristate area with the opportunity to
-    escape the chaos of city living and a return to the serenity of nature and
-    our circadian rhythms.  Our retreats are held in the picturesque Hudson
+    Not Your Guru Retreats provides the tristate area with the opportunity
+
+    to escape the chaos of city living and a return to the serenity of nature
+
+    and our circadian rhythms.  Our retreats are held in the picturesque Hudson
+
     Valley, less than 3 hours away from the city, and are led by NYC's top
+
     fitness and wellness instructors. 
+      
+    ###### There are many reasons to give yourself the gift of a Not Your Guru Retreat.
+      
+    &nbsp;
 
 
-    There are many reasons to give yourself the gift of a Not Your Guru Retreat.
-
-
-    These are our top 3!
+    #### These are our top 3!
   features:
     - image: /img/modalities-of-fitness.png
       text: Exposure To Different Modalities of Fitness and Wellness
-      description: "Not Your Guru Retreats offers education for life. Every individual
+      description: Not Your Guru Retreats offers education for life. Every individual
         is unique in their own journey, so the most powerful thing one can
         achieve is a deeper understanding and connection to self.  We are not
         your guru; and no one should be. This is why we offer a range of
         modalities and courses taught by experts across such practices as yoga,
         pilates, nutrition, meditation, and functional training, so you can
-        discover what resonates best with your body and lifestyle. "
+        discover what resonates best with your body and lifestyle.
     - image: /img/capabilities.png
       text: Expand Your Capabilities
       description: Experience yourself at your best and be extraordinary. Expanding

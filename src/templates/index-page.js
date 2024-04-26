@@ -10,6 +10,8 @@ import RetreatRoll from "../components/RetreatRoll"; // latest retreats
 import LandingHeroImage from "../components/LandingHeroImage"; // Hero Image Zone
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
+import Markdown from 'react-markdown' // this library lets us parse markdown to html (well really its converting to a JSX react component)
+
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
 	// image,
@@ -24,8 +26,12 @@ export const IndexPageTemplate = ({
 	showBlog
 }) => {
 	const heroImage = getImage(hero.image) || hero.image
-	console.log('hero:', hero)
-	console.log('getImage():', getImage(hero.image))
+
+
+	// console.log('description', intro.description)
+	// console.log('toHTML():', toHTML(intro.description))
+	// console.log('remark:', remark)
+	// console.log('toHTML():', remark().use(remarkHTML).processSync(intro.description))
 
 	return (
 		<div>
@@ -56,7 +62,8 @@ export const IndexPageTemplate = ({
 										{intro.heading}
 									</h3>
 									<p className={intro.centered && 'has-text-centered is-size-5'}>
-										{intro.description}
+										{/* {toHTML(intro.description)} */}
+										<Markdown>{intro.description}</Markdown>
 									</p>
 								</div>
 							</div>
@@ -81,7 +88,9 @@ export const IndexPageTemplate = ({
 								<div className='column is-8 is-offset-2'>
 									<div className='content'>
 										<h3 className='has-text-weight-semibold is-size-2'>{retreats.heading}</h3>
-										<p className='mb-6 is-size-5'>{retreats.description}</p>
+										<p className='mb-6 is-size-5'>
+											<Markdown>{retreats.description}</Markdown>
+										</p>
 									</div>
 								</div>
 							</div>
@@ -109,7 +118,9 @@ export const IndexPageTemplate = ({
 							<div className='column is-half'>
 								<div className='content'>
 									<h3 className='has-text-weight-semibold is-size-2'>{about.heading}</h3>
-									<p className='is-size-5'>{about.description}</p>
+									<p className='is-size-5'>
+										<Markdown>{about.description}</Markdown>
+									</p>
 									<div className='column is-12 has-text-centered'>
 										<Link className='button is-primary is-outlined' to={about.cta_btn_link}>
 											{about.cta_btn_text}
@@ -130,7 +141,9 @@ export const IndexPageTemplate = ({
 							<div className='column is-8 is-offset-2'>
 								<div className='content'>
 									<h3 className='has-text-weight-semibold is-size-2'>{corporate.heading}</h3>
-									<p className='is-size-5'>{corporate.description}</p>
+									<p className='is-size-5'>
+										<Markdown>{corporate.description}</Markdown>
+									</p>
 									<div className='column is-12 has-text-centered'>
 										<Link className='button is-primary is-outlined' to={corporate.cta_btn_link}>
 											{corporate.cta_btn_text}

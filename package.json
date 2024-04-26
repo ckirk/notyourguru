@@ -16,6 +16,7 @@
     "gatsby-plugin-sharp": "^4.0.0",
     "gatsby-remark-copy-linked-files": "^5.0.0",
     "gatsby-remark-images": "^6.0.0",
+    "gatsby-remark-line-breaks": "^1.0.0",
     "gatsby-remark-relative-images": "^2.0.2",
     "gatsby-source-filesystem": "^4.0.0",
     "gatsby-transformer-remark": "^5.0.0",
@@ -26,6 +27,7 @@
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-helmet": "^6.0.0",
+    "react-markdown": "^8.0.0",
     "sass": "^1.72.0",
     "uuid": "^8.0.0"
   },

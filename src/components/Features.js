@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import Markdown from 'react-markdown' // this library lets us parse markdown to html (well really its converting to a JSX react component)
 
 const Feature = (props) => {
 	const { item } = props
 	const [isTruncated, setIsTruncated] = useState(true)
 
 	const handleToggleTruncate = () => {
-		console.log('BOOM!!!')
+		// console.log('BOOM!!!')
 		setIsTruncated(!isTruncated)
 	}
 
@@ -32,7 +33,7 @@ const Feature = (props) => {
 				<div className='bottom'>
 					{item.description && (
 						<p className={`has-text-justified-desktop ${isTruncated && 'truncated'}`}>
-							{item.description}
+							<Markdown>{item.description}</Markdown>
 						</p>
 					)}
 
