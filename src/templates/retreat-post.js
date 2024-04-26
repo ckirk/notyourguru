@@ -19,6 +19,8 @@ export const RetreatPostTemplate = ({
 	price,
 	tags,
 	helmet,
+	featuredRetreat,
+	soldOut
 	// test
 }) => {
 	const PostContent = contentComponent || Content
@@ -157,6 +159,8 @@ export const retreatQuery = graphql`
 				title
 				subtitle
 				description
+				featuredRetreat
+				soldOut
 				tags
 				featuredimage {
 					childImageSharp {

@@ -8,7 +8,7 @@ endDate: 2024-07-21T19:04:05.631Z
 featuredRetreat: false
 featuredimage: /img/screen-shot-2023-05-25-at-5.39.59-pm.png
 price: 270.99
-featuredpost: false
+soldOut: false
 date: 2024-03-20T04:47:48.945Z
 location: '{"type":"Point","coordinates":[-73.8655797,40.7113502]}'
 tags:

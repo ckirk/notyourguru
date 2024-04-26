@@ -107,6 +107,7 @@ export default function RetreatsRoll() {
 									endDate(formatString: "MMMM DD, YYYY")
 									price
 									featuredRetreat
+									soldOut
 									featuredimage {
 										childImageSharp {
 											gatsbyImageData(width: 600, quality: 100, layout: CONSTRAINED) # CONSTRAINED, FIXED, FULL_WIDTH

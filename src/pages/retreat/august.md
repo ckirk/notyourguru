@@ -7,7 +7,7 @@ startDate: 2024-08-17T00:06:03.997Z
 endDate: 2024-08-19T00:06:04.008Z
 featuredimage: /img/retreats.jpeg
 price: 0
-featuredpost: false
+soldOut: false
 featuredRetreat: false
 location: '{"type":"Point","coordinates":[-88.7652077,39.0412198]}'
 ---

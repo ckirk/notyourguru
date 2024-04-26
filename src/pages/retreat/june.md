@@ -8,7 +8,7 @@ endDate: 2024-06-16T19:11:35.066Z
 featuredRetreat: false
 featuredimage: /img/https___cdn.evbuc.com_images_522930449_268977341116_1_original.jpg
 price: 1250
-featuredpost: false
+soldOut: true
 date: 2024-03-20T04:47:48.945Z
 location: '{"type":"Point","coordinates":[-73.8655797,40.7113502]}'
 tags: []
