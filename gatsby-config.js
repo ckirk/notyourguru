@@ -1,8 +1,7 @@
 module.exports = {
 	siteMetadata: {
 		title: 'Not Your Guru',
-		description:
-			'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+		description: 'Not Your Guru Retreats Curates Experiences For Life!',
 	},
 	plugins: [
 		'gatsby-plugin-react-helmet',
@@ -37,7 +36,7 @@ module.exports = {
 			},
 		},
 		{
-      // I added this to pull in the settings from CMS
+			// I added this to pull in the settings from CMS
 			resolve: 'gatsby-source-filesystem',
 			options: {
 				path: `${__dirname}/src/config`,
@@ -51,8 +50,8 @@ module.exports = {
 			resolve: 'gatsby-transformer-remark',
 			options: {
 				plugins: [
-					'gatsby-remark-relative-images', 
-					'gatsby-remark-line-breaks',
+					'gatsby-remark-relative-images',
+					// 'gatsby-remark-line-breaks',
 					{
 						resolve: 'gatsby-remark-images',
 						options: {

@@ -34,13 +34,20 @@ const RetreatPreview = (props) => {
 									imageInfo={{
 										image: post.frontmatter.featuredimage,
 										alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-										style: { 
-											filter: 'brightness(0.85)' 
-										}
+										style: {
+											filter: 'brightness(0.85)',
+										},
 									}}
 								/>
 								<div className='imgOverlay'>
-									<h2 className='is-size-3 has-text-weight-semibold'>{post.frontmatter.title}</h2>
+									<h2
+										className='is-size-3 is-size-4-mobile has-text-weight-semibold'
+										style={{
+											whiteSpace: 'normal',
+										}}
+									>
+										{post.frontmatter.title}
+									</h2>
 									{/* <p className='has-text-centered'>{post.frontmatter.subtitle}</p> */}
 								</div>
 							</div>
@@ -52,8 +59,11 @@ const RetreatPreview = (props) => {
 				<div className='body'>
 					<div className='post-meta'>
 						<Link
-							className='subtitle has-text-primary is-size-4 has-text-weight-semibold'
+							className='subtitle has-text-primary is-size-4 is-size-5-mobile has-text-weight-semibold'
 							to={post.fields.slug}
+							style={{
+								whiteSpace: 'normal',
+							}}
 						>
 							{post.frontmatter.subtitle}
 						</Link>

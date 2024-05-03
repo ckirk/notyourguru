@@ -49,7 +49,7 @@ export default function LandingHeroImage(props) {
 						objectFit={'cover'}
 						objectPosition={imgPosition}
 						style={{
-							height: '100%',
+							height: '100vh',
 							gridArea: '1/1',
 							// You can set a maximum height for the image, if you wish.
 							maxHeight: height,

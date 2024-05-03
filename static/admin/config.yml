@@ -311,10 +311,10 @@ collections:
         }
       - { label: "Title", name: "title", widget: "string", hint: The display name for the event }
       - { label: "Subtitle", name: "subtitle", widget: "string", hint: A short teaser for the retreat. Shows up in colored text below image on retreat preview tiles }
-      - { label: "Description", name: "description", widget: "text", hint: A short text description of the retreat that shows up in the retreat previews }
+      - { label: "Description", name: "description", widget: "string", hint: A short text description of the retreat that shows up in the retreat previews }
       - { label: "Start Date", name: "startDate", widget: "datetime", hint: The starting date for the event (also used for ordering events)}
       - { label: "End Date", name: "endDate", widget: "datetime", hint: The ending date for the event }
-      - { label: "Featured", name: "featuredRetreat", widget: "boolean", hint: 'A "featured" event could be highlighted or placed more prominently on the site (not active)' }
+      - { label: "Featured", name: "featuredRetreat", widget: "boolean", required: false, hint: 'A "featured" event could be highlighted or placed more prominently on the site (not active)' }
       - { label: "Sold Out", name: "soldOut", widget: "boolean", required: false, hint: Check if sold out and retreat will display as sold out (not implemented)' }
       - { label: "Featured Image", name: "featuredimage", widget: image, hint: The image associated with the retreat }
       - { 

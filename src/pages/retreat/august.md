@@ -5,12 +5,14 @@ subtitle: Hudson Valley Mind, Body, Soul Reset Series (3/3)
 description: 8 spots available
 startDate: 2024-08-17T00:06:03.997Z
 endDate: 2024-08-19T00:06:04.008Z
+featuredRetreat: false
+soldOut: false
 featuredimage: /img/retreats.jpeg
 price: 0
-soldOut: false
-featuredRetreat: false
 location: '{"type":"Point","coordinates":[-88.7652077,39.0412198]}'
 ---
+#### What's Included:
+
 * 7 Organic meals prepared by a nutritionist (Fri Snacks/Dinner, Sat Breakfast/Lunch/Dinner, Sun Breakfast and Lunch)
 * 2 Strength training workouts + protein shakes
 * 2 yoga sessions

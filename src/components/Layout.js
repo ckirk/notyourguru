@@ -17,11 +17,9 @@ const TemplateWrapper = (props) => {
 			<Helmet>
 				<html lang='en' data-theme='light' /> {/* force light mode */}
 				<title>{title}</title>
+				{/* description info comes from graphql via gatsby-config.js */}
 				<meta name='description' content={description} />
-				<link 
-					rel="shortcut icon" 
-					href={`${withPrefix('/')}img/favicon.ico`}
-				/>
+				<link rel='shortcut icon' href={`${withPrefix('/')}img/favicon.ico`} />
 				<link
 					rel='apple-touch-icon'
 					sizes='180x180'
@@ -44,11 +42,13 @@ const TemplateWrapper = (props) => {
 					href={`${withPrefix('/')}img/safari-pinned-tab.svg`}
 					color='#5bbad5'
 				/>
-				<meta name='theme-color' content='#fff' />
-				<meta property='og:type' content='business.business' />
+				<meta name='theme-color' content='#439294' />
+				<meta property='og:type' content='website' />
 				<meta property='og:title' content={title} />
+				<meta property='og:description' content={description} />
 				<meta property='og:url' content='/' />
-				<meta property='og:image' content={`${withPrefix('/')}img/og-image.jpg`} />
+				{/* preview thumbnail image */}
+				<meta property='og:image' content={`${withPrefix('/')}img/logo_500.jpg`} />
 				{/* <!-- Start of HubSpot Embed Code --> */}
 				<script
 					type='text/javascript'

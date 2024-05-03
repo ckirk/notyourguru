@@ -92,6 +92,13 @@ export const IndexPageTemplate = ({
 											<Markdown>{retreats.description}</Markdown>
 										</p>
 									</div>
+									<div className='column is-12 has-text-centered'>
+										
+										{/* Hubspot Popup Trigger Button */}
+										<button className='button is-primary is-medium hs-cta-trigger-button hs-cta-trigger-button-165573647794'>
+											Reserve Your Spot Today
+										</button>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -99,7 +106,7 @@ export const IndexPageTemplate = ({
 					<RetreatRoll />
 					<section className='section'>
 						<div className='column is-12 has-text-centered'>
-							<Link className='button is-primary is-outlined' to='/retreats'>
+							<Link className='button is-primary is-medium' to='/retreats'>
 								{retreats.cta_btn_text}
 							</Link>
 						</div>
