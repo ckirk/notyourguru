@@ -16,6 +16,16 @@ export default function LandingHeroImage(props) {
 		cta_btn_link
   } = props;
 
+	// display different hero image heights depending on mobile vs desktop
+	const calcHeight = () => {
+		// mobile
+		if (window.innerWidth <= 768) {
+			return '50vh' // mobile
+		} else {
+			return height // desktop
+		}
+	}
+
   return (
 		<>
 			<div
@@ -49,7 +59,7 @@ export default function LandingHeroImage(props) {
 						objectFit={'cover'}
 						objectPosition={imgPosition}
 						style={{
-							height: '100vh',
+							height: calcHeight(),
 							gridArea: '1/1',
 							// You can set a maximum height for the image, if you wish.
 							maxHeight: height,
