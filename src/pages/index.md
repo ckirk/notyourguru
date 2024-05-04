@@ -77,9 +77,12 @@ about:
   enabled: true
   heading: About Me
   description: >-
-    I have been professionally involved in the world of fitness since the age of
-    23 in 2010.  I have also been involved in the journey of personal healing my
-    whole life after a tragedy that rocked my family when I was a toddler. 
+    I have always used physicality and exercise as a way to manage my early
+    childhood trauma. My entire life is a journey of personal healing after a
+    tragedy that rocked my family when I was a toddler. 
+
+
+    I got professionally involved in the world of fitness at the age of 23 in 2010.
 
 
     It wasn’t until I learned how connected my emotional body and physical body are, and what it means to nourish these two bodies, that I learned to thrive in my circumstances. 
