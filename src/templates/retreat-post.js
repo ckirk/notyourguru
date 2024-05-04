@@ -5,13 +5,14 @@ import { Helmet } from "react-helmet";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
+import { useEffect } from 'react'
 
 // Template for individual post (on its own page)
 // eslint-disable-next-line
 export const RetreatPostTemplate = ({
 	title,
 	subtitle,
-  startDate,
+	startDate,
 	endDate,
 	content,
 	contentComponent,
@@ -20,11 +21,21 @@ export const RetreatPostTemplate = ({
 	tags,
 	helmet,
 	featuredRetreat,
-	soldOut
+	soldOut,
 	// test
 }) => {
 	const PostContent = contentComponent || Content
 	// console.log('entry:', test)
+
+	useEffect(() => {
+		setTimeout(() => {
+			// force reset of hubspot js so that new buttons will be parsed without forcing a page refresh
+			window.hubspot_web_interactives_running = false
+			var script = document.createElement('script')
+			script.src = 'https://js.hubspot.com/web-interactives-embed.js'
+			document.body.appendChild(script)
+		}, 500) // wait for dom to finish loading
+	}, []) // Empty dependency array means this effect runs only once after the component mounts
 
 	return (
 		<section className='section'>
@@ -50,7 +61,6 @@ export const RetreatPostTemplate = ({
 
 						<section className='section'>
 							<div className='column is-12 has-text-centered'>
-								
 								{/* Hubspot Popup Trigger Button */}
 								<button className='button is-primary is-medium hs-cta-trigger-button hs-cta-trigger-button-165573647794'>
 									Reserve Your Spot Today

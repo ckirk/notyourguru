@@ -10,28 +10,38 @@ import Pricing from "../components/Pricing";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 import FullWidthImage from "../components/FullWidthImage";
 import RetreatRoll from "../components/RetreatRoll"; // a few recent blogs
+import { useEffect } from 'react'
 
 
 // eslint-disable-next-line
 export const RetreatsPageTemplate = ({
-  image,
-  title,
-  heading,
-  description,
-  content,
-  contentComponent,
-  // intro,
-  // main,
-  // testimonials,
-  // fullImage,
-  // pricing,
+	image,
+	title,
+	heading,
+	description,
+	content,
+	contentComponent,
+	// intro,
+	// main,
+	// testimonials,
+	// fullImage,
+	// pricing,
 }) => {
+	const PageContent = contentComponent || Content
+	const heroImage = getImage(image) || image
+	// const fullWidthImage = getImage(fullImage) || fullImage;
 
-  const PageContent = contentComponent || Content
-  const heroImage = getImage(image) || image;
-  // const fullWidthImage = getImage(fullImage) || fullImage;
+	useEffect(() => {
+		setTimeout(() => {
+			// force reset of hubspot js so that new buttons will be parsed without forcing a page refresh
+			window.hubspot_web_interactives_running = false
+			var script = document.createElement('script')
+			script.src = 'https://js.hubspot.com/web-interactives-embed.js'
+			document.body.appendChild(script)
+		}, 500) // wait for dom to finish loading
+	}, []) // Empty dependency array means this effect runs only once after the component mounts
 
-  return (
+	return (
 		<div className='content'>
 			<FullWidthImage img={heroImage} title={title} />
 
@@ -102,11 +112,8 @@ export const RetreatsPageTemplate = ({
 
 			<section className='section'>
 				<div className='column is-12 has-text-centered'>
-          
-          {/* Hubspot Popup Trigger Button */}
-					<button
-						className='button is-primary is-medium hs-cta-trigger-button hs-cta-trigger-button-165573647794'
-					>
+					{/* Hubspot Popup Trigger Button */}
+					<button className='button is-primary is-medium hs-cta-trigger-button hs-cta-trigger-button-165573647794'>
 						Reserve Your Spot Today
 					</button>
 				</div>
