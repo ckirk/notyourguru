@@ -28,7 +28,7 @@ intro:
     #### These are our top 3!
   features:
     - image: /img/modalities-of-fitness.png
-      text: Exposure To Different Modalities of Fitness and Wellness
+      text: Learn Our Holistic Best Practices
       description: Not Your Guru Retreats offers education for life. Every individual
         is unique in their own journey, so the most powerful thing one can
         achieve is a deeper understanding and connection to self.  We are not
@@ -68,16 +68,17 @@ retreats:
   enabled: true
 about:
   enabled: true
-  heading: About Our Founder
+  heading: About Me
   description: >-
-    If you are reading this then something about this page has captured your
-    interest, and for that I am grateful. My name is Jesse, and I started "Not
-    Your Guru" as a philosophy rooted in the belief that true wellness comes
-    from empowering individuals to cultivate a deeper connection within
-    themselves. 
+    I have been professionally involved in the world of fitness since the age of
+    23 in 2010.  I have also been involved in the journey of personal healing my
+    whole life after a tragedy that rocked my family when I was a toddler. 
 
 
-    As a personal trainer and wellness coach practitioner, I offer a diverse range of services, including in-person training, online coaching, transformative retreats, and ready-made training programs. My approach is not about providing quick fixes or being someone's guru; rather, it's about equipping individuals with the tools they need to navigate their own journey towards physical and emotional well-being. With a lifetime of learning and personal experience in both realms, my objective is to foster a supportive environment where clients can discover their inner strength, resilience, and self-awareness.
+    It wasn’t until I learned how connected my emotional body and physical body are, and what it means to nourish these two bodies, that I learned to thrive in my circumstances. 
+
+
+    To learn more about my story click here.
   image: /img/jessepic.jpg
   cta_btn_text: Contact Jesse about 1 on 1 services
   cta_btn_link: /contact
