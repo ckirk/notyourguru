@@ -14,7 +14,7 @@ intro:
     life?* 
 
 
-    We are not your guru, because nobody should be. But we can help you discover the guru in you.
+    We are not your guru, because nobody should be. But we can help you **discover the guru in you.**
 
 
     ***Not Your Guru Retreats*** provides the tristate area with the opportunity
@@ -24,10 +24,6 @@ intro:
     and our circadian rhythms. 
 
      Our retreats are held in the picturesque **Hudson Valley,** less than 3 hours away from the city, and are led by **NYC's top fitness and wellness instructors.** 
-
-
-
-
 
     ###### There are many reasons to give yourself the gift of a Not Your Guru Retreat.&nbsp;
 
