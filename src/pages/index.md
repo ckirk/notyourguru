@@ -4,7 +4,7 @@ hero:
   title: Live Inspired
   subtitle: Not Your Guru Retreats Curates Experiences For Life!
   image: /img/silhouette_centered.jpg
-  cta_btn_text: Find Your Retreat
+  cta_btn_text: Join The Waitlist!
   cta_btn_link: /retreats
 intro:
   heading: Discover The Guru In You
