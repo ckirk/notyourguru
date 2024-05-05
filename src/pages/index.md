@@ -60,7 +60,7 @@ intro:
 retreats:
   heading: "Upcoming Retreats! "
   description: >-
-    Join us this summer for our Mind, Body, Soul Reset Series! 
+    Join us this summer for our **Mind, Body, Soul Reset Series!** 
 
 
     Embark on a transformative journey where **exercise is a gateway to understanding our body's capabilities**, complemented by immersive experiences in meditation, yoga, hot and cold exposure, invigorating hikes, and more. This experience is suitable for all levels!
