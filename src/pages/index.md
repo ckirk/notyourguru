@@ -10,7 +10,7 @@ intro:
   heading: "Is Life Happening To You or Are You Living An Inspired Life? "
   centered: true
   description: >-
-    We are not your guru, because nobody should be. But we can help you
+    We are not your guru, because nobody should be; but we can help you
     **discover the guru in you.**
 
 
