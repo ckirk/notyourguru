@@ -7,7 +7,7 @@ hero:
   cta_btn_text: Check Availability!
   cta_btn_link: /retreats
 intro:
-  heading: "Does Life Happen To You or Are You Living An Inspired Life? "
+  heading: "Is Life Happening To You or Are You Living An Inspired Life? "
   centered: true
   description: >-
     We are not your guru, because nobody should be. But we can help you
