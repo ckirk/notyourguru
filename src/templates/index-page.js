@@ -9,6 +9,7 @@ import BlogRoll from "../components/BlogRoll"; // a few recent blogs
 import RetreatRoll from "../components/RetreatRoll"; // latest retreats
 import LandingHeroImage from "../components/LandingHeroImage"; // Hero Image Zone
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import { useEffect } from 'react'
 
 import Markdown from 'react-markdown' // this library lets us parse markdown to html (well really its converting to a JSX react component)
 
@@ -23,10 +24,19 @@ export const IndexPageTemplate = ({
 	about,
 	corporate,
 	reviews,
-	showBlog
+	showBlog,
 }) => {
 	const heroImage = getImage(hero.image) || hero.image
 
+	useEffect(() => {
+		setTimeout(() => {
+			// force reset of hubspot js so that new buttons will be parsed without forcing a page refresh
+			window.hubspot_web_interactives_running = false
+			var script = document.createElement('script')
+			script.src = 'https://js.hubspot.com/web-interactives-embed.js'
+			document.body.appendChild(script)
+		}, 500) // wait for dom to finish loading
+	}, []) // Empty dependency array means this effect runs only once after the component mounts
 
 	// console.log('description', intro.description)
 	// console.log('toHTML():', toHTML(intro.description))
@@ -93,7 +103,6 @@ export const IndexPageTemplate = ({
 										</p>
 									</div>
 									<div className='column is-12 has-text-centered'>
-										
 										{/* Hubspot Popup Trigger Button */}
 										<button className='button is-primary is-medium hs-cta-trigger-button hs-cta-trigger-button-165573647794'>
 											Reserve Your Spot Today
