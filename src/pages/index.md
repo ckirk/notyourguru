@@ -48,10 +48,10 @@ intro:
         tailored to your individual abilities."
     - image: /img/connection.png
       text: Connection to Self, Others, and Nature
-      description: Remove yourself from the hustle and bustle of every day life, where
-        **many of us spend our days looking right through other people**, and
-        take time to **connect to yourself, others, and nature.** Connection and
-        presence is essential for cultivating inner peace, fostering meaningful
+      description: Remove yourself from the toxicity of every day life, where **many
+        people spend our days looking right through other people.** Take time to
+        **connect to yourself, others, and nature.** Connection and presence is
+        essential for cultivating inner peace, fostering meaningful
         relationships, and experiencing the profound beauty of the natural
         world. Encountering other like-minded individuals in a serene retreat
         setting not only encourages camaraderie but also provides opportunities
