@@ -20,7 +20,9 @@ intro:
 
     and our circadian rhythms. 
 
-     Our retreats are held in the picturesque **Hudson Valley,** less than 3 hours away from the city, and are led by **NYC's top fitness and wellness instructors.** 
+
+    Our retreats are held in the picturesque **Hudson Valley,** less than 3 hours away from the city, and are led by **NYC's top fitness and wellness instructors.** 
+
 
     There are many reasons to **give yourself the gift of a Not Your Guru Retreat**.
 
@@ -48,14 +50,14 @@ intro:
         tailored to your individual abilities."
     - image: /img/connection.png
       text: Connection to Self, Others, and Nature
-      description: Remove yourself from the toxicity of every day life, where **many
-        people spend our days looking right through other people.** Take time to
-        **connect to yourself, others, and nature.** Connection and presence is
-        essential for cultivating inner peace, fostering meaningful
+      description: "**How** **many people spend their days looking right through other
+        people?** Remove yourself from the toxicity of every day life, and take
+        the time to **connect to yourself, others, and nature.** Connection and
+        presence is essential for cultivating inner peace, fostering meaningful
         relationships, and experiencing the profound beauty of the natural
         world. Encountering other like-minded individuals in a serene retreat
         setting not only encourages camaraderie but also provides opportunities
-        for shared growth, support, and inspiration.
+        for shared growth, support, and inspiration."
   enabled: true
 retreats:
   heading: "Upcoming Retreats! "
