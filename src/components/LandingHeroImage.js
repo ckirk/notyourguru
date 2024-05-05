@@ -18,11 +18,14 @@ export default function LandingHeroImage(props) {
 
 	// display different hero image heights depending on mobile vs desktop
 	const calcHeight = () => {
-		// mobile
-		if (window.innerWidth <= 768) {
-			return '50vh' // mobile
-		} else {
-			return height // desktop
+		// ensure widow is defined (execute in browser, not node.js)
+		if (typeof window !== 'undefined') {
+			if (window.innerWidth <= 768) {
+				// mobile
+				return '50vh' // mobile
+			} else {
+				return height // desktop
+			}
 		}
 	}
 
