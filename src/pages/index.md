@@ -4,17 +4,14 @@ hero:
   title: Live Inspired
   subtitle: Not Your Guru Retreats Curates Experiences For Life!
   image: /img/silhouette_centered.jpg
-  cta_btn_text: Join The Waitlist!
+  cta_btn_text: Check Availability!
   cta_btn_link: /retreats
 intro:
-  heading: Discover The Guru In You
+  heading: "Is Life To Happening To You or Are You Living An Inspired Life? "
   centered: true
   description: >-
-    Are you allowing life to happen to you or *are you living an inspired
-    life?* 
-
-
-    We are not your guru, because nobody should be. But we can help you **discover the guru in you.**
+    We are not your guru, because nobody should be. But we can help you
+    **discover the guru in you.**
 
 
     ***Not Your Guru Retreats*** provides the tristate area with the opportunity
@@ -25,10 +22,10 @@ intro:
 
      Our retreats are held in the picturesque **Hudson Valley,** less than 3 hours away from the city, and are led by **NYC's top fitness and wellness instructors.** 
 
-    ###### There are many reasons to give yourself the gift of a Not Your Guru Retreat.&nbsp;
+    There are many reasons to **give yourself the gift of a Not Your Guru Retreat**.
 
 
-    #### These are our top 3!
+    ###### These are our top 3!
   features:
     - image: /img/modalities-of-fitness.png
       text: Learn Our Holistic Best Practices
