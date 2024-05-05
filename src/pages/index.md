@@ -30,7 +30,7 @@ intro:
     **These are our top 3!**
   features:
     - image: /img/modalities-of-fitness.png
-      text: Learn Our Holistic Best Practices
+      text: Discover Your Holistic Best Practices
       description: "**Not Your Guru Retreats offers education for life**. Every
         individual is unique in their own journey, so the most powerful thing
         one can achieve is a deeper understanding and connection to self.  **We
