@@ -4,31 +4,34 @@ hero:
   title: Live Inspired
   subtitle: Not Your Guru Retreats Curates Experiences For Life!
   image: /img/silhouette_centered.jpg
-  cta_btn_text: Find Your Retreat
+  cta_btn_text: Join The Waitlist!
   cta_btn_link: /retreats
 intro:
   heading: Discover The Guru In You
   centered: true
   description: >-
-    Not Your Guru Retreats provides the tristate area with the opportunity
+    Are you allowing life to happen to you or *are you living an inspired
+    life?* 
+
+
+    We are not your guru, because nobody should be. But we can help you **discover the guru in you.**
+
+
+    ***Not Your Guru Retreats*** provides the tristate area with the opportunity
 
     to escape the chaos of city living and a return to the serenity of nature
 
-    and our circadian rhythms.  Our retreats are held in the picturesque Hudson
+    and our circadian rhythms. 
 
-    Valley, less than 3 hours away from the city, and are led by NYC's top
+     Our retreats are held in the picturesque **Hudson Valley,** less than 3 hours away from the city, and are led by **NYC's top fitness and wellness instructors.** 
 
-    fitness and wellness instructors. 
-      
-    ###### There are many reasons to give yourself the gift of a Not Your Guru Retreat.
-      
-    &nbsp;
+    ###### There are many reasons to give yourself the gift of a Not Your Guru Retreat.&nbsp;
 
 
     #### These are our top 3!
   features:
     - image: /img/modalities-of-fitness.png
-      text: Exposure To Different Modalities of Fitness and Wellness
+      text: Learn Our Holistic Best Practices
       description: Not Your Guru Retreats offers education for life. Every individual
         is unique in their own journey, so the most powerful thing one can
         achieve is a deeper understanding and connection to self.  We are not
@@ -68,16 +71,20 @@ retreats:
   enabled: true
 about:
   enabled: true
-  heading: About Our Founder
+  heading: About Me
   description: >-
-    If you are reading this then something about this page has captured your
-    interest, and for that I am grateful. My name is Jesse, and I started "Not
-    Your Guru" as a philosophy rooted in the belief that true wellness comes
-    from empowering individuals to cultivate a deeper connection within
-    themselves. 
+    I have always used physicality and exercise as a way to manage my early
+    childhood trauma. My entire life is a journey of personal healing after a
+    tragedy that rocked my family when I was a toddler. 
 
 
-    As a personal trainer and wellness coach practitioner, I offer a diverse range of services, including in-person training, online coaching, transformative retreats, and ready-made training programs. My approach is not about providing quick fixes or being someone's guru; rather, it's about equipping individuals with the tools they need to navigate their own journey towards physical and emotional well-being. With a lifetime of learning and personal experience in both realms, my objective is to foster a supportive environment where clients can discover their inner strength, resilience, and self-awareness.
+    I got professionally involved in the world of fitness at the age of 23 in 2010.
+
+
+    It wasn’t until I learned how connected my emotional body and physical body are, and what it means to nourish these two bodies, that I learned to thrive in my circumstances. 
+
+
+    To learn more about my story click here.
   image: /img/jessepic.jpg
   cta_btn_text: Contact Jesse about 1 on 1 services
   cta_btn_link: /contact
