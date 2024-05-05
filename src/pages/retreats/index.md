@@ -5,13 +5,17 @@ image: /img/retreats2.jpeg
 heading: Mind, Body, Soul Reset Series
 path: /retreats
 ---
-Join us this summer for our Mind, Body, Soul Reset Series! Embark on a transformative journey where exercise becomes a gateway to understanding our body's capabilities, complemented by immersive experiences in meditation, yoga, hot and cold exposure, invigorating hikes, and more. This experience is suitable for all levels!
+**Join us this summer for our Mind, Body, Soul Reset Series!** Embark on a transformative journey where **exercise is a gateway to understanding our body's capabilities**, complemented by immersive experiences in **meditation, yoga, hot and cold exposure, invigorating hikes, and more.** This experience is suitable for all levels!
 
-“A teacher is never a giver of truth; he is a guide, a pointer to the truth that each student must find for himself.” - Bruce Lee
+Day 1 - Connection to Self
 
-Here is a list of what you can expect from a Not Your Guru Retreat experience
+Day 2 - Connection to Others and to the Natural World
 
+Day 3 - Living in an Empowered State
 
+##### “A teacher is never a giver of truth; he is a guide, a pointer to the truth that each student must find for himself.” - Bruce Lee
+
+Here is what you can expect from ***Not Your Guru Retreat's Mind, Body, Soul Reset series!***
 
 * 7 Organic meals prepared by a nutritionist 
 * 2 Strength training workouts + protein shakes
@@ -26,13 +30,3 @@ Here is a list of what you can expect from a Not Your Guru Retreat experience
 * 2 "Coaching Sessions" - Dialogues of Empowerment
 * Working with the 5 senses
 * Lodging (transportation not included)
-
-
-
-Broken down even further, here are the themes for each day.
-
-Day 1 - Connection to Self
-
-Day 2 - Connection to Others and to the Natural World
-
-Day 3 - Living in an Empowered State
