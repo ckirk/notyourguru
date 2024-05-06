@@ -10,8 +10,8 @@ intro:
   heading: "Is Life Happening To You or Are You Living An Inspired Life? "
   centered: true
   description: >-
-    We are not your guru, because nobody should be; but we can help you
-    **discover the guru in you.**
+    We are not your guru, because nobody should be; but we can help **discover
+    the guru in you.**
 
 
     ***Not Your Guru Retreats*** provides the tristate area with the opportunity
