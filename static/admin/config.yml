@@ -8,7 +8,7 @@ backend:
     uploadMedia: "[skip ci] Upload “{{path}}”"
     deleteMedia: "[skip ci] Delete “{{path}}”"
 
-publish_mode: editorial_workflow # simple | editorial_workflow
+publish_mode: simple # simple | editorial_workflow
 local_backend: true
 media_folder: static/img
 public_folder: /img
@@ -263,6 +263,20 @@ collections:
               name: "templateKey",
               widget: "hidden",
               default: "training-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: Image, name: image, widget: image }
+          - { label: "Body", name: "body", widget: "markdown" }
+
+      - file: "src/pages/contact/index.md"
+        label: "Contact Page"
+        name: "contact"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "contact-page",
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: Image, name: image, widget: image }

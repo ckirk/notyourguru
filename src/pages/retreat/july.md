@@ -1,13 +1,13 @@
 ---
 templateKey: retreat-post
 title: Hudson Valley Mind, Body, Soul Reset Series (July)
-subtitle: Get centered in a rustic mountain town.
-description: Enrollment Now Open - 5 spots available
+subtitle: " Hudson Valley Mind, Body, Soul Reset Series (2/3)"
+description: Enrollment Is Now Open - 5 spots available
 startDate: 2024-07-19T19:04:05.619Z
 endDate: 2024-07-21T19:04:05.631Z
 featuredRetreat: false
 featuredimage: /img/https___cdn.evbuc.com_images_522930449_268977341116_1_original.jpg
-price: 1250
+price: 0
 featuredpost: false
 date: 2024-03-20T04:47:48.945Z
 location: '{"type":"Point","coordinates":[-73.8655797,40.7113502]}'
@@ -15,8 +15,6 @@ tags:
   - test
   - lorem
 ---
-![](/img/montana.jpeg)
-
 #### What's Included:
 
 * 7 Organic meals prepared by a nutritionist (Fri Snacks/Dinner, Sat Breakfast/Lunch/Dinner, Sun Breakfast and Lunch)
@@ -32,8 +30,6 @@ tags:
 * Working with the 5 senses
 * 3 powerful meditations
 * Lodging (transportation not included)
-
-
 
 ##### Daily Themes
 

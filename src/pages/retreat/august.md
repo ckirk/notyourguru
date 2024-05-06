@@ -2,7 +2,7 @@
 templateKey: retreat-post
 title: Hudson Valley Mind, Body, Soul Reset Series (August)
 subtitle: Hudson Valley Mind, Body, Soul Reset Series (3/3)
-description: Enrollment is now open - 8 spots available
+description: Enrollment Is Now Open - 8 spots available
 startDate: 2024-08-17T00:06:03.997Z
 endDate: 2024-08-19T00:06:04.008Z
 featuredRetreat: false
