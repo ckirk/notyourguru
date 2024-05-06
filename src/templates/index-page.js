@@ -113,7 +113,7 @@ export const IndexPageTemplate = ({
 						</div>
 					</section>
 					<RetreatRoll />
-					<section className='section'>
+					<section className='section pt-0'>
 						<div className='column is-12 has-text-centered'>
 							<Link className='button is-primary is-medium' to='/retreats'>
 								{retreats.cta_btn_text}

@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
+import soldOut from '../img/sold_out.png'
+
 
 // Template for showing multiple retreats on a page
 const RetreatsRollTemplate = (props) => {
@@ -35,18 +37,31 @@ const RetreatPreview = (props) => {
 										image: post.frontmatter.featuredimage,
 										alt: `featured image thumbnail for post ${post.frontmatter.title}`,
 										style: {
-											filter: 'brightness(0.85)',
+											// filter: 'brightness(0.85)',
 										},
 									}}
 								/>
 								<div className='imgOverlay'>
+									{post.frontmatter.soldOut && (
+										<PreviewCompatibleImage
+											imageInfo={{
+												image: soldOut,
+												alt: 'Sold Out',
+												style: {
+													padding: '30px'
+													// filter: 'brightness(0.85)',
+												},
+											}}
+										/>
+									)}
+
 									<h2
 										className='is-size-3 is-size-4-mobile has-text-weight-semibold'
 										style={{
 											whiteSpace: 'normal',
 										}}
 									>
-										{post.frontmatter.title}
+										{/* {post.frontmatter.title} */}
 									</h2>
 									{/* <p className='has-text-centered'>{post.frontmatter.subtitle}</p> */}
 								</div>
@@ -65,7 +80,7 @@ const RetreatPreview = (props) => {
 								whiteSpace: 'normal',
 							}}
 						>
-							{post.frontmatter.subtitle}
+							{post.frontmatter.title}
 						</Link>
 						<p className='is-size-5 is-block dates'>
 							{`${post.frontmatter.startDate} - ${post.frontmatter.endDate}`}

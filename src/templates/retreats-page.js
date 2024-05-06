@@ -53,6 +53,12 @@ export const RetreatsPageTemplate = ({
 						<PageContent className='content' content={content} />
 					</div>
 				</div>
+				<div className='column is-12 has-text-centered'>
+					{/* Hubspot Popup Trigger Button */}
+					<button className='button mt-5 is-primary is-medium hs-cta-trigger-button hs-cta-trigger-button-165573647794'>
+						Reserve Your Spot Today
+					</button>
+				</div>
 			</section>
 
 			{/* Upcomnig Retreats */}
@@ -110,7 +116,7 @@ export const RetreatsPageTemplate = ({
 				</div>
 			</section> */}
 
-			<section className='section'>
+			<section className='section pt-0'>
 				<div className='column is-12 has-text-centered'>
 					{/* Hubspot Popup Trigger Button */}
 					<button className='button is-primary is-medium hs-cta-trigger-button hs-cta-trigger-button-165573647794'>

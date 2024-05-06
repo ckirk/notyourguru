@@ -39,7 +39,7 @@ const Feature = (props) => {
 
 					<div className='column is-12 has-text-centered'>
 						<div className='button is-primary is-outlined' onClick={handleToggleTruncate}>
-							{isTruncated ? 'Show More' : 'Show Less'}
+							{isTruncated ? 'Learn More' : 'Show Less'}
 						</div>
 					</div>
 				</div>
