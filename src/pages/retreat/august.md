@@ -2,13 +2,13 @@
 templateKey: retreat-post
 title: Hudson Valley Mind, Body, Soul Reset Series (August)
 subtitle: Hudson Valley Mind, Body, Soul Reset Series (3/3)
-description: 8 spots available
+description: Enrollment is now open - 8 spots available
 startDate: 2024-08-17T00:06:03.997Z
 endDate: 2024-08-19T00:06:04.008Z
 featuredRetreat: false
 soldOut: false
 featuredimage: /img/retreats.jpeg
-price: 0
+price: 1250
 location: '{"type":"Point","coordinates":[-88.7652077,39.0412198]}'
 ---
 #### What's Included:
@@ -26,3 +26,13 @@ location: '{"type":"Point","coordinates":[-88.7652077,39.0412198]}'
 * Working with the 5 senses
 * 3 powerful meditations
 * Lodging (transportation not included)
+
+
+
+##### Daily Themes
+
+Day 1 - Connection to Self
+
+Day 2 - Connection to Others and Nature
+
+Day 3 - Living in an Empowered State
