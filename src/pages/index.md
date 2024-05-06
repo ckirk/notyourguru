@@ -27,7 +27,7 @@ intro:
     There are many reasons to **give yourself the gift of a Not Your Guru Retreat**.
 
 
-    **These are our top 3!**
+    ### **These are our top 3!**
   features:
     - image: /img/modalities-of-fitness.png
       text: Discover Your Holistic Best Practices
