@@ -32,6 +32,7 @@ const Footer = () => {
 							coaching
 							programs
 							training
+							about
 						}
 						socials {
 							facebook {
@@ -84,11 +85,11 @@ const Footer = () => {
 						to='/'
 						title='Logo'
 						style={{
-								flex: '0 0 auto',
-								width: '100px',
-								borderRadius: '6px',
-								overflow: 'hidden'
-							}}
+							flex: '0 0 auto',
+							width: '100px',
+							borderRadius: '6px',
+							overflow: 'hidden',
+						}}
 					>
 						<GatsbyImage
 							image={logo}
@@ -146,6 +147,13 @@ const Footer = () => {
 						<div className='column is-4'>
 							<section className='menu'>
 								<ul className='menu-list'>
+									
+									{menu.about && (
+										<li>
+											<Link to='/about'>About</Link>
+										</li>
+									)}
+
 									{menu.blog && (
 										<li>
 											<Link to='/blog'>Blog</Link>

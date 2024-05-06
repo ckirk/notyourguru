@@ -23,6 +23,7 @@ CMS.registerPreviewTemplate('retreats', RetreatsPagePreview)
 CMS.registerPreviewTemplate('training', SimplePagePreview) // using common SimplePagePreview template for now
 CMS.registerPreviewTemplate('coaching', SimplePagePreview) // using common SimplePagePreview template for now
 CMS.registerPreviewTemplate('contact', SimplePagePreview) // using common SimplePagePreview template for now
+CMS.registerPreviewTemplate('about', SimplePagePreview) // using common SimplePagePreview template for now
 CMS.registerPreviewTemplate('programs', SimplePagePreview) // using common SimplePagePreview template for now
 
 // Collections

@@ -282,6 +282,20 @@ collections:
           - { label: Image, name: image, widget: image }
           - { label: "Body", name: "body", widget: "markdown" }
 
+      - file: "src/pages/about/index.md"
+        label: "About Page"
+        name: "about"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "about-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: Image, name: image, widget: image }
+          - { label: "Body", name: "body", widget: "markdown" }
+
       - file: "src/pages/coaching/index.md"
         label: "Online Coaching"
         name: "coaching"
@@ -402,6 +416,7 @@ collections:
             },
             { label: Home, name: home, widget: boolean },
             { label: Training, name: training, widget: boolean },
+            { label: About, name: about, widget: boolean },
             { label: Coaching, name: coaching, widget: boolean },
             { label: Ready-Made Programs, name: programs, widget: boolean },
             { label: Blog, name: blog, widget: boolean },

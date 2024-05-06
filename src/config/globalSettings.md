@@ -8,6 +8,7 @@ menu:
   training: true
   coaching: false
   programs: false
+  about: false
   blog: false
 socials:
   facebook:
@@ -22,3 +23,4 @@ socials:
   youtube:
     link: https://www.youtube.com/
     enabled: false
+---

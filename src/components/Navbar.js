@@ -29,6 +29,7 @@ const Navbar = (props) => {
 							coaching
 							programs
 							training
+							about
 						}
 						logo {
 							childImageSharp {
@@ -63,10 +64,10 @@ const Navbar = (props) => {
 								height: '40px',
 								marginRight: '10px',
 								borderRadius: '6px',
-								overflow: 'hidden'
+								overflow: 'hidden',
 							}}
 							imgStyle={{
-								maxHeight: '40px'
+								maxHeight: '40px',
 							}}
 							alt=''
 							formats={['auto', 'webp', 'avif']}
@@ -125,6 +126,12 @@ const Navbar = (props) => {
 					{menu.programs && (
 						<Link className='navbar-item' to='/programs' activeClassName='is-selected'>
 							Ready-Made Programs
+						</Link>
+					)}
+
+					{menu.about && (
+						<Link className='navbar-item' to='/about' activeClassName='is-selected'>
+							About
 						</Link>
 					)}
 
