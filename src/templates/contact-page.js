@@ -18,11 +18,11 @@ export const ContactPageTemplate = ({ title, image, content, contentComponent, s
 	const PageContent = contentComponent || Content
 	const heroImage = getImage(image) || image
 
-	const [isValidated, setIsValidated] = useState(false)
+	const [formData, setFormData] = useState({})
 
 
 	const handleChange = (e) => {
-		setIsValidated({ [e.target.name]: e.target.value })
+		setFormData({ ...formData, [e.target.name]: e.target.value })
 	}
 
 	const handleSubmit = (e) => {
@@ -33,7 +33,7 @@ export const ContactPageTemplate = ({ title, image, content, contentComponent, s
 			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
 			body: encode({
 				'form-name': form.getAttribute('name'),
-				...state,
+				...formData,
 			}),
 		})
 			.then(() => navigate(form.getAttribute('action')))
