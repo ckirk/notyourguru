@@ -15,26 +15,27 @@ tags:
   - test
   - lorem
 ---
-#### What's Included:
+### The Retreat is Broken Up Into Daily Themes
 
-* 7 Organic meals prepared by a nutritionist (Fri Snacks/Dinner, Sat Breakfast/Lunch/Dinner, Sun Breakfast and Lunch)
-* 2 Strength training workouts + protein shakes
-* 2 yoga sessions
-* 1 Nature Hike
-* 1 Functional Movement Screening test
-* 1 Mobilization and Activation series
-* 3 opportunities for Cold plunge and sauna
-* Bonfire and Cocktails at night
-* Reviewing 3 Breathing Techniques
-* 2 "Coaching Sessions" - dialogues of empowerment
-* Working with the 5 senses
-* 3 powerful meditations
+Day 1 Theme - “Connection to Self”
+
+Day 2 Theme - “Connection to Others and to Nature”
+
+Day 3 Theme - “Living in Possibility”
+
+### The Itinerary Includes
+
+* Daily Morning Liquids (Including Fire Ciders, Teas, and Fruit-Infused Water)
+* Daily Cold Plunge for Increased Energy and mood
+* Daily Sauna for Recovery
+* 7 Organic Nutritionist Prepared Meals
+* 3 Powerful Meditations
+* 2 Yoga Sessions
+* 1 Mindful Movement Seminar
+* 1 "Program Your Workout" Workshop
+* 1 Highly Challenging Workout
+* 1 Hike in Nature
+* 1 Sound Bath
+* 1 Breathwork Workshop
+* 1 Fire Ceremony
 * Lodging (transportation not included)
-
-##### Daily Themes
-
-Day 1 - Connection to Self
-
-Day 2 - Connection to Others and Nature
-
-Day 3 - Living in an Empowered State
