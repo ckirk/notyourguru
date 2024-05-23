@@ -7,7 +7,7 @@ startDate: 2024-07-19T19:04:05.619Z
 endDate: 2024-07-21T19:04:05.631Z
 featuredRetreat: false
 featuredimage: /img/https___cdn.evbuc.com_images_522930449_268977341116_1_original.jpg
-price: 0
+price: 1250
 featuredpost: false
 date: 2024-03-20T04:47:48.945Z
 location: '{"type":"Point","coordinates":[-73.8655797,40.7113502]}'
