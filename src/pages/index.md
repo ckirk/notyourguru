@@ -2,16 +2,18 @@
 templateKey: index-page
 hero:
   title: Live Inspired
-  subtitle: Not Your Guru Retreats Curates Experiences For Life!
+  subtitle: Not Your Guru Retreats Curates Wellness Experiences For Life!
   image: /img/silhouette_centered.jpg
   cta_btn_text: Check Availability!
   cta_btn_link: /retreats
 intro:
-  heading: "Is Life Happening To You or Are You Living An Inspired Life? "
+  heading: "Are You Overwhelmed With Work And Need A Break? "
   centered: true
   description: >-
-    We are not your guru, because nobody should be; but we can help **discover
-    the guru in you.**
+    Is life happening to you, or you are you living an inspired life?
+
+
+    We are Not Your Guru, because nobody should be; but we can help **discover the guru in you.**
 
 
     ***Not Your Guru Retreats*** provides the tristate area with the opportunity
