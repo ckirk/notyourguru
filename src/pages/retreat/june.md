@@ -13,15 +13,13 @@ soldOut: true
 location: '{"type":"Point","coordinates":[-73.8655797,40.7113502]}'
 tags: []
 ---
-### The Retreat is Broken Up Into Daily Themes.
+### The Retreat is Broken Up Into Daily Themes
 
 Day 1 Theme - “Connection to Self”
 
 Day 2 Theme - “Connection to Others and to Nature”
 
 Day 3 Theme - “Living in Possibility”
-
-
 
 ### The Itinerary Includes
 
