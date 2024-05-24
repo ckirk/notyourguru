@@ -7,10 +7,11 @@ hero:
   cta_btn_text: Check Availability!
   cta_btn_link: /retreats
 intro:
-  heading: "Are You Overwhelmed With Work And Need A Break? "
+  heading: Is Life Happening To You, or You Are You Living An Inspired Life?
   centered: true
   description: >-
-    Is life happening to you, or you are you living an inspired life?
+    The American Psychological Association (APA) conducted a survey that shows
+    **77% of employees experience burnout** at work. **Don't be a statistic!**
 
 
     We are Not Your Guru, because nobody should be; but we can help **discover the guru in you.**
