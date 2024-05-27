@@ -7,7 +7,7 @@ hero:
   cta_btn_text: Check Availability!
   cta_btn_link: /retreats
 intro:
-  heading: Is Life Happening To You, or You Are You Living An Inspired Life?
+  heading: Is Life Happening To You, or Are You Living An Inspired Life?
   centered: true
   description: >-
     The American Psychological Association (APA) conducted a survey that shows
