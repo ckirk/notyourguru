@@ -22,22 +22,28 @@ export const ContactPageTemplate = ({ title, image, content, contentComponent, s
 
 
 	const handleChange = (e) => {
+		// console.log(formData)
 		setFormData({ ...formData, [e.target.name]: e.target.value })
 	}
 
 	const handleSubmit = (e) => {
 		e.preventDefault()
 		const form = e.target
-		fetch('/', {
-			method: 'POST',
-			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-			body: encode({
-				'form-name': form.getAttribute('name'),
-				...formData,
-			}),
-		})
-			.then(() => navigate(form.getAttribute('action')))
-			.catch((error) => alert(error))
+		if (formData.name && formData.email && formData.message) {
+			fetch('/', {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+				body: encode({
+					'form-name': form.getAttribute('name'),
+					...formData,
+				}),
+			})
+				.then(() => navigate(form.getAttribute('action')))
+				.catch((error) => alert(error))
+			} else {
+				console.log('formData: ', formData)
+				console.log('Form is incomplete')
+			}
 	}
 
 	return (
@@ -77,17 +83,17 @@ export const ContactPageTemplate = ({ title, image, content, contentComponent, s
 										</label>
 									</div>
 									<div className='field mb-5'>
-										<label className='label' htmlFor={'name'}>
+										<label className='label' htmlFor='name'>
 											Name
 										</label>
 										<div className='control'>
 											<input
 												className='input'
-												type={'text'}
-												name={'name'}
+												type='text'
+												name='name'
 												onChange={handleChange}
-												id={'name'}
-												required={true}
+												id='name'
+												required
 											/>
 										</div>
 									</div>
@@ -98,11 +104,11 @@ export const ContactPageTemplate = ({ title, image, content, contentComponent, s
 										<div className='control'>
 											<input
 												className='input'
-												type={'email'}
-												name={'email'}
+												type='email'
+												name='email'
 												onChange={handleChange}
-												id={'email'}
-												required={true}
+												id='email'
+												required
 											/>
 										</div>
 									</div>
@@ -113,10 +119,10 @@ export const ContactPageTemplate = ({ title, image, content, contentComponent, s
 										<div className='control'>
 											<textarea
 												className='textarea'
-												name={'message'}
+												name='message'
 												onChange={handleChange}
-												id={'message'}
-												required={true}
+												id='message'
+												required
 											/>
 										</div>
 									</div>
