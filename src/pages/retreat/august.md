@@ -1,14 +1,14 @@
 ---
 templateKey: retreat-post
-title: Hudson Valley Mind, Body, Soul Reset Series (August)
-subtitle: Hudson Valley Mind, Body, Soul Reset Series (3/3)
+title: Costa Rica Adventure Retreat (March)
+subtitle: Discover Costa Rica's famed Guanacaste region in all of it's glory!
 description: Enrollment Is Now Open - 8 spots available
-startDate: 2024-08-17T00:06:03.997Z
-endDate: 2024-08-19T00:06:04.008Z
+startDate: 2025-03-04T01:06:03.997Z
+endDate: 2025-03-10T00:06:04.008Z
 featuredRetreat: false
 soldOut: false
 featuredimage: /img/retreats.jpeg
-price: 1250
+price: 1495
 location: '{"type":"Point","coordinates":[-88.7652077,39.0412198]}'
 ---
 ### The Retreat is Broken Up Into Daily Themes
