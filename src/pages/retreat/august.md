@@ -8,7 +8,7 @@ endDate: 2025-03-10T00:06:04.008Z
 featuredRetreat: false
 soldOut: false
 featuredimage: /img/retreats.jpeg
-price: 1495
+price: 3500
 location: '{"type":"Point","coordinates":[-88.7652077,39.0412198]}'
 ---
 ### The Retreat is Broken Up Into Daily Themes
